@@ -4,7 +4,7 @@ M3DGR: A Multi-modal, Multi-scenario and Massive-baseline SLAM Dataset for Groun
 
 
 ## 🎯 Notice
-Full datasets and codes will be released upon paper acceptance.
+This paper is under review now. Full datasets and codes will be released upon paper acceptance.
 
 
 ## SENSOR SETUP
