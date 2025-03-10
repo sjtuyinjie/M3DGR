@@ -2,9 +2,21 @@
 M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots
 
 
-
 ## 🎯 Notice
 This paper is under review now. Full datasets and codes will be released upon paper acceptance.
+## 🔥 SLAM benchmark
+- a list of excellent projects based on M3DGR dataset:
+
+  - ① [Tartanvo: A generalizable learning-based vo](https://arxiv.org/abs/2011.00359) from PMLR2021
+  - ② [Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras](https://arxiv.org/abs/1610.06475) from T-RO2017
+  - ③ [Orb-slam3: An accurate open-source library for visual, visual–inertial, and multimap slam](https://arxiv.org/abs/2007.11898) from T-RO2021
+  - ④ [DM-VIO: Delayed marginalization visual-inertial odometry](https://arxiv.org/abs/2201.04114) from RA-L2022
+  - ⑤ [Vins-mono: A robust and versatile monocular visual-inertial state estimator](https://arxiv.org/abs/1708.03852) from T-RO2018
+  - ⑥ [VINS-RGBD: RGBD-inertial trajectory estimation and mapping for ground robots](https://www.mdpi.com/1424-8220/19/10/2251) from Sensors2019
+  - ⑦ [GVINS: Tightly coupled GNSS–visual–inertial fusion for smooth and consistent state estimation](https://arxiv.org/abs/2103.07899) from T-RO2022
+  - ⑧ VIW-Fusion: visual-inertial-wheel fusion odometry from [open repository](https://github.com/TouchDeeper/VIW-Fusion)2021
+  - ⑨ VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS from [open repository](https://github.com/Wallong/VINS-GPS-Wheel)2021
+  - ⑩ [Ground-fusion: A low-cost ground slam system robust to corner cases](https://arxiv.org/abs/2402.14308) from ICRA2024
 
 
 ## SENSOR SETUP
