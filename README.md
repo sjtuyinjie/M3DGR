@@ -31,6 +31,10 @@ This paper is under review now. Full datasets and codes will be released upon pa
     - ⑱ [LiLi-OM: Towards high-performance solid-state-lidar-inertial odometry and mapping](https://arxiv.org/abs/2010.13150) and the [*open repository*](https://github.com/KIT-ISAS/lili-om) from RA-L2021
     - ⑲ LIO-Livox: A Robust LiDAR-Inertial Odometry for Livox LiDAR from [*open repository*](https://github.com/Livox-SDK/LIO-Livox)2021
     - ⑳ [Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels](https://ieeexplore.ieee.org/document/9718203) and the [*open repository*](https://github.com/gaoxiang12/faster-lio) from RA-L2022
+    - ㉑ IESKF-LIO: reference to fast_lio1.0 from [*open repository*](https://github.com/Livox-SDK/LIO-Livox)2022
+    - ㉒ [VoxelMap: Efficient and probabilistic adaptive voxel mapping method for LiDAR odometry](https://arxiv.org/abs/2109.07082) and the [*open repository*](https://github.com/hku-mars/VoxelMap) from RA-L2022
+    - ㉓ [Fast-lio2: Fast direct lidar-inertial odometry](https://ieeexplore.ieee.org/abstract/document/9697912) and the [*open repository*](https://github.com/hku-mars/FAST_LIO) from T-RO2022
+    - ㉔ [Point-LIO: Robust High-Bandwidth Lidar-Inertial Odometry](https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/aisy.202200459) and the [*open repository*](https://github.com/hku-mars/Point-LIO) from AIS2023
     - 
 
 
