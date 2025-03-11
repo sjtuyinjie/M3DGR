@@ -4,7 +4,7 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 
 ## 🎯 Notice
 This paper is under review now. Full datasets and codes will be released upon paper acceptance.
-## 🔥 SLAM benchmark
+## 🔥 SLAM Benchmark
 - A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
   
   - 💡 **VO system**:
@@ -28,6 +28,10 @@ This paper is under review now. Full datasets and codes will be released upon pa
     - ⑮ [LIO-mapping: Tightly coupled 3d lidar inertial odometry and mapping](https://ieeexplore.ieee.org/abstract/document/8793511) and the [*open repository*](https://github.com/hyye/lio-mapping) from ICRA 2019
     - ⑯ [Lio-sam: Tightly-coupled lidar inertial odometry via smoothing and mapping](https://arxiv.org/abs/2007.00258) and the [*open repository*](https://github.com/TixiaoShan/LIO-SAM) from IROS2020
     - ⑰ [Lins: A lidar-inertial state estimator for robust and efficient navigation](https://arxiv.org/abs/1907.02233) and the [*open repository*](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM) from ICRA2020
+    - ⑱ [LiLi-OM: Towards high-performance solid-state-lidar-inertial odometry and mapping](https://arxiv.org/abs/2010.13150) and the [*open repository*](https://github.com/KIT-ISAS/lili-om) from RA-L2021
+    - ⑲ LIO-Livox: A Robust LiDAR-Inertial Odometry for Livox LiDAR from [*open repository*](https://github.com/Livox-SDK/LIO-Livox)2021
+    - ⑳ [Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels](https://ieeexplore.ieee.org/document/9718203) and the [*open repository*](https://github.com/gaoxiang12/faster-lio) from RA-L2022
+    - 
 
 
 ## SENSOR SETUP
