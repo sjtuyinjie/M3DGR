@@ -35,7 +35,13 @@ This paper is under review now. Full datasets and codes will be released upon pa
     - ㉒ [VoxelMap: Efficient and probabilistic adaptive voxel mapping method for LiDAR odometry](https://arxiv.org/abs/2109.07082) and the [*open repository*](https://github.com/hku-mars/VoxelMap) from RA-L2022
     - ㉓ [Fast-lio2: Fast direct lidar-inertial odometry](https://ieeexplore.ieee.org/abstract/document/9697912) and the [*open repository*](https://github.com/hku-mars/FAST_LIO) from T-RO2022
     - ㉔ [Point-LIO: Robust High-Bandwidth Lidar-Inertial Odometry](https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/aisy.202200459) and the [*open repository*](https://github.com/hku-mars/Point-LIO) from AIS2023
-    - 
+    - ㉕ [LOG-LIO: A LiDAR-Inertial Odometry with Efficient Local Geometric Information Estimation](https://arxiv.org/abs/2307.09531) and the [*open repository*](https://github.com/tiev-tongji/LOG-LIO) from RA-L2023
+    - ㉖ CT-LIO: Continuous-Time LiDAR-Inertial Odometry from [*open repository*](https://github.com/chengwei0427/ct-lio)2023
+    - ㉗ [DLIO: Direct LiDAR-Inertial Odometry: Lightweight LIO with Continuous-Time Motion Correction](https://arxiv.org/abs/2203.03749) and the [*open repository*](https://github.com/vectr-ucla/direct_lidar_inertial_odometry) from ICRA2023
+    - ㉘ HM-LIO: A Hash Map based LiDAR-Inertial Odometry from [*open repository*](https://github.com/chengwei0427/hm-lio)2023
+    - ㉙ [MM-LINS: a Multi-Map LiDAR-Inertial System for Over-Degenerate Environments](https://ieeexplore.ieee.org/document/10557776) and the [*open repository*](https://github.com/lian-yue0515/MM-LINS) from T-IV2024
+    - ㉚ [LIGO: Tightly Coupled LiDAR-Inertial-GNSS Odometry based on a Hierarchy Fusion Framework for Global Localization with Real-time Mapping](https://dl.acm.org/doi/10.1109/TRO.2025.3530298) and the [*open repository*](https://github.com/Joanna-HE/LIGO.) from T-RO2025
+  - 💡 **LVIO system**:
 
 
 ## SENSOR SETUP
