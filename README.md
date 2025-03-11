@@ -5,7 +5,7 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 ## 🎯 Notice
 This paper is under review now. Full datasets and codes will be released upon paper acceptance.
 ## 🔥 SLAM benchmark
-- a list of excellent projects based on M3DGR dataset:
+- a list of tested cutting-edge methods on M3DGR dataset:
 
   - ① [Tartanvo: A generalizable learning-based vo](https://arxiv.org/abs/2011.00359) from PMLR2021
   - ② [Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras](https://arxiv.org/abs/1610.06475) from T-RO2017
