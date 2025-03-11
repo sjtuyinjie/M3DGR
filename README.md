@@ -5,11 +5,11 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 ## 🎯 Notice
 This paper is under review now. Full datasets and codes will be released upon paper acceptance.
 ## 🔥 SLAM benchmark
-- a list of tested cutting-edge methods on M3DGR dataset:
-  - 💡 VO system:
+- A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
+  - 💡 **VO system**:
     - ① [Tartanvo: A generalizable learning-based vo](https://arxiv.org/abs/2011.00359) and the [*open repository*](https://github.com/castacks/tartanvo) from PMLR2021
     - ② [Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras](https://arxiv.org/abs/1610.06475) and the [*open repository*](https://github.com/raulmur/ORB_SLAM2) from T-RO2017
-  - 💡 VIO system:
+  - 💡 **VIO system**:
     - ③ [Orb-slam3: An accurate open-source library for visual, visual–inertial, and multimap slam](https://arxiv.org/abs/2007.11898) and the [*open repository*](https://github.com/UZ-SLAMLab/ORB_SLAM3) from T-RO2021
     - ④ [DM-VIO: Delayed marginalization visual-inertial odometry](https://arxiv.org/abs/2201.04114) and the [*open repository*](https://github.com/lukasvst/dm-vio) from RA-L2022
     - ⑤ [Vins-mono: A robust and versatile monocular visual-inertial state estimator](https://arxiv.org/abs/1708.03852) and the [*open repository*](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) from T-RO2018
@@ -18,12 +18,12 @@ This paper is under review now. Full datasets and codes will be released upon pa
     - ⑧ VIW-Fusion: visual-inertial-wheel fusion odometry from [*open repository*](https://github.com/TouchDeeper/VIW-Fusion)2021
     - ⑨ VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS from [*open repository*](https://github.com/Wallong/VINS-GPS-Wheel)2021
     - ⑩ [Ground-fusion: A low-cost ground slam system robust to corner cases](https://arxiv.org/abs/2402.14308) and the [*open repository*](https://github.com/SJTU-ViSYS/Ground-Fusion) from ICRA2024
-  - 💡 LO system:
+  - 💡 **LO system**:
     - ⑪ A-LOAM: Advanced implementation of [LOAM: Lidar odometry and mapping in real-time](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf), which from [*open repository*](https://github.com/HKUST-Aerial-Robotics/A-LOAM)2019
     - ⑫ [Loam livox: A fast, robust, high-precision LiDAR odometry and mapping package for LiDARs of small FoV](https://ieeexplore.ieee.org/abstract/document/9197440) and the [*open repository*](https://github.com/hku-mars/loam_livox) from ICRA2020
     - ⑬ CTLO: Continuous-Time LiDAR Odometry from [*open repository*](https://github.com/chengwei0427/CTLO)2023
     - ⑭ [Lego-loam: Lightweight and ground-optimized lidar odometry and mapping on variable terrain](https://ieeexplore.ieee.org/abstract/document/8594299) and the [*open repository*](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) from IROS2018
-  - 💡 LIO system:
+  - 💡 **LIO system**:
     - ⑮ [LIO-mapping: Tightly coupled 3d lidar inertial odometry and mapping](https://ieeexplore.ieee.org/abstract/document/8793511) and the [*open repository*](https://github.com/hyye/lio-mapping) from ICRA 2019
     - ⑯ [Lio-sam: Tightly-coupled lidar inertial odometry via smoothing and mapping](https://arxiv.org/abs/2007.00258) and the [*open repository*](https://github.com/TixiaoShan/LIO-SAM) from IROS2020
     - ⑰ [Lins: A lidar-inertial state estimator for robust and efficient navigation](https://arxiv.org/abs/1907.02233) and the [*open repository*](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM) from ICRA2020
