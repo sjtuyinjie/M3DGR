@@ -70,6 +70,11 @@ The rostopics of our rosbag sequences are listed as follows:
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj.pdf" width="800px">
 </div>
 <p align="left">Figure 2. traj</p>
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
+02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
+03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
 
 ### Visual Challenge
 <div align=center>
