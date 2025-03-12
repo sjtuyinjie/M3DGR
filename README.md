@@ -62,18 +62,19 @@ The rostopics of our rosbag sequences are listed as follows:
  
 
 ## DATASET SEQUENCES
+![Traj](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj.pdf)
 
 ### Visual Challenge
-
+![light01](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01.pdf)
 
 ### Wheel Slippage
-
+![dark01](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/dark01.pdf)
 
 ### GNSS Denied
-
-
+![GNSS_Denied](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GNSS_Denied.pdf)
 
 ### LiDAR Degeneration
+![corridor01](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor01.pdf)
 
 
 ## 🔥 SLAM Benchmark
