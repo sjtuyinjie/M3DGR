@@ -83,11 +83,23 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 </div>
 <p align="left">Figure 3. light01</p>
 
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
+02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
+03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+
 ### Wheel Slippage
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/dark01.pdf" width="800px">
 </div>
 <p align="left">Figure 4. dark01</p>
+
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
+02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
+03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
 
 ### GNSS Denied
 <div align=center>
@@ -95,11 +107,23 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 </div>
 <p align="left">Figure 5. GNSS_Denied</p>
 
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
+02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
+03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+
 ### LiDAR Degeneration
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor01.pdf" width="800px">
 </div>
 <p align="left">Figure 6. corridor01</p>
+
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
+02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
+03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
 
 ## 🔥 SLAM Benchmark
 - A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
