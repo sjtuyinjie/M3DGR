@@ -87,13 +87,13 @@ The rostopics of our rosbag sequences are listed as follows:
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GNSS_Denied.pdf" width="800px">
 </div>
-<p align="left">Figure 4. GNSS_Denied</p>
+<p align="left">Figure 5. GNSS_Denied</p>
 
 ### LiDAR Degeneration
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor01.pdf" width="800px">
 </div>
-<p align="left">Figure 4. corridor01</p>
+<p align="left">Figure 6. corridor01</p>
 
 ## 🔥 SLAM Benchmark
 - A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
