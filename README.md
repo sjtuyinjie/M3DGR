@@ -8,7 +8,7 @@ This paper is under review now. Full datasets and codes will be released upon pa
 ## SENSOR SETUP
 ### Acquisition Platform
 Physical drawings and schematics of the ground robot. (a) Side view of the robot. (b) Sensor arrangement on the top layer. (c) Sensor arrangement on the middle and bottom layers. All dimensions are provided in centimeters.
-![car](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/car.pdf)
+![Physical drawings and schematics of the ground robot](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/car.pdf)
 
 ### Sensor parameters
 
