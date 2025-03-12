@@ -6,6 +6,8 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 This paper is under review now. Full datasets and codes will be released upon paper acceptance.
 ## 🔥 SLAM Benchmark
 - A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
+    - ① Wheel Odom from [M3DGR]()'s wheel speedometer solution
+    - ② [Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras](https://arxiv.org/abs/1610.06475) and the [*open repository*](https://github.com/raulmur/ORB_SLAM2) from T-RO2017
   
   - 💡 **VO system**:
   
@@ -76,6 +78,14 @@ This paper is under review now. Full datasets and codes will be released upon pa
     - ㉚ [LIGO: Tightly Coupled LiDAR-Inertial-GNSS Odometry based on a Hierarchy Fusion Framework for Global Localization with Real-time Mapping](https://dl.acm.org/doi/10.1109/TRO.2025.3530298) and the [*open repository*](https://github.com/Joanna-HE/LIGO.) from T-RO2025
       
   - 💡 **LVIO system**:
+    - ㉛ [LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping](https://arxiv.org/abs/2104.10831) and the [*open repository*](https://github.com/TixiaoShan/LVI-SAM) from ICRA2021
+    - ㉜ [R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping](https://arxiv.org/abs/2102.12400) and the [*open repository*](https://github.com/hku-mars/r2live) from RA-L2021
+    - ㉝ [R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package](https://arxiv.org/abs/2109.07982) and the [*open repository*](https://github.com/hku-mars/r3live) from ICRA2022
+    - ㉞ [FAST-LIVO: Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry](https://arxiv.org/abs/2203.00893) and the [*open repository*](https://github.com/hku-mars/FAST-LIVO) from IROS2022
+    - ㉟ [Coco-LIC: Continuous-Time Tightly-Coupled LiDAR-Inertial-Camera Odometry using Non-Uniform B-spline](https://arxiv.org/abs/2309.09808) and the [*open repository*](https://github.com/APRIL-ZJU/Coco-LIC) from RA-L2023
+    - ㊱ [SR-LIVO: LiDAR-Inertial-Visual Odometry and Mapping with Sweep Reconstruction](https://arxiv.org/abs/2312.16800) and the [*open repository*](https://github.com/ZikangYuan/sr_livo) from RA-L2024
+    - ㊲ [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](https://arxiv.org/abs/2408.14035) and the [*open repository*](https://github.com/hku-mars/FAST-LIVO2) from T-RO2024
+    - ㊳ 
 
 
 ## SENSOR SETUP
