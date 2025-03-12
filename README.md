@@ -66,20 +66,34 @@ The rostopics of our rosbag sequences are listed as follows:
  
 
 ## DATASET SEQUENCES
-![Traj](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj.pdf)
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj.pdf" width="800px">
+</div>
+<p align="left">Figure 2. traj</p>
 
 ### Visual Challenge
-![light01](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01.pdf)
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01.pdf" width="800px">
+</div>
+<p align="left">Figure 3. light01</p>
 
 ### Wheel Slippage
-![dark01](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/dark01.pdf)
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/dark01.pdf" width="800px">
+</div>
+<p align="left">Figure 4. dark01</p>
 
 ### GNSS Denied
-![GNSS_Denied](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GNSS_Denied.pdf)
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GNSS_Denied.pdf" width="800px">
+</div>
+<p align="left">Figure 4. GNSS_Denied</p>
 
 ### LiDAR Degeneration
-![corridor01](https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor01.pdf)
-
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor01.pdf" width="800px">
+</div>
+<p align="left">Figure 4. corridor01</p>
 
 ## 🔥 SLAM Benchmark
 - A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
