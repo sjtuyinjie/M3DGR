@@ -130,99 +130,97 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 ## 🔥 SLAM Benchmark
 - A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
 - 
-  - 💡 **Wheel system**:
-  - 
+  - 💡 **Measurement**:
+
     - ① Wheel Odom from [M3DGR](https://github.com/sjtuyinjie/M3DGR)'s wheel speedometer solution
       
-  - 💡 **GNSS system**:
-  - 
     - ② GNSS SPP from [Ground-Fusion++](https://github.com/sjtuyinjie/Ground-Fusion2) solution
   
   - 💡 **VO system**:
   
-    - ③ [Tartanvo: A generalizable learning-based vo](https://arxiv.org/abs/2011.00359) and the [*open repository*](https://github.com/castacks/tartanvo) from PMLR2021
+    - ③ [PMLR2021]Tartanvo: A generalizable learning-based vo [[paper](https://arxiv.org/abs/2011.00359)][[code](https://github.com/castacks/tartanvo)] 
       
-    - ④ [Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras](https://arxiv.org/abs/1610.06475) and the [*open repository*](https://github.com/raulmur/ORB_SLAM2) from T-RO2017
+    - ④ [T-RO2017]Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras [[paper](https://arxiv.org/abs/1610.06475)][[code](https://github.com/raulmur/ORB_SLAM2)] 
       
   - 💡 **VIO system**:
     
-    - ⑤ [Orb-slam3: An accurate open-source library for visual, visual–inertial, and multimap slam](https://arxiv.org/abs/2007.11898) and the [*open repository*](https://github.com/UZ-SLAMLab/ORB_SLAM3) from T-RO2021
+    - ⑤ [T-RO2021]Orb-slam3: An accurate open-source library for visual, visual–inertial, and multimap slam [paper](https://arxiv.org/abs/2007.11898)[[code](https://github.com/UZ-SLAMLab/ORB_SLAM3)] 
       
-    - ⑥ [DM-VIO: Delayed marginalization visual-inertial odometry](https://arxiv.org/abs/2201.04114) and the [*open repository*](https://github.com/lukasvst/dm-vio) from RA-L2022
+    - ⑥ [RA-L2022]DM-VIO: Delayed marginalization visual-inertial odometry [paper](https://arxiv.org/abs/2201.04114)[[code](https://github.com/lukasvst/dm-vio)] 
       
-    - ⑦ [Vins-mono: A robust and versatile monocular visual-inertial state estimator](https://arxiv.org/abs/1708.03852) and the [*open repository*](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) from T-RO2018
+    - ⑦ [T-RO2018]Vins-mono: A robust and versatile monocular visual-inertial state estimator [[paper](https://arxiv.org/abs/1708.03852)][[code](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)]
       
-    - ⑧ [VINS-RGBD: RGBD-inertial trajectory estimation and mapping for ground robots](https://www.mdpi.com/1424-8220/19/10/2251) and the [*open repository*](https://github.com/STAR-Center/VINS-RGBD) from Sensors2019
+    - ⑧ [Sensors2019]VINS-RGBD: RGBD-inertial trajectory estimation and mapping for ground robots [[paper](https://www.mdpi.com/1424-8220/19/10/2251)][[code](https://github.com/STAR-Center/VINS-RGBD)]
       
-    - ⑨ [GVINS: Tightly coupled GNSS–visual–inertial fusion for smooth and consistent state estimation](https://arxiv.org/abs/2103.07899) and the [*open repository*](https://github.com/HKUST-Aerial-Robotics/GVINS) from T-RO2022
+    - ⑨ [T-RO2022]GVINS: Tightly coupled GNSS–visual–inertial fusion for smooth and consistent state estimation [[paper](https://arxiv.org/abs/2103.07899)][[code](https://github.com/HKUST-Aerial-Robotics/GVINS)]
       
-    - ⑩ VIW-Fusion: visual-inertial-wheel fusion odometry from [*open repository*](https://github.com/TouchDeeper/VIW-Fusion)2021
+    - ⑩ [2021]VIW-Fusion: visual-inertial-wheel fusion odometry [[code](https://github.com/TouchDeeper/VIW-Fusion)]
       
-    - ⑪ VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS from [*open repository*](https://github.com/Wallong/VINS-GPS-Wheel)2021
+    - ⑪ [2021]VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS [[code](https://github.com/Wallong/VINS-GPS-Wheel)]
       
-    - ⑫ [Ground-fusion: A low-cost ground slam system robust to corner cases](https://arxiv.org/abs/2402.14308) and the [*open repository*](https://github.com/SJTU-ViSYS/Ground-Fusion) from ICRA2024
+    - ⑫ [ICRA2024]Ground-fusion: A low-cost ground slam system robust to corner cases [[paper](https://arxiv.org/abs/2402.14308)][[code](https://github.com/SJTU-ViSYS/Ground-Fusion)]
       
   - 💡 **LO system**:
     
-    - ⑬ A-LOAM: Advanced implementation of [LOAM: Lidar odometry and mapping in real-time](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf), which from [*open repository*](https://github.com/HKUST-Aerial-Robotics/A-LOAM)2019
+    - ⑬ [2019]A-LOAM: Advanced implementation of LOAM [[paper](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf)][[code](https://github.com/HKUST-Aerial-Robotics/A-LOAM)]
       
-    - ⑭ [Loam livox: A fast, robust, high-precision LiDAR odometry and mapping package for LiDARs of small FoV](https://ieeexplore.ieee.org/abstract/document/9197440) and the [*open repository*](https://github.com/hku-mars/loam_livox) from ICRA2020
+    - ⑭ [ICRA2020]Loam livox: A fast, robust, high-precision LiDAR odometry and mapping package for LiDARs of small FoV [[paper](https://ieeexplore.ieee.org/abstract/document/9197440)][[*open repository*](https://github.com/hku-mars/loam_livox)] 
       
-    - ⑮ CTLO: Continuous-Time LiDAR Odometry from [*open repository*](https://github.com/chengwei0427/CTLO)2023
+    - ⑮ [2023]CTLO: Continuous-Time LiDAR Odometry [[code](https://github.com/chengwei0427/CTLO)]
       
-    - ⑯ [Lego-loam: Lightweight and ground-optimized lidar odometry and mapping on variable terrain](https://ieeexplore.ieee.org/abstract/document/8594299) and the [*open repository*](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM) from IROS2018
+    - ⑯ [IROS2018]Lego-loam: Lightweight and ground-optimized lidar odometry and mapping on variable terrain [[paper](https://ieeexplore.ieee.org/abstract/document/8594299)][[code](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)]
       
   - 💡 **LIO system**:
     
-    - ⑰ [LIO-mapping: Tightly coupled 3d lidar inertial odometry and mapping](https://ieeexplore.ieee.org/abstract/document/8793511) and the [*open repository*](https://github.com/hyye/lio-mapping) from ICRA 2019
+    - ⑰ [ICRA 2019]LIO-mapping: Tightly coupled 3d lidar inertial odometry and mapping [[paper](https://ieeexplore.ieee.org/abstract/document/8793511)][[code](https://github.com/hyye/lio-mapping)]
       
-    - ⑱ [Lio-sam: Tightly-coupled lidar inertial odometry via smoothing and mapping](https://arxiv.org/abs/2007.00258) and the [*open repository*](https://github.com/TixiaoShan/LIO-SAM) from IROS2020
+    - ⑱ [IROS2020]Lio-sam: Tightly-coupled lidar inertial odometry via smoothing and mapping [[paper](https://arxiv.org/abs/2007.00258)][[code](https://github.com/TixiaoShan/LIO-SAM)]
       
-    - ⑲ [Lins: A lidar-inertial state estimator for robust and efficient navigation](https://arxiv.org/abs/1907.02233) and the [*open repository*](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM) from ICRA2020
+    - ⑲ [ICRA2020]Lins: A lidar-inertial state estimator for robust and efficient navigation [[paper](https://arxiv.org/abs/1907.02233)][[code](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM)] 
       
-    - ⑳ [LiLi-OM: Towards high-performance solid-state-lidar-inertial odometry and mapping](https://arxiv.org/abs/2010.13150) and the [*open repository*](https://github.com/KIT-ISAS/lili-om) from RA-L2021
+    - ⑳ [RA-L2021]LiLi-OM: Towards high-performance solid-state-lidar-inertial odometry and mapping [[paper](https://arxiv.org/abs/2010.13150)][[code](https://github.com/KIT-ISAS/lili-om)]
       
-    - ㉑ LIO-Livox: A Robust LiDAR-Inertial Odometry for Livox LiDAR from [*open repository*](https://github.com/Livox-SDK/LIO-Livox)2021
+    - ㉑ [2021]LIO-Livox: A Robust LiDAR-Inertial Odometry for Livox LiDAR [[code](https://github.com/Livox-SDK/LIO-Livox)]
       
-    - ㉒ [Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels](https://ieeexplore.ieee.org/document/9718203) and the [*open repository*](https://github.com/gaoxiang12/faster-lio) from RA-L2022
+    - ㉒ [RA-L2022]Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels [[paper](https://ieeexplore.ieee.org/document/9718203)][[code](https://github.com/gaoxiang12/faster-lio)]
       
-    - ㉓ IESKF-LIO: reference to fast_lio1.0 from [*open repository*](https://github.com/Livox-SDK/LIO-Livox)2022
+    - ㉓ [2022]IESKF-LIO: reference to fast_lio1.0 [code](https://github.com/Livox-SDK/LIO-Livox)
       
-    - ㉔ [VoxelMap: Efficient and probabilistic adaptive voxel mapping method for LiDAR odometry](https://arxiv.org/abs/2109.07082) and the [*open repository*](https://github.com/hku-mars/VoxelMap) from RA-L2022
+    - ㉔ [RA-L2022]VoxelMap: Efficient and probabilistic adaptive voxel mapping method for LiDAR odometry [[paper](https://arxiv.org/abs/2109.07082)][[code](https://github.com/hku-mars/VoxelMap)]
       
-    - ㉕ [Fast-lio2: Fast direct lidar-inertial odometry](https://ieeexplore.ieee.org/abstract/document/9697912) and the [*open repository*](https://github.com/hku-mars/FAST_LIO) from T-RO2022
+    - ㉕ [T-RO2022]Fast-lio2: Fast direct lidar-inertial odometry [[paper](https://ieeexplore.ieee.org/abstract/document/9697912)][[code](https://github.com/hku-mars/FAST_LIO)]
       
-    - ㉖ [Point-LIO: Robust High-Bandwidth Lidar-Inertial Odometry](https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/aisy.202200459) and the [*open repository*](https://github.com/hku-mars/Point-LIO) from AIS2023
+    - ㉖ [AIS2023]Point-LIO: Robust High-Bandwidth Lidar-Inertial Odometry [[paper](https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/aisy.202200459)][[code](https://github.com/hku-mars/Point-LIO)]
       
-    - ㉗ [LOG-LIO: A LiDAR-Inertial Odometry with Efficient Local Geometric Information Estimation](https://arxiv.org/abs/2307.09531) and the [*open repository*](https://github.com/tiev-tongji/LOG-LIO) from RA-L2023
+    - ㉗ [RA-L2023]LOG-LIO: A LiDAR-Inertial Odometry with Efficient Local Geometric Information Estimation [[paper](https://arxiv.org/abs/2307.09531)][[code](https://github.com/tiev-tongji/LOG-LIO)]
       
-    - ㉘ CT-LIO: Continuous-Time LiDAR-Inertial Odometry from [*open repository*](https://github.com/chengwei0427/ct-lio)2023
+    - ㉘ [2023]CT-LIO: Continuous-Time LiDAR-Inertial Odometry [[code](https://github.com/chengwei0427/ct-lio)]
       
-    - ㉙ [DLIO: Direct LiDAR-Inertial Odometry: Lightweight LIO with Continuous-Time Motion Correction](https://arxiv.org/abs/2203.03749) and the [*open repository*](https://github.com/vectr-ucla/direct_lidar_inertial_odometry) from ICRA2023
+    - ㉙ [ICRA2023]DLIO: Direct LiDAR-Inertial Odometry: Lightweight LIO with Continuous-Time Motion Correction [[paper](https://arxiv.org/abs/2203.03749)][[code](https://github.com/vectr-ucla/direct_lidar_inertial_odometry)]
       
-    - ㉚ HM-LIO: A Hash Map based LiDAR-Inertial Odometry from [*open repository*](https://github.com/chengwei0427/hm-lio)2023
+    - ㉚ [2023]HM-LIO: A Hash Map based LiDAR-Inertial Odometry [[code](https://github.com/chengwei0427/hm-lio)]
       
-    - ㉛ [MM-LINS: a Multi-Map LiDAR-Inertial System for Over-Degenerate Environments](https://ieeexplore.ieee.org/document/10557776) and the [*open repository*](https://github.com/lian-yue0515/MM-LINS) from T-IV2024
+    - ㉛ [T-IV2024]MM-LINS: a Multi-Map LiDAR-Inertial System for Over-Degenerate Environments [[paper](https://ieeexplore.ieee.org/document/10557776)][[code](https://github.com/lian-yue0515/MM-LINS)]
       
-    - ㉜ [LIGO: Tightly Coupled LiDAR-Inertial-GNSS Odometry based on a Hierarchy Fusion Framework for Global Localization with Real-time Mapping](https://dl.acm.org/doi/10.1109/TRO.2025.3530298) and the [*open repository*](https://github.com/Joanna-HE/LIGO.) from T-RO2025
+    - ㉜ [T-RO2025]LIGO: Tightly Coupled LiDAR-Inertial-GNSS Odometry based on a Hierarchy Fusion Framework for Global Localization with Real-time Mapping [[paper](https://dl.acm.org/doi/10.1109/TRO.2025.3530298)][[code](https://github.com/Joanna-HE/LIGO.)]
       
   - 💡 **LVIO system**:
     
-    - ㉝ [LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping](https://arxiv.org/abs/2104.10831) and the [*open repository*](https://github.com/TixiaoShan/LVI-SAM) from ICRA2021
+    - ㉝ [ICRA2021]LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping [[paper](https://arxiv.org/abs/2104.10831)][[code](https://github.com/TixiaoShan/LVI-SAM)]
       
-    - ㉞ [R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping](https://arxiv.org/abs/2102.12400) and the [*open repository*](https://github.com/hku-mars/r2live) from RA-L2021
+    - ㉞ [RA-L2021]R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping [[paper](https://arxiv.org/abs/2102.12400)][[code](https://github.com/hku-mars/r2live)]
       
-    - ㉟ [R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package](https://arxiv.org/abs/2109.07982) and the [*open repository*](https://github.com/hku-mars/r3live) from ICRA2022
+    - ㉟ [ICRA2022]R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package [[paper](https://arxiv.org/abs/2109.07982)][[code](https://github.com/hku-mars/r3live)]
       
-    - ㊱ [FAST-LIVO: Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry](https://arxiv.org/abs/2203.00893) and the [*open repository*](https://github.com/hku-mars/FAST-LIVO) from IROS2022
+    - ㊱ [IROS2022]FAST-LIVO: Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2203.00893)][[code](https://github.com/hku-mars/FAST-LIVO)]
     
-    - ㊲ [Coco-LIC: Continuous-Time Tightly-Coupled LiDAR-Inertial-Camera Odometry using Non-Uniform B-spline](https://arxiv.org/abs/2309.09808) and the [*open repository*](https://github.com/APRIL-ZJU/Coco-LIC) from RA-L2023
+    - ㊲ [RA-L2023]Coco-LIC: Continuous-Time Tightly-Coupled LiDAR-Inertial-Camera Odometry using Non-Uniform B-spline [[paper](https://arxiv.org/abs/2309.09808)][[code](https://github.com/APRIL-ZJU/Coco-LIC)]
       
-    - ㊳ [SR-LIVO: LiDAR-Inertial-Visual Odometry and Mapping with Sweep Reconstruction](https://arxiv.org/abs/2312.16800) and the [*open repository*](https://github.com/ZikangYuan/sr_livo) from RA-L2024
+    - ㊳ [RA-L2024]SR-LIVO: LiDAR-Inertial-Visual Odometry and Mapping with Sweep Reconstruction [[paper](https://arxiv.org/abs/2312.16800)][[code](https://github.com/ZikangYuan/sr_livo)]
       
-    - ㊴ [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](https://arxiv.org/abs/2408.14035) and the [*open repository*](https://github.com/hku-mars/FAST-LIVO2) from T-RO2024
+    - ㊴ [T-RO2024]FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2408.14035)][[code](https://github.com/hku-mars/FAST-LIVO2)]
       
-    - ㊵ Ground-Fusion++: Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework and the [*open repository*](https://github.com/sjtuyinjie/Ground-Fusion2)
+    - ㊵ Ground-Fusion++: Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework [[paper]()][[code](https://github.com/sjtuyinjie/Ground-Fusion2)
 
 
 
