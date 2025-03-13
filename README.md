@@ -10,7 +10,7 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 Physical drawings and schematics of the ground robot. (a) Side view of the robot. (b) Sensor arrangement on the top layer. (c) Sensor arrangement on the middle and bottom layers. All dimensions are provided in centimeters.
 
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/car.pdf" width="300px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/car.jpg" width="800px">
 </div>
 <p align="left">Figure 1. The directions of the sensors are marked in different colors,red for X,green for Y and blue for Z.</p>
 
@@ -69,7 +69,7 @@ The rostopics of our rosbag sequences are listed as follows:
 
 ## DATASET SEQUENCES
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj.pdf" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/%E8%BD%A8%E8%BF%B9.png" width="800px">
 </div>
 <p align="left">Figure 2. traj</p>
 
@@ -81,7 +81,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### Visual Challenge
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01.pdf" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/dark(less).jpg" width="800px">
 </div>
 <p align="left">Figure 3. light01</p>
 
@@ -93,7 +93,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### Wheel Slippage
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/dark01.pdf" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="800px">
 </div>
 <p align="left">Figure 4. dark01</p>
 
@@ -105,7 +105,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### GNSS Denied
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GNSS_Denied.pdf" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="800px">
 </div>
 <p align="left">Figure 5. GNSS_Denied</p>
 
@@ -117,7 +117,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### LiDAR Degeneration
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor01.pdf" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="800px">
 </div>
 <p align="left">Figure 6. corridor01</p>
 
