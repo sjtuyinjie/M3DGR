@@ -71,7 +71,7 @@ The rostopics of our rosbag sequences are listed as follows:
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
 </div>
-<p align="center">Figure 2. traj</p>
+<p align="center">Figure 2. All trajectories are mapped in different colors.</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
@@ -83,7 +83,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
 </div>
-<p align="center">Figure 3. light01</p>
+<p align="center">Figure 3. light01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
@@ -95,7 +95,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
 </div>
-<p align="center">Figure 4. dark01</p>
+<p align="center">Figure 4. Dark01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
@@ -107,7 +107,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="600px">
 </div>
-<p align="center">Figure 5. GNSS_Denied</p>
+<p align="center">Figure 5. GNSS_Denied01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
@@ -119,7 +119,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="600px">
 </div>
-<p align="center">Figure 6. corridor01</p>
+<p align="center">Figure 6. corridor01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
