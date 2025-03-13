@@ -69,7 +69,7 @@ The rostopics of our rosbag sequences are listed as follows:
 
 ## DATASET SEQUENCES
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
 </div>
 <p align="center">Figure 2. traj</p>
 
@@ -81,7 +81,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### Visual Challenge
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
 </div>
 <p align="center">Figure 3. light01</p>
 
@@ -93,7 +93,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### Wheel Slippage
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
 </div>
 <p align="center">Figure 4. dark01</p>
 
@@ -105,7 +105,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### GNSS Denied
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="600px">
 </div>
 <p align="center">Figure 5. GNSS_Denied</p>
 
@@ -117,7 +117,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 
 ### LiDAR Degeneration
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="600px">
 </div>
 <p align="center">Figure 6. corridor01</p>
 
