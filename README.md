@@ -3,7 +3,7 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 
 
 ## 🎯 Notice
-This paper is under review now. Full datasets and codes will be released upon paper acceptance.
+## This paper is under review now. Full datasets and codes will be released upon paper acceptance.
 
 ## SENSOR SETUP
 ### Acquisition Platform
