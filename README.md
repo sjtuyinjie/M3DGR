@@ -70,7 +70,6 @@ The rostopics of our rosbag sequences are listed as follows:
 ## DATASET SEQUENCES
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
-</div>
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -78,11 +77,11 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
 02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
 03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+</div>
 
 ### Visual Challenge
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
-</div>
 <p align="center">Figure 3. light01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -90,11 +89,11 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
 02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
 03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+</div>
 
 ### Wheel Slippage
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
-</div>
 <p align="center">Figure 4. Dark01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -102,11 +101,11 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
 02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
 03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+</div>
 
 ### GNSS Denied
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="600px">
-</div>
 <p align="center">Figure 5. GNSS_Denied01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -114,11 +113,11 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
 02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
 03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+</div>
 
 ### LiDAR Degeneration
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="600px">
-</div>
 <p align="center">Figure 6. corridor01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -126,6 +125,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
 02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
 03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+</div>
 
 ## 🔥 SLAM Benchmark
 - A list of tested cutting-edge methods on **M3DGR**🦄 dataset:
