@@ -12,7 +12,7 @@ Physical drawings and schematics of the ground robot. (a) Side view of the robot
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/car.jpg" width="800px">
 </div>
-<p align="left">Figure 1. The directions of the sensors are marked in different colors,red for X,green for Y and blue for Z.</p>
+<p align="center">Figure 1. The directions of the sensors are marked in different colors,red for X,green for Y and blue for Z.</p>
 
 ### Sensor parameters
 
