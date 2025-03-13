@@ -18,51 +18,53 @@ Physical drawings and schematics of the ground robot. (a) Side view of the robot
 
 All the sensors and track devices and their most important parameters are listed as below:
 
-* **LIDAR** Velodyne VLP-32C, 360 Horizontal Field of View (FOV),-30 to +10 vertical FOV,10Hz,Max Range 200 m,Range Resolution 3 cm, Horizontal Angular Resolution 0.2°.  
-
-* **RGB Camera** FLIR Pointgrey CM3-U3-13Y3C-CS,fish-eye lens,1280*1024,190 HFOV,190 V-FOV, 15 Hz  
-* **GNSS** Ublox M8T, GPS/BeiDou, 1Hz  
-* **Infrared Camera**,PLUG 617,640*512,90.2 H-FOV,70.6 V-FOV,25Hz;  
-* **V-I Sensor**,Realsense d435i,RGB/Depth 640*480,69H-FOV,42.5V-FOV,15Hz;IMU 6-axix, 200Hz  
-* **Event Camera** Inivation DVXplorer, 640*480,15Hz;  
-* **IMU**,Handsfree A9,9-axis,150Hz;  
-* **GNSS-IMU** Xsens Mti 680G. GNSS-RTK,localization precision 2cm,100Hz;IMU 9-axis,100 Hz;  
-* **Laser Scanner** Leica MS60, localization 1mm+1.5ppm  
-* **Motion-capture System** Vicon Vero 2.2, localization accuracy 1mm, 50 Hz;
+* **LiDAR1** Livox Avia, Non-repetitive, 70.4° Horizontal Field of View (FOV), 77.2° vertical FOV, 10HZ, Max Range 450m, Range Precision 2cm, Angular Precision 0.05º, IMU 6-axis 200HZ.
+* **LiDAR2** Livox MID-360, Non-repetitive, 360° Horizontal Field of View (FOV), -7° to +52° vertical FOV,  10Hz, Max Range 40 m, Range Resolution 3 cm, Angular Resolution 0.15°, IMU 6-axis, 200HZ.
+* **V-I Sensor** Realsense d435i, RGB/Depth 640*480, 69°H-FOV, 42.5°V-FOV,15Hz; IMU 6-axis, 200Hz.
+* **Omnidirectional Camera** Insta360 X4,  RGB 2880*1440, 360°H-FOV, 360°V-FOV, 15HZ.
+* **Wheel Odometer** WHEELTEC, 2D, 20HZ.
+* **GNSS Receiver** CUAV C-RTK9Ps, BDS/GPS/GLONASS/Galileo, 10HZ.
+* **RTK Receiver**  CUAV C-RTK2HP,  localization accuracy 0.8cm(H)/1.5cm(V), 15HZ.
+* **Motion-capture System** OptiTrack, localization accuracy 1mm, 360HZ.
 
 The rostopics of our rosbag sequences are listed as follows:
 
-* LIDAR: `/velodyne_points` 
+* LiDAR1: `/livox/avia/lidar`
 
-* RGB Camera: 
-`/camera/left/image_raw/compressed `,  
-`/camera/right/image_raw/compressed `,  
-`/camera/third/image_raw/compressed `,  
-`/camera/fourth/image_raw/compressed `,  
-`/camera/fifth/image_raw/compressed `,  
-`/camera/sixth/image_raw/compressed `,  
-`/camera/head/image_raw/compressed `  
-* GNSS Ublox M8T:  
-`/ublox/aidalm `,  
-`/ublox/aideph `,  
-`/ublox/fix `,  
-`/ublox/fix_velocity `,  
-`/ublox/monhw `,  
-`/ublox/navclock `,  
-`/ublox/navpvt `,  
-`/ublox/navsat `,  
-`/ublox/navstatus `,  
-`/ublox/rxmraw `  
+* LiDAR2: `/livox/mid360/lidar` 
+
+* Wheel Odometer：`/odom`
+
+* RGB Camera: `/camera/color/image_raw/compressed`
+
+* Omnidirectional  Camera: `/cv_camera/image_raw/compressed`
+
+* Depth Camera: `/camera/aligned_depth_to_color/image_raw/compressedDepth`
+
+* GNSS:
+
+ `/ublox_driver/ephem`
+ 
+​	`/ublox_driver/glo_ephem`
+ 
+​	`/ublox_driver/iono_params`
+ 
+​	`/ublox_driver/range_meas`
+
+​	`/ublox_driver/receiver_lla`
+
+​	`/ublox_driver/receiver_pvt`
+
+​	`/ublox_driver/time_pulse_info`
 
 
-* Infrared Camera:`/thermal_image_raw ` 
-* V-I Sensor:  
-`/camera/color/image_raw/compressed `,  
-`/camera/imu`
-* Event Camera:  
-`/dvs/events`,  
-`/dvs_rendering/compressed`
-* IMU: `/handsfree/imu `
+* IMU:
+ 
+ `/camera/imu`
+  
+ `/livox/avia/imu`
+
+ `/livox/mid360/imu`
  
 
 ## DATASET SEQUENCES
