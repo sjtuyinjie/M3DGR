@@ -82,7 +82,7 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 ### Visual Challenge
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
-<p align="center">Figure 3. light01 Sequences</p>
+<p align="center">Figure 3. Light01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
