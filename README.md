@@ -191,8 +191,8 @@ An overview of **M3DGR** is given in the table below:
 
 ### Standard
 <div align=center>
-<!-- <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
-<p align="center">Figure 3. Light01 Sequences</p> -->
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/outdoor.jpg" width="600px">
+<p align="center">Figure 3. Outdoor01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
@@ -202,10 +202,10 @@ Outdoor01|2025-01-22|6.10g|s|Outdoor|[Rosbag]|[GT]
 Outdoor04|2025-01-22|13.4g|s|Outdoor|[Rosbag]|[GT]
 </div>
 
-### Visual Challenge
+### 📷 Visual Challenge
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
-<p align="center">Figure 3. Light01 Sequences</p>
+<p align="center">Figure 4. Light01 Sequences</p>
 </div>
 
 #### Indoor:
@@ -240,22 +240,22 @@ Dark03|2024-12-29|2.21g|s|Night|[Rosbag]|[GT]
 Dark04|2024-12-29|7.57g|s|Night|[Rosbag]|[GT]
 </div>
 
-### LiDAR Degeneration
+### 🌐 LiDAR Degeneration
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="600px">
-<p align="center">Figure 6. corridor01 Sequences</p>
+<p align="center">Figure 5. corridor01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Corridor01|2025-01-24|6.39g|172s|Long Corridor|[Rosbag]()|[GT]()
-Corridor02|2021-07-31|4.62g|327s|Long Corridor|[Rosbag]()|[GT]()
-Elevator01|2021-08-04|11.2g|283s|Long Corridor,Elevator|[Rosbag]()|[GT]()
+Corridor01|2025-01-24|6.39g|s|Long Corridor|[Rosbag]()|[GT]()
+Corridor02|2021-07-31|4.62g|s|Long Corridor|[Rosbag]()|[GT]()
+Elevator01|2021-08-04|11.2g|s|Long Corridor,Elevator|[Rosbag]()|[GT]()
 </div>
 
-### Wheel Slippage
+### 🚗 Wheel Slippage
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
-<p align="center">Figure 4. Dark01 Sequences</p>
+<p align="center">Figure 6. Dark01 Sequences</p>
 </div>
 
 #### Indoor:
@@ -263,10 +263,10 @@ Elevator01|2021-08-04|11.2g|283s|Long Corridor,Elevator|[Rosbag]()|[GT]()
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Wheel-float01|2024-12-28|1.5g|172s|Wheel Float|[Rosbag]|[GT]
-Wheel-float02|2024-12-28|1.84g|327s|Wheel Float|[Rosbag]|[GT]
-Sha-turn01|2024-12-28|1.68g|327s|Shap Turn|[Rosbag]|[GT]
-Sha-turn02|2024-12-28|1.22g|327s|Shap Turn|[Rosbag]|[GT]
+Wheel-float01|2024-12-28|1.5g|s|Wheel Float|[Rosbag]|[GT]
+Wheel-float02|2024-12-28|1.84g|s|Wheel Float|[Rosbag]|[GT]
+Sha-turn01|2024-12-28|1.68g|s|Shap Turn|[Rosbag]|[GT]
+Sha-turn02|2024-12-28|1.22g|s|Shap Turn|[Rosbag]|[GT]
 </div>
 
 #### Outdoor:
@@ -274,21 +274,21 @@ Sha-turn02|2024-12-28|1.22g|327s|Shap Turn|[Rosbag]|[GT]
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Grass01 |2024-12-28|1.5g|172s|Wheel Float|[Rosbag]|[GT]
-Grass02 |2024-12-28|1.84g|327s|Wheel Float|[Rosbag]|[GT]
-Grass03 |2025-1-26|3.58g|327s|Wheel Float|[Rosbag]|[GT]
-Z-Rough-Road01|2024-12-28|10.4g|327s|Z Rough Road|[Rosbag]|[GT]
+Grass01 |2024-12-28|1.5g|s|Wheel Float|[Rosbag]|[GT]
+Grass02 |2024-12-28|1.84g|s|Wheel Float|[Rosbag]|[GT]
+Grass03 |2025-1-26|3.58g|s|Wheel Float|[Rosbag]|[GT]
+Z-Rough-Road01|2024-12-28|10.4g|s|Z Rough Road|[Rosbag]|[GT]
 </div>
 
-### GNSS Denied
+### 🛰️ GNSS Denied
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="600px">
-<p align="center">Figure 5. GNSS_Denied01 Sequences</p>
+<p align="center">Figure 7. GNSS_Denied01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-GNSS-denial01|2025-07-31|10.5g|172s|dark,around gate|[Rosbag]|[GT]
-GNSS-denial02|2025-07-31|12.7g|327s|dark,loop back|[Rosbag]|[GT]
+GNSS-denial01|2025-07-31|10.5g|s|Long time,GNSS Denial|[Rosbag]|[GT]
+GNSS-denial02|2025-07-31|12.7g|s|Long time,GNSS Denial |[Rosbag]|[GT]
 </div>
 
 ## 🔥 SLAM Benchmark
