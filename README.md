@@ -73,7 +73,7 @@ The rostopics of our rosbag sequences are listed as follows:
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
 </div>
 
-An overview of scenarios in M3DGR dataset.
+An overview of **M3DGR** is given in the table below:
 <div align=center>
 <table border="0">
   <thead>
