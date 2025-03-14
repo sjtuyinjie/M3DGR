@@ -247,9 +247,9 @@ Dark04|2024-12-29|7.57g|s|Night|[Rosbag]|[GT]
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Corridor01|2025-01-24|6.39g|s|Long Corridor|[Rosbag]()|[GT]()
-Corridor02|2021-07-31|4.62g|s|Long Corridor|[Rosbag]()|[GT]()
-Elevator01|2021-08-04|11.2g|s|Long Corridor,Elevator|[Rosbag]()|[GT]()
+Corridor01|2025-01-24|6.39g|s|Long Corridor|[Rosbag]|[GT]
+Corridor02|2021-07-31|4.62g|s|Long Corridor|[Rosbag]|[GT]
+Elevator01|2021-08-04|11.2g|s|Long Corridor,Elevator|[Rosbag]|[GT]
 </div>
 
 ### 🚗 Wheel Slippage
