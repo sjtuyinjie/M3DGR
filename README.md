@@ -72,6 +72,23 @@ The rostopics of our rosbag sequences are listed as follows:
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
 
+| **Scenario**     | **Visual Challenge** |                   | **LiDAR Degeneracy** |                   |                   | **Wheel Slippage** |                   |                   |                   | **GNSS Denial** | **Standard** | **TOTAL** |
+|------------------|----------------------|-------------------|----------------------|-------------------|-------------------|--------------------|-------------------|-------------------|-------------------|-----------------|--------------|-----------|
+|                  | Dark  | VI¹  | Dynamic | Occlusion | Corridor | Elevator | WF² | ST³ | Grass | RR⁴ |               |              |           |
+|------------------|-------|------|---------|-----------|----------|----------|------|------|-------|------|---------------|--------------|-----------|
+| **Number**       | 5     | 4    | 3       | 4         | 2        | 1        | 2    | 2    | 2     | 1    | 2             | 4            | 32        |
+| **Dist/m**       | 1653.31 | 1055.58 | 355.97 | 1091.24  | 545.64   | 470.64   | 101.55 | 170.88 | 318.91 | 457.35 | 1162.39        | 4485.49     | 11868.95 |
+| **Duration/s**   | 2274  | 1458 | 609     | 1224      | 696      | 699      | 171  | 238  | 459   | 533  | 1359          | 5101         | 14821    |
+| **Size/GB**      | 27.0  | 20.0 | 7.1     | 12.3      | 11.9     | 11.2     | 3.3  | 2.9  | 9.7   | 10.4 | 23.2          | 86.0         | 225.0    |
+| **GroundTruth**  | RTK/Mocap | RTK/Mocap | RTK/Mocap | RTK/Mocap | ArUco    | ArUco    | Mocap | Mocap | RTK   | RTK  | ArUco         | RTK          | ----     |
+
+*Footnotes:*  
+¹ stands for varying illumination  
+² stands for wheel float  
+³ stands for sharp turn  
+⁴ stands for rough road
+
+
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
 01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
