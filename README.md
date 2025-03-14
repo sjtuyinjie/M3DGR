@@ -189,6 +189,17 @@ An overview of **M3DGR** is given in the table below:
 ³ stands for sharp turn  
 ⁴ stands for rough road
 
+### Standard
+<div align=center>
+<!-- <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
+<p align="center">Figure 3. Light01 Sequences</p> -->
+
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
+02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
+03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+</div>
 
 ### Visual Challenge
 <div align=center>
