@@ -82,6 +82,113 @@ The rostopics of our rosbag sequences are listed as follows:
 | **Size/GB**      | 27.0  | 20.0 | 7.1     | 12.3      | 11.9     | 11.2     | 3.3  | 2.9  | 9.7   | 10.4 | 23.2          | 86.0         | 225.0    |
 | **GroundTruth**  | RTK/Mocap | RTK/Mocap | RTK/Mocap | RTK/Mocap | ArUco    | ArUco    | Mocap | Mocap | RTK   | RTK  | ArUco         | RTK          | ----     |
 
+<table border="1">
+  <thead>
+    <tr>
+      <th rowspan="2">**Scenario**</th>
+      <th colspan="4">**Visual Challenge**</th>
+      <th colspan="2">**LiDAR Degeneracy**</th>
+      <th colspan="4">**Wheel Slippage**</th>
+      <th rowspan="2">**GNSS Denial**</th>
+      <th rowspan="2">**Standard**</th>
+      <th rowspan="2">**TOTAL**</th>
+    </tr>
+    <tr>
+      <th>Dark</th>
+      <th>VI¹</th>
+      <th>Dynamic</th>
+      <th>Occlusion</th>
+      <th>Corridor</th>
+      <th>Elevator</th>
+      <th>WF²</th>
+      <th>ST³</th>
+      <th>Grass</th>
+      <th>RR⁴</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Number</strong></td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td><strong>Dist/m</strong></td>
+      <td>1653.31</td>
+      <td>1055.58</td>
+      <td>355.97</td>
+      <td>1091.24</td>
+      <td>545.64</td>
+      <td>470.64</td>
+      <td>101.55</td>
+      <td>170.88</td>
+      <td>318.91</td>
+      <td>457.35</td>
+      <td>1162.39</td>
+      <td>4485.49</td>
+      <td>11868.95</td>
+    </tr>
+    <tr>
+      <td><strong>Duration/s</strong></td>
+      <td>2274</td>
+      <td>1458</td>
+      <td>609</td>
+      <td>1224</td>
+      <td>696</td>
+      <td>699</td>
+      <td>171</td>
+      <td>238</td>
+      <td>459</td>
+      <td>533</td>
+      <td>1359</td>
+      <td>5101</td>
+      <td>14821</td>
+    </tr>
+    <tr>
+      <td><strong>Size/GB</strong></td>
+      <td>27.0</td>
+      <td>20.0</td>
+      <td>7.1</td>
+      <td>12.3</td>
+      <td>11.9</td>
+      <td>11.2</td>
+      <td>3.3</td>
+      <td>2.9</td>
+      <td>9.7</td>
+      <td>10.4</td>
+      <td>23.2</td>
+      <td>86.0</td>
+      <td>225.0</td>
+    </tr>
+    <tr>
+      <td><strong>GroundTruth</strong></td>
+      <td>RTK/Mocap</td>
+      <td>RTK/Mocap</td>
+      <td>RTK/Mocap</td>
+      <td>RTK/Mocap</td>
+      <td>ArUco</td>
+      <td>ArUco</td>
+      <td>Mocap</td>
+      <td>Mocap</td>
+      <td>RTK</td>
+      <td>RTK</td>
+      <td>ArUco</td>
+      <td>RTK</td>
+      <td>----</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 ¹ stands for varying illumination  
