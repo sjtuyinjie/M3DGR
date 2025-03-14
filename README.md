@@ -71,8 +71,10 @@ The rostopics of our rosbag sequences are listed as follows:
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
+</div>
 
 An overview of scenarios in M3DGR dataset.
+<div align=center>
 <table border="0">
   <thead>
     <tr>
