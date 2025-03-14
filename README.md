@@ -196,10 +196,10 @@ An overview of **M3DGR** is given in the table below:
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Longtime01|2025-01-23|30.2g|s|long time|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214176&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
-Longtime_02|2025-01-23|36.3g|s|long time|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214177&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
-Outdoor01|2025-01-22|6.10g|s||[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214141&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
-Outdoor04|2025-01-22|13.4g|s||[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214142&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
+Longtime01|2025-01-23|30.2g|s|long time|[Rosbag]|[GT]
+Longtime_02|2025-01-23|36.3g|s|long time|[Rosbag]|[GT]
+Outdoor01|2025-01-22|6.10g|s||[Rosbag]|[GT]
+Outdoor04|2025-01-22|13.4g|s||[Rosbag]|[GT]
 </div>
 
 ### Visual Challenge
@@ -213,14 +213,14 @@ Outdoor04|2025-01-22|13.4g|s||[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Dynamic01|2024-12-28|2.14g|s|Dynamic peron|[Rosbag]|[GT]()
-Dynamic02|2024-12-28|1.85g|s|Dynamic peron|[Rosbag]|[GT]()
-Occlusion01|2024-12-28|1.46g|s|full Occlusion|[Rosbag]|[GT]()
-Occlusion02|2024-12-28|1.48g|s|full Occlusion|[Rosbag]|[GT]()
-Varying-illu01|2024-12-28|1.84g|s|varying illumination|[Rosbag]|[GT]()
-Varying-illu02|2024-12-28|1.75g|s|varying illumination|[Rosbag]|[GT]()
-Dark01|2024-12-28|2.01g|s|dark room|[Rosbag]|[GT]()
-Dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]()
+Dynamic01|2024-12-28|2.14g|s|Dynamic peron|[Rosbag]|[GT]
+Dynamic02|2024-12-28|1.85g|s|Dynamic peron|[Rosbag]|[GT]
+Occlusion01|2024-12-28|1.46g|s|full Occlusion|[Rosbag]|[GT]
+Occlusion02|2024-12-28|1.48g|s|full Occlusion|[Rosbag]|[GT]
+Varying-illu01|2024-12-28|1.84g|s|varying illumination|[Rosbag]|[GT]
+Varying-illu02|2024-12-28|1.75g|s|varying illumination|[Rosbag]|[GT]
+Dark01|2024-12-28|2.01g|s|dark room|[Rosbag]|[GT]
+Dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]
 </div>
 
 #### Outdoor:
