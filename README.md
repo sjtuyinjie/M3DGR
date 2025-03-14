@@ -219,8 +219,8 @@ Occlusion01|2024-12-28|1.46g|s|full Occlusion|[Rosbag]|[GT]()
 Occlusion02|2024-12-28|1.48g|s|full Occlusion|[Rosbag]|[GT]()
 Varying-illu01|2024-12-28|1.84g|s|varying illumination|[Rosbag]|[GT]()
 Varying-illu02|2024-12-28|1.75g|s|varying illumination|[Rosbag]|[GT]()
-dark01|2024-12-28|2.01g|s|dark room|[Rosbag]|[GT]()
-dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]()
+Dark01|2024-12-28|2.01g|s|dark room|[Rosbag]|[GT]()
+Dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]()
 </div>
 
 #### Outdoor:
@@ -228,14 +228,13 @@ dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]()
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Dynamic01|2024-12-28|2.14g|s||[Rosbag]()|[GT]()
-Dynamic02|2024-12-28|1.85g|s||[Rosbag]()|[GT]()
-Occlusion01|2024-12-28|1.46g|s||[Rosbag]()|[GT]()
-Occlusion02|2024-12-28|1.48g|s||[Rosbag]()|[GT]()
-Varying-illu01|2024-12-28|1.84g|s||[Rosbag]()|[GT]()
-Varying-illu02|2024-12-28|1.75g|s||[Rosbag]()|[GT]()
-dark01|2024-12-28|2.01g|s||[Rosbag]()|[GT]()
-dark02|2024-12-28|1.90g|s||[Rosbag]()|[GT]()
+Dark03|2024-12-29|2.21g|s||[Rosbag]|[GT]()
+Dark04|2024-12-29|7.57g|s||[Rosbag]|[GT]()
+Dynamic03|2024-12-28|1.46g|s||[Rosbag]|[GT]()
+Dynamic04|2024-12-28|1.48g|s||[Rosbag]|[GT]()
+Occlusion03|2024-12-28|1.84g|s||[Rosbag]|[GT]()
+Occlusion04|2024-12-28|1.75g|s||[Rosbag]|[GT]()
+Occlusion05|2024-12-28|1.75g|s||[Rosbag]|[GT]()
 </div>
 
 ### LiDAR Degeneration
