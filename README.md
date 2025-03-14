@@ -72,7 +72,7 @@ The rostopics of our rosbag sequences are listed as follows:
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
 
-| **Scenario**     | **Visual Challenge** |                   | **LiDAR Degeneracy** |                   |                   | **Wheel Slippage** |                   |                   |                   | **GNSS Denial** | **Standard** | **TOTAL** |
+| **Scenario**     | <th colspan="2">**Visual Challenge**</th> |                   | **LiDAR Degeneracy** |                   |                   | **Wheel Slippage** |                   |                   |                   | **GNSS Denial** | **Standard** | **TOTAL** |
 |                  | Dark  | VI¹  | Dynamic | Occlusion | Corridor | Elevator | WF² | ST³ | Grass | RR⁴ |               |              |           |
 |------------------|-------|------|---------|-----------|----------|----------|------|------|-------|------|---------------|--------------|-----------|
 | **Number**       | 5     | 4    | 3       | 4         | 2        | 1        | 2    | 2    | 2     | 1    | 2             | 4            | 32        |
