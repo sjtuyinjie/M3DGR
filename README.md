@@ -85,6 +85,8 @@ The rostopics of our rosbag sequences are listed as follows:
 ² stands for wheel float  
 ³ stands for sharp turn  
 ⁴ stands for rough road
+
+
 | **Scenario**     | <th colspan="2">**Visual Challenge**</th> |                   | **LiDAR Degeneracy** |                   |                   | **Wheel Slippage** |                   |                   |                   | **GNSS Denial** | **Standard** | **TOTAL** |
 |------------------|-------------------------------------------|-------------------|----------------------|-------------------|-------------------|--------------------|-------------------|-------------------|-------------------|-----------------|--------------|-----------|
 |                  | Dark  | VI¹  | Dynamic | Occlusion | Corridor | Elevator | WF² | ST³ | Grass | RR⁴ |               |              |           |
