@@ -4,7 +4,7 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 
 ## 🎯 Notice
 ## This paper is under review now. Full datasets and codes will be released upon paper acceptance.
-，但目前，您只能靠自己了
+
 ## SENSOR SETUP
 ### Acquisition Platform
 Physical drawings and schematics of the ground robot. (a) Side view of the robot. (b) Sensor arrangement on the top layer. (c) Sensor arrangement on the middle and bottom layers. All dimensions are provided in centimeters.
