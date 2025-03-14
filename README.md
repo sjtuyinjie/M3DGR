@@ -81,7 +81,6 @@ The rostopics of our rosbag sequences are listed as follows:
 | **Size/GB**      | 27.0  | 20.0 | 7.1     | 12.3      | 11.9     | 11.2     | 3.3  | 2.9  | 9.7   | 10.4 | 23.2          | 86.0         | 225.0    |
 | **GroundTruth**  | RTK/Mocap | RTK/Mocap | RTK/Mocap | RTK/Mocap | ArUco    | ArUco    | Mocap | Mocap | RTK   | RTK  | ArUco         | RTK          | ----     |
 </div>
-*Footnotes:*  
 ¹ stands for varying illumination  
 ² stands for wheel float  
 ³ stands for sharp turn  
