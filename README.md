@@ -228,13 +228,13 @@ Dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]()
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Dark03|2024-12-29|2.21g|s||[Rosbag]|[GT]()
-Dark04|2024-12-29|7.57g|s||[Rosbag]|[GT]()
 Dynamic03|2024-12-28|1.46g|s||[Rosbag]|[GT]()
 Dynamic04|2024-12-28|1.48g|s||[Rosbag]|[GT]()
 Occlusion03|2024-12-28|1.84g|s||[Rosbag]|[GT]()
 Occlusion04|2024-12-28|1.75g|s||[Rosbag]|[GT]()
 Occlusion05|2024-12-28|1.75g|s||[Rosbag]|[GT]()
+Dark03|2024-12-29|2.21g|s||[Rosbag]|[GT]()
+Dark04|2024-12-29|7.57g|s||[Rosbag]|[GT]()
 </div>
 
 ### LiDAR Degeneration
