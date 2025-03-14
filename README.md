@@ -208,7 +208,7 @@ Outdoor04|2025-01-22|13.4g|s||[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM
 <p align="center">Figure 3. Light01 Sequences</p>
 </div>
 
-#### Indoor
+#### Indoor:
 <div align=center>
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -223,7 +223,7 @@ dark01|2024-12-28|2.01g|s|dark room|[Rosbag]|[GT]()
 dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]()
 </div>
 
-#### Outdoor
+#### Outdoor:
 <div align=center>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
