@@ -202,6 +202,18 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
 </div>
 
+### LiDAR Degeneration
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="600px">
+<p align="center">Figure 6. corridor01 Sequences</p>
+
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
+02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
+03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+</div>
+
 ### Wheel Slippage
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
@@ -218,18 +230,6 @@ Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="600px">
 <p align="center">Figure 5. GNSS_Denied01 Sequences</p>
-
-Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
---|:--|:--:|--:|--:|--:|--:
-01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
-02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
-03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
-</div>
-
-### LiDAR Degeneration
-<div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="600px">
-<p align="center">Figure 6. corridor01 Sequences</p>
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
