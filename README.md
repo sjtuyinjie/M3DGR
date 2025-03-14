@@ -258,7 +258,7 @@ Elevator01|2021-08-04|11.2g|283s|Long Corridor,Elevator|[Rosbag]()|[GT]()
 <p align="center">Figure 4. Dark01 Sequences</p>
 </div>
 
-# Indoor:
+#### Indoor:
 <div align=center>
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -269,7 +269,7 @@ Sha-turn01|2024-12-28|1.68g|327s|Shap Turn|[Rosbag]|[GT]
 Sha-turn02|2024-12-28|1.22g|327s|Shap Turn|[Rosbag]|[GT]
 </div>
 
-# Outdoor:
+#### Outdoor:
 <div align=center>
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
@@ -287,9 +287,8 @@ Z-Rough-Road01|2024-12-28|10.4g|327s|Z Rough Road|[Rosbag]|[GT]
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
-02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
-03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+GNSS-denial01|2025-07-31|10.5g|172s|dark,around gate|[Rosbag]|[GT]
+GNSS-denial02|2025-07-31|12.7g|327s|dark,loop back|[Rosbag]|[GT]
 </div>
 
 ## 🔥 SLAM Benchmark
