@@ -75,13 +75,13 @@ The rostopics of our rosbag sequences are listed as follows:
 <table border="1">
   <thead>
     <tr>
-      <th rowspan="2">**Scenario**</th>
-      <th colspan="4">**Visual Challenge**</th>
-      <th colspan="2">**LiDAR Degeneracy**</th>
-      <th colspan="4">**Wheel Slippage**</th>
-      <th rowspan="2">**GNSS Denial**</th>
-      <th rowspan="2">**Standard**</th>
-      <th rowspan="2">**TOTAL**</th>
+      <th rowspan="2">Scenario</th>
+      <th colspan="4">Visual Challenge</th>
+      <th colspan="2">LiDAR Degeneracy</th>
+      <th colspan="4">Wheel Slippage</th>
+      <th rowspan="2">GNSS Denial</th>
+      <th rowspan="2">Standard</th>
+      <th rowspan="2">TOTAL</th>
     </tr>
     <tr>
       <th>Dark</th>
