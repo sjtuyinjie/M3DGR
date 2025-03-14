@@ -196,21 +196,41 @@ An overview of **M3DGR** is given in the table below:
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-long_time_01|2025-01-23|30.2g|s|long time|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214176&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
-long_time_02|2025-01-23|36.3g|s|dark,loop back|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214177&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
-03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+Longtime01|2025-01-23|30.2g|s|long time|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214176&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
+Longtime_02|2025-01-23|36.3g|s|long time|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214177&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
+Outdoor01|2025-01-22|6.10g|s||[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214141&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
+Outdoor04|2025-01-22|13.4g|s||[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214142&parId=2B4BFC0EDF421186%214140&o=OneUp)|[GT]()
 </div>
 
 ### Visual Challenge
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
 <p align="center">Figure 3. Light01 Sequences</p>
-
+ 
+#### Indoor
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
-02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
-03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+Dynamic01|2024-12-28|2.14g|s||[Rosbag]()|[GT]()
+Dynamic02|2024-12-28|1.85g|s||[Rosbag]()|[GT]()
+Occlusion01|2024-12-28|1.46g|s||[Rosbag]()|[GT]()
+Occlusion02|2024-12-28|1.48g|s||[Rosbag]()|[GT]()
+Varying-illu01|2024-12-28|1.84g|s||[Rosbag]()|[GT]()
+Varying-illu02|2024-12-28|1.75g|s||[Rosbag]()|[GT]()
+dark01|2024-12-28|2.01g|s||[Rosbag]()|[GT]()
+dark02|2024-12-28|1.90g|s||[Rosbag]()|[GT]()
+</div>
+
+#### Outdoor
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+Dynamic01|2024-12-28|2.14g|s||[Rosbag]()|[GT]()
+Dynamic02|2024-12-28|1.85g|s||[Rosbag]()|[GT]()
+Occlusion01|2024-12-28|1.46g|s||[Rosbag]()|[GT]()
+Occlusion02|2024-12-28|1.48g|s||[Rosbag]()|[GT]()
+Varying-illu01|2024-12-28|1.84g|s||[Rosbag]()|[GT]()
+Varying-illu02|2024-12-28|1.75g|s||[Rosbag]()|[GT]()
+dark01|2024-12-28|2.01g|s||[Rosbag]()|[GT]()
+dark02|2024-12-28|1.90g|s||[Rosbag]()|[GT]()
 </div>
 
 ### LiDAR Degeneration
