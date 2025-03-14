@@ -4,7 +4,7 @@ M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Grou
 
 ## 🎯 Notice
 ## This paper is under review now. Full datasets and codes will be released upon paper acceptance.
-
+，但目前，您只能靠自己了
 ## SENSOR SETUP
 ### Acquisition Platform
 Physical drawings and schematics of the ground robot. (a) Side view of the robot. (b) Sensor arrangement on the top layer. (c) Sensor arrangement on the middle and bottom layers. All dimensions are provided in centimeters.
@@ -197,9 +197,9 @@ An overview of **M3DGR** is given in the table below:
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
 Longtime01|2025-01-23|30.2g|s|long time|[Rosbag]|[GT]
-Longtime_02|2025-01-23|36.3g|s|long time|[Rosbag]|[GT]
-Outdoor01|2025-01-22|6.10g|s||[Rosbag]|[GT]
-Outdoor04|2025-01-22|13.4g|s||[Rosbag]|[GT]
+Longtime02|2025-01-23|36.3g|s|long time|[Rosbag]|[GT]
+Outdoor01|2025-01-22|6.10g|s|Outdoor|[Rosbag]|[GT]
+Outdoor04|2025-01-22|13.4g|s|Outdoor|[Rosbag]|[GT]
 </div>
 
 ### Visual Challenge
@@ -213,8 +213,8 @@ Outdoor04|2025-01-22|13.4g|s||[Rosbag]|[GT]
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Dynamic01|2024-12-28|2.14g|s|Dynamic peron|[Rosbag]|[GT]
-Dynamic02|2024-12-28|1.85g|s|Dynamic peron|[Rosbag]|[GT]
+Dynamic01|2024-12-28|2.14g|s|Dynamic Peron|[Rosbag]|[GT]
+Dynamic02|2024-12-28|1.85g|s|Dynamic Peron|[Rosbag]|[GT]
 Occlusion01|2024-12-28|1.46g|s|full Occlusion|[Rosbag]|[GT]
 Occlusion02|2024-12-28|1.48g|s|full Occlusion|[Rosbag]|[GT]
 Varying-illu01|2024-12-28|1.84g|s|varying illumination|[Rosbag]|[GT]
@@ -228,13 +228,16 @@ Dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Dynamic03|2024-12-28|1.46g|s||[Rosbag]|[GT]()
-Dynamic04|2024-12-28|1.48g|s||[Rosbag]|[GT]()
-Occlusion03|2024-12-28|1.84g|s||[Rosbag]|[GT]()
-Occlusion04|2024-12-28|1.75g|s||[Rosbag]|[GT]()
-Occlusion05|2024-12-28|1.75g|s||[Rosbag]|[GT]()
-Dark03|2024-12-29|2.21g|s||[Rosbag]|[GT]()
-Dark04|2024-12-29|7.57g|s||[Rosbag]|[GT]()
+Dynamic03|2024-12-28|1.46g|s|Dynamic Peron|[Rosbag]|[GT]
+Dynamic04|2024-12-28|1.48g|s|Dynamic Peron|[Rosbag]|[GT]
+Occlusion03|2024-12-28|1.84g|s|Partial Occlusion|[Rosbag]|[GT]
+Occlusion04|2024-12-28|1.75g|s|Partial Occlusion|[Rosbag]|[GT]
+Occlusion05|2024-12-28|1.75g|s|Partial Occlusion|[Rosbag]|[GT]
+Varying-illu03|2024-12-28|13.5g|s|varying illumination|[Rosbag]|[GT]
+Varying-illu04|2024-12-28|9.25g|s|varying illumination|[Rosbag]|[GT]
+Varying-illu05|2024-12-28|6.12g|s|varying illumination|[Rosbag]|[GT]
+Dark03|2024-12-29|2.21g|s|Night|[Rosbag]|[GT]
+Dark04|2024-12-29|7.57g|s|Night|[Rosbag]|[GT]
 </div>
 
 ### LiDAR Degeneration
@@ -244,21 +247,37 @@ Dark04|2024-12-29|7.57g|s||[Rosbag]|[GT]()
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
-02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
-03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+Corridor01|2025-01-24|6.39g|172s|Long Corridor|[Rosbag]()|[GT]()
+Corridor02|2021-07-31|4.62g|327s|Long Corridor|[Rosbag]()|[GT]()
+Elevator01|2021-08-04|11.2g|283s|Long Corridor,Elevator|[Rosbag]()|[GT]()
 </div>
 
 ### Wheel Slippage
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
 <p align="center">Figure 4. Dark01 Sequences</p>
+</div>
 
+# Indoor:
+<div align=center>
+ 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag]()|[GT]()
-02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag]()|[GT]()
-03|2021-08-04|21.9g|283s|day|[Rosbag]()|[GT]()
+Wheel-float01|2024-12-28|1.5g|172s|Wheel Float|[Rosbag]|[GT]
+Wheel-float02|2024-12-28|1.84g|327s|Wheel Float|[Rosbag]|[GT]
+Sha-turn01|2024-12-28|1.68g|327s|Shap Turn|[Rosbag]|[GT]
+Sha-turn02|2024-12-28|1.22g|327s|Shap Turn|[Rosbag]|[GT]
+</div>
+
+# Outdoor:
+<div align=center>
+ 
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
+--|:--|:--:|--:|--:|--:|--:
+Grass01 |2024-12-28|1.5g|172s|Wheel Float|[Rosbag]|[GT]
+Grass02 |2024-12-28|1.84g|327s|Wheel Float|[Rosbag]|[GT]
+Grass03 |2025-1-26|3.58g|327s|Wheel Float|[Rosbag]|[GT]
+Z-Rough-Road01|2024-12-28|10.4g|327s|Z Rough Road|[Rosbag]|[GT]
 </div>
 
 ### GNSS Denied
