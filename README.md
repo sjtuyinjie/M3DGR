@@ -1,5 +1,4 @@
-# M3DGR
-M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots
+# M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots
 
 
 ## 🎯 Notice
