@@ -66,7 +66,16 @@ The rostopics of our rosbag sequences are listed as follows:
 `/camera/imu`,  
 `/livox/avia/imu`,  
 `/livox/mid360/imu`  
- 
+
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" width="600px">
+<p align="center">Figure 2. All trajectories are mapped in different colors.</p>
+</div>
+
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif" width="600px">
+<p align="center">Figure 2. All trajectories are mapped in different colors.</p>
+</div>
 
 ## 2. DATASET SEQUENCES
 <div align=center>
