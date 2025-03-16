@@ -4,7 +4,7 @@
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="600px">
 </div>
-<p align="center"> Our goal is to Benchmark "all" cutting-edge SLAM!.</p>
+<p align="center"> Our goal is to benchmark "all" cutting-edge SLAM!.</p>
 
 
 ## 🎯 Notice
