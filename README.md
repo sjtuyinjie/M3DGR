@@ -297,7 +297,7 @@ GNSS-denial02|2025-07-31|12.7g|s|Long time,GNSS Denial |[Rosbag]|[GT]
 </div>
 
 ## 🔥 SLAM Benchmark
-- We have tested following cutting-edge methods on **M3DGR**🦄 dataset. We will release all the custom baseline codes upon paper acceptance.
+- We have tested following cutting-edge methods on **M3DGR**🦄 dataset. **We will release all these custom baseline codes upon paper acceptance!**
 - 
   - 💡 **Measurement**:
 
