@@ -2,7 +2,7 @@
 
 
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="600px">
 </div>
 <p align="center"> .</p>
 
