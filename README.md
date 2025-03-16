@@ -1,6 +1,12 @@
 # M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots
 
 
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="800px">
+</div>
+<p align="center"> .</p>
+
+
 ## 🎯 Notice
 ## This paper is under review now. Full datasets and codes will be released upon paper acceptance.
 
