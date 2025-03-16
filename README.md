@@ -67,6 +67,12 @@ The rostopics of our rosbag sequences are listed as follows:
 `/livox/avia/imu`,  
 `/livox/mid360/imu`  
 
+## 2. DATASET SEQUENCES
+<div align=center>
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
+<p align="center">Figure 2. All trajectories are mapped in different colors.</p>
+</div>
+
 <table>
   <tr>
     <td align="center">
@@ -77,12 +83,6 @@ The rostopics of our rosbag sequences are listed as follows:
     </td>
   </tr>
 </table>
-
-## 2. DATASET SEQUENCES
-<div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
-<p align="center">Figure 2. All trajectories are mapped in different colors.</p>
-</div>
 
 An overview of **M3DGR** is given in the table below:
 <div align=center>
