@@ -10,7 +10,7 @@
 ## 🎯 Notice
 ## This paper is under review now. Full datasets and codes will be released upon paper acceptance.
 
-## SENSOR SETUP
+## 1. SENSOR SETUP
 ### Acquisition Platform
 Physical drawings and schematics of the ground robot. (a) Side view of the robot. (b) Sensor arrangement on the top layer. (c) Sensor arrangement on the middle and bottom layers. All dimensions are provided in centimeters.
 
@@ -24,12 +24,19 @@ Physical drawings and schematics of the ground robot. (a) Side view of the robot
 All the sensors and track devices and their most important parameters are listed as below:
 
 * **LiDAR1** Livox Avia, Non-repetitive, 70.4° Horizontal Field of View (FOV), 77.2° vertical FOV, 10HZ, Max Range 450m, Range Precision 2cm, Angular Precision 0.05º, IMU 6-axis 200HZ.
+  
 * **LiDAR2** Livox MID-360, Non-repetitive, 360° Horizontal Field of View (FOV), -7° to +52° vertical FOV,  10Hz, Max Range 40 m, Range Resolution 3 cm, Angular Resolution 0.15°, IMU 6-axis, 200HZ.
+  
 * **V-I Sensor** Realsense d435i, RGB/Depth 640*480, 69°H-FOV, 42.5°V-FOV,15Hz; IMU 6-axis, 200Hz.
+  
 * **Omnidirectional Camera** Insta360 X4,  RGB 2880*1440, 360°H-FOV, 360°V-FOV, 15HZ.
+  
 * **Wheel Odometer** WHEELTEC, 2D, 20HZ.
+  
 * **GNSS Receiver** CUAV C-RTK9Ps, BDS/GPS/GLONASS/Galileo, 10HZ.
+  
 * **RTK Receiver**  CUAV C-RTK2HP,  localization accuracy 0.8cm(H)/1.5cm(V), 15HZ.
+  
 * **Motion-capture System** OptiTrack, localization accuracy 1mm, 360HZ.
 
 The rostopics of our rosbag sequences are listed as follows:
@@ -46,33 +53,22 @@ The rostopics of our rosbag sequences are listed as follows:
 
 * Depth Camera: `/camera/aligned_depth_to_color/image_raw/compressedDepth`
 
-* GNSS:
+* GNSS:  
+`/ublox_driver/ephem`,  
+​`/ublox_driver/glo_ephem`,  
+`/ublox_driver/iono_params`,  
+​`/ublox_driver/range_meas`,  
+​`/ublox_driver/receiver_lla`,  
+`/ublox_driver/receiver_pvt`,  
+`/ublox_driver/time_pulse_info`  
 
- `/ublox_driver/ephem`
- 
-​	`/ublox_driver/glo_ephem`
- 
-​	`/ublox_driver/iono_params`
- 
-​	`/ublox_driver/range_meas`
-
-​	`/ublox_driver/receiver_lla`
-
-​	`/ublox_driver/receiver_pvt`
-
-​	`/ublox_driver/time_pulse_info`
-
-
-* IMU:
- 
- `/camera/imu`
-  
- `/livox/avia/imu`
-
- `/livox/mid360/imu`
+* IMU:  
+`/camera/imu`,  
+`/livox/avia/imu`,  
+`/livox/mid360/imu`  
  
 
-## DATASET SEQUENCES
+## 2. DATASET SEQUENCES
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
@@ -296,7 +292,7 @@ GNSS-denial01|2025-07-31|10.5g|s|Long time,GNSS Denial|[Rosbag]|[GT]
 GNSS-denial02|2025-07-31|12.7g|s|Long time,GNSS Denial |[Rosbag]|[GT]
 </div>
 
-## 🔥 SLAM Benchmark
+## 🔥 3. SLAM Benchmark
 - We have tested following cutting-edge methods on **M3DGR**🦄 dataset. **We will release all these custom baseline codes upon paper acceptance!**
 - 
   - 💡 **Measurement**:
