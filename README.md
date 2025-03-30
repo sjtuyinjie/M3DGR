@@ -239,16 +239,16 @@ Dark02|2024-11-24|1.90g|161s|dark room|[Rosbag]|[GT]
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Dynamic03|2024-12-28|1.46g|s|Dynamic Peron|[Rosbag]|[GT]
-Dynamic04|2024-12-28|1.48g|s|Dynamic Peron|[Rosbag]|[GT]
-Occlusion03|2024-12-28|1.84g|s|Partial Occlusion|[Rosbag]|[GT]
-Occlusion04|2024-12-28|1.75g|s|Partial Occlusion|[Rosbag]|[GT]
-Occlusion05|2024-12-28|1.75g|s|Partial Occlusion|[Rosbag]|[GT]
-Varying-illu03|2024-12-28|13.5g|s|varying illumination|[Rosbag]|[GT]
-Varying-illu04|2024-12-28|9.25g|s|varying illumination|[Rosbag]|[GT]
-Varying-illu05|2024-12-28|6.12g|s|varying illumination|[Rosbag]|[GT]
-Dark03|2024-12-29|2.21g|s|Night|[Rosbag]|[GT]
-Dark04|2024-12-29|7.57g|s|Night|[Rosbag]|[GT]
+Dynamic03|2024-12-06|3.20g|284s|Dynamic Peron|[Rosbag]|[GT]
+Dynamic04|2024-12-06|4.32g|384s|Dynamic Peron|[Rosbag]|[GT]
+Occlusion03|2024-12-01|4.00g|396s|Partial Occlusion|[Rosbag]|[GT]
+Occlusion04|2024-12-01|4.18g|359s|Partial Occlusion|[Rosbag]|[GT]
+Occlusion05|2024-12-01|5.27g|542s|Partial Occlusion|[Rosbag]|[GT]
+Varying-illu03|2025-1-13|13.5g|1027s|varying illumination|[Rosbag]|[GT]
+Varying-illu04|2025-1-13|9.25g|667s|varying illumination|[Rosbag]|[GT]
+Varying-illu05|2025-1-13|6.12g|491s|varying illumination|[Rosbag]|[GT]
+Dark03|2024-11-25|2.21g|206s|Night|[Rosbag]|[GT]
+Dark04|2024-11-25|7.57g|710s|Night|[Rosbag]|[GT]
 </div>
 
 ### 🌐 LiDAR Degeneration
@@ -258,9 +258,9 @@ Dark04|2024-12-29|7.57g|s|Night|[Rosbag]|[GT]
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Corridor01|2025-01-24|6.39g|s|Long Corridor|[Rosbag]|[GT]
-Corridor02|2021-07-31|4.62g|s|Long Corridor|[Rosbag]|[GT]
-Elevator01|2021-08-04|11.2g|s|Long Corridor,Elevator|[Rosbag]|[GT]
+Corridor01|2025-01-21|6.39g|403s|Long Corridor|[Rosbag]|[GT]
+Corridor02|2025-01-21|4.62g|293s|Long Corridor|[Rosbag]|[GT]
+Elevator01|2025-01-21|11.2g|699s|Long Corridor,Elevator|[Rosbag]|[GT]
 </div>
 
 ### 🚗 Wheel Slippage
@@ -274,10 +274,10 @@ Elevator01|2021-08-04|11.2g|s|Long Corridor,Elevator|[Rosbag]|[GT]
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Wheel-float01|2024-12-28|1.5g|s|Wheel Float|[Rosbag]|[GT]
-Wheel-float02|2024-12-28|1.84g|s|Wheel Float|[Rosbag]|[GT]
-Sha-turn01|2024-12-28|1.68g|s|Shap Turn|[Rosbag]|[GT]
-Sha-turn02|2024-12-28|1.22g|s|Shap Turn|[Rosbag]|[GT]
+Wheel-float01|2024-11-24|1.5g|123s|Wheel Float|[Rosbag]|[GT]
+Wheel-float02|2024-11-24|1.84g|149s|Wheel Float|[Rosbag]|[GT]
+Sha-turn01|2024-11-24|1.68g|138s|Shap Turn|[Rosbag]|[GT]
+Sha-turn02|2024-11-24|1.22g|100s|Shap Turn|[Rosbag]|[GT]
 </div>
 
 #### Outdoor:
@@ -285,10 +285,10 @@ Sha-turn02|2024-12-28|1.22g|s|Shap Turn|[Rosbag]|[GT]
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Grass01 |2024-12-28|1.5g|s|Wheel Float|[Rosbag]|[GT]
-Grass02 |2024-12-28|1.84g|s|Wheel Float|[Rosbag]|[GT]
-Grass03 |2025-1-26|3.58g|s|Wheel Float|[Rosbag]|[GT]
-Z-Rough-Road01|2024-12-28|10.4g|s|Z Rough Road|[Rosbag]|[GT]
+Grass01 |2025-01-19|6.10g|287s|Wheel Float|[Rosbag]|[GT]
+Grass02 |2025-01-21|2.70g|133s|Wheel Float|[Rosbag]|[GT]
+Grass03 |2025-01-21|3.58g|172s|Wheel Float|[Rosbag]|[GT]
+Z-Rough-Road01|2025-01-14|10.4g|533s|Z Rough Road|[Rosbag]|[GT]
 </div>
 
 ### 🛰️ GNSS Denied
@@ -298,8 +298,8 @@ Z-Rough-Road01|2024-12-28|10.4g|s|Z Rough Road|[Rosbag]|[GT]
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-GNSS-denial01|2025-07-31|10.5g|s|Long time,GNSS Denial|[Rosbag]|[GT]
-GNSS-denial02|2025-07-31|12.7g|s|Long time,GNSS Denial |[Rosbag]|[GT]
+GNSS-denial01|2025-01-19|10.5g|609s|Long time,GNSS Denial|[Rosbag]|[GT]
+GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
 </div>
 
 ## 🔥 3. SLAM Benchmark
