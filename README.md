@@ -207,10 +207,10 @@ An overview of **M3DGR** is given in the table below:
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Longtime01|2025-01-23|30.2g|s|long time|[Rosbag]|[GT]
-Longtime02|2025-01-23|36.3g|s|long time|[Rosbag]|[GT]
-Outdoor01|2025-01-22|6.10g|s|Outdoor|[Rosbag]|[GT]
-Outdoor04|2025-01-22|13.4g|s|Outdoor|[Rosbag]|[GT]
+Longtime01|2025-01-14|30.2g|1798s|long time|[Rosbag]|[GT]
+Longtime02|2025-01-18|36.3g|2118s|long time|[Rosbag]|[GT]
+Outdoor01|2025-01-03|6.10g|411s|Outdoor|[Rosbag]|[GT]
+Outdoor04|2025-01-03|13.4g|782s|Outdoor|[Rosbag]|[GT]
 </div>
 
 ### 📷 Visual Challenge
@@ -224,14 +224,14 @@ Outdoor04|2025-01-22|13.4g|s|Outdoor|[Rosbag]|[GT]
  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Dynamic01|2024-12-28|2.14g|s|Dynamic Peron|[Rosbag]|[GT]
-Dynamic02|2024-12-28|1.85g|s|Dynamic Peron|[Rosbag]|[GT]
-Occlusion01|2024-12-28|1.46g|s|full Occlusion|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214082&parId=2B4BFC0EDF421186%214073&o=OneUp)|[GT](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214109&parId=2B4BFC0EDF421186%214106&o=OneUp)
-Occlusion02|2024-12-28|1.48g|s|full Occlusion|[Rosbag]|[GT]
-Varying-illu01|2024-12-28|1.84g|s|varying illumination|[Rosbag]|[GT]
-Varying-illu02|2024-12-28|1.75g|s|varying illumination|[Rosbag]|[GT]
-Dark01|2024-12-28|2.01g|s|dark room|[Rosbag]|[GT]
-Dark02|2024-12-28|1.90g|s|dark room|[Rosbag]|[GT]
+Dynamic01|2024-11-24|2.14g|175s|Dynamic Peron|[Rosbag]|[GT]
+Dynamic02|2024-11-24|1.85g|150s|Dynamic Peron|[Rosbag]|[GT]
+Occlusion01|2024-11-24|1.46g|142s|full Occlusion|[Rosbag](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214082&parId=2B4BFC0EDF421186%214073&o=OneUp)|[GT](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBb1lSUXQ4T19Fc3JsM0xuVTN6TmNXM3pHd0hQP2U9bTdHUkpp&cid=2B4BFC0EDF421186&id=2B4BFC0EDF421186%214109&parId=2B4BFC0EDF421186%214106&o=OneUp)
+Occlusion02|2024-11-24|1.48g|144s|full Occlusion|[Rosbag]|[GT]
+Varying-illu01|2024-11-24|1.84g|154s|varying illumination|[Rosbag]|[GT]
+Varying-illu02|2024-11-24|1.75g|146s|varying illumination|[Rosbag]|[GT]
+Dark01|2024-11-24|2.01g|170s|dark room|[Rosbag]|[GT]
+Dark02|2024-11-24|1.90g|161s|dark room|[Rosbag]|[GT]
 </div>
 
 #### Outdoor:
