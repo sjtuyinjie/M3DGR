@@ -266,7 +266,7 @@ Elevator01|2025-01-21|11.2g|699s|Long Corridor,Elevator|[Rosbag]|[GT]
 ### 🚗 Wheel Slippage
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
-<p align="center">Figure 6. Dark01 Sequences</p>
+<p align="center">Figure 6. Wheelfloat01 Sequences</p>
 </div>
 
 #### Indoor:
