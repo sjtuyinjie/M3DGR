@@ -1,6 +1,16 @@
 # M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots
 
 
+💎 Correspondance Author: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)
+&emsp;
+📝 [[Paper]](TBD)
+&emsp;
+➡️ [[Algorithm code]](https://github.com/sjtuyinjie/Ground-Fusion2)
+&emsp;
+⭐️[[Presentation Video]](TBD)
+&emsp;
+🔥[[News]](TBD)
+
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="600px">
 </div>
