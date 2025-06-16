@@ -8,7 +8,7 @@
 
 
 ## 🎯 Notice
-## This paper is under review now. Full datasets and codes will be released upon paper acceptance.
+## 2025.06.16: This paper is accepted to IROS2025! We will release all datasets and codes soon, please stay tuned!
 
 ## 1. SENSOR SETUP
 ### Acquisition Platform
