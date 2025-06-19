@@ -20,6 +20,10 @@
 ## 🎯 Notice
 ## 2025.06.16: This paper is accepted to IROS2025! We will release all datasets and codes soon, please stay tuned!
 
+## Introduction
+This is the official implementation of the IROS2025 paper entitled "Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework". This paper presents a complete solution to robust SLAM for ground robots under degraded environments, including a comprehensive benchmark M3DGR(this repo) and a resilient SLAM framework Ground-Fusion++([Link](https://github.com/sjtuyinjie/Ground-Fusion2)).
+
+
 ## 1. SENSOR SETUP
 ### Acquisition Platform
 Physical drawings and schematics of the ground robot. (a) Side view of the robot. (b) Sensor arrangement on the top layer. (c) Sensor arrangement on the middle and bottom layers. All dimensions are provided in centimeters.
