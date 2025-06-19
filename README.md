@@ -312,6 +312,10 @@ GNSS-denial01|2025-01-19|10.5g|609s|Long time,GNSS Denial|[Rosbag]|[GT]
 GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
 </div>
 
+> ⚠️ **Known Issues**:  
+> - The RGB images collected by the D434I and X4 cameras are rolling shutter, which might affect the performance of some visual SLAM systems which require global shutter.  
+> - Ithe dataset lacks external trigger between sensors, instead, we perform synchronization via software synchronization.  
+
 ## 🔥 3. SLAM Benchmark
 - We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**
 - 
@@ -407,5 +411,7 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
       
     - ㊵ [2025] Ground-Fusion++: Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework [[paper]()][[code](https://github.com/sjtuyinjie/Ground-Fusion2)]
 
-
+> ⚠️ **Known Issues**:  
+> - Please note that experimental performance may exhibit variability across runs and hardware platforms; the results reported in the paper represent averaged outcomes under our testing conditions.  
+> - It is possible to further improve performance through careful parameter tuning and repeated evaluation in specific scenarios.  
 
