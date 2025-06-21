@@ -1,27 +1,34 @@
 # M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots
 
 
-💎 Correspondance Author: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)
-&emsp;
-📝 [[Paper]](TBD)
-&emsp;
-➡️ [[Algorithm code]](https://github.com/sjtuyinjie/Ground-Fusion2)
-&emsp;
-⭐️[[Presentation Video]](TBD)
-&emsp;
-🔥[[News]](TBD)
 
-<div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="600px">
+💎 Corresponding Author: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)  📝 [[Paper]](TBD) &emsp; ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; ⭐️ [[Presentation Video]](TBD) &emsp; 🔥 [[News]](TBD)
+
+<div align="center">
+  <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="600px" alt="M3DGR Logo">
 </div>
-<p align="center"> Our goal is to benchmark "all" cutting-edge SLAM!</p>
+
+<p align="center">Our goal is to benchmark "all" cutting-edge SLAM!</p>
+
+---
+
+## 📢 Notice
+
+**2025.06.16:** Our paper has been accepted to IROS 2025! We will release all datasets and code soon. Please stay tuned!
 
 
-## 🎯 Notice
-## 2025.06.16: This paper is accepted to IROS2025! We will release all datasets and codes soon, please stay tuned!
+## 🎯 Introduction
 
-## Introduction
-This is the official implementation of the IROS2025 paper entitled "Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework". This paper presents a complete solution to robust SLAM for ground robots under degraded environments, including a comprehensive benchmark M3DGR(this repo) and a resilient SLAM framework Ground-Fusion++([Link](https://github.com/sjtuyinjie/Ground-Fusion2)).
+This repository contains the official implementation of our **IROS 2025** paper:
+
+> **"Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and a Resilient Framework"**
+
+In this work, we propose a complete solution for robust SLAM on ground robots operating under degraded conditions. Our key contributions are:
+
+- 📦 **[M3DGR Benchmark](this repo)**: A comprehensive multi-sensor, multi-scenario SLAM benchmark for evaluating performance in challenging environments.  
+- 🚀 **Ground-Fusion++ ([Link](https://github.com/sjtuyinjie/Ground-Fusion2))**: A resilient and modular SLAM framework integrating heterogeneous sensors for robust localization and high-quality mapping.
+
+
 
 
 ## 1. SENSOR SETUP
