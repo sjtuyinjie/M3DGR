@@ -2,7 +2,7 @@
 
 
 
-💎 Corresponding Author: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)  📝 [[Paper]](TBD) &emsp; ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; ⭐️ [[Presentation Video]](TBD) &emsp; 🔥 [[News]](TBD)
+💎 Corresponding Author: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp;  📝 [[Paper]](TBD) &emsp; ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; ⭐️ [[Presentation Video]](TBD) &emsp; 🔥 [[News]](TBD)
 
 <div align="center">
   <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="600px" alt="M3DGR Logo">
