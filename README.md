@@ -5,7 +5,7 @@
 💎 Projcet Leader: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp;  📝 [[Paper]](TBD) &emsp; ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; ⭐️ [[Presentation Video]](TBD) &emsp; 🔥 [[News]](TBD)
 
 <div align="center">
-  <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logo.png" width="610px" alt="M3DGR Logo">
+  <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logov2.png" width="600px" alt="M3DGR Logo">
 </div>
 
 <p align="center">Our goal is to benchmark "all" cutting-edge SLAM!</p>
