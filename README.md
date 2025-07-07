@@ -17,6 +17,12 @@
 **2025.06.16:** Our paper has been accepted to IROS 2025! We will release all datasets and code soon. Please stay tuned!
 
 
+## TODO
+- [x] Release camera-ready version paper.
+- [x] Release Ground-Fusion++ code.
+- [x] Release M3DGR dataset with GT and calibration files.
+- [x] Release 40 SLAM codes adapted for M3DGR dataset.
+
 ## 🎯 Introduction
 
 This repository contains the official implementation of our **IROS 2025** paper:
