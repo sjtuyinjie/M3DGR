@@ -2,7 +2,7 @@
 
 
 
-💎 Projcet Leader: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp;  📝 [[Paper]](TBD) &emsp; ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; ⭐️ [[Presentation Video]](TBD) &emsp; 🔥 [[News]](TBD)
+💎 Projcet Leader: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp;  📝 [[Paper]](https://github.com/sjtuyinjie/M3DGR/blob/main/_IROS2025_GroundFusion2_M3DGR.pdf) &emsp; ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; ⭐️ [[Presentation Video]](TBD) &emsp; 🔥 [[News]](TBD)
 
 <div align="center">
   <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logov3.png" width="600px" alt="M3DGR Logo">
@@ -18,7 +18,7 @@
 
 
 ## TODO
-- [x] Release camera-ready version paper.[paper]()
+- [x] Release camera-ready version paper.[paper](https://github.com/sjtuyinjie/M3DGR/blob/main/_IROS2025_GroundFusion2_M3DGR.pdf)
 - [ ] Release Ground-Fusion++ code.
 - [ ] Release M3DGR dataset with GT and calibration files.
 - [ ] Release 40 SLAM codes adapted for M3DGR dataset.
