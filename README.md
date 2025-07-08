@@ -18,10 +18,10 @@
 
 
 ## TODO
-- [x] Release camera-ready version paper.
-- [x] Release Ground-Fusion++ code.
-- [x] Release M3DGR dataset with GT and calibration files.
-- [x] Release 40 SLAM codes adapted for M3DGR dataset.
+- [x] Release camera-ready version paper.[paper]()
+- [ ] Release Ground-Fusion++ code.
+- [ ] Release M3DGR dataset with GT and calibration files.
+- [ ] Release 40 SLAM codes adapted for M3DGR dataset.
 
 ## 🎯 Introduction
 
