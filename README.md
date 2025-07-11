@@ -455,4 +455,6 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
 ### 6.2 Open-source Contribution
 Waiting for your algorithms!
 
-
+    - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+    - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+    
