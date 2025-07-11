@@ -43,7 +43,6 @@ We encourage you to adapt and evaluate your SLAM or localization algorithms on t
 Our goal is to build an open and dynamic community, where researchers can not only use the dataset, but also contribute back by:
 -  Integrating your algorithms as baseline methods
 -  Sharing configuration files, evaluation results, and insights
--  Helping to expand the benchmark coverage across real-world corner cases
 
 Let’s make M3DGR a growing hub for robust, reproducible SLAM research! You can 
 - Submit a Pull Request to contribute new algorithms, configuration files, or improvements via Github [Pull Request](https://github.com/sjtuyinjie/M3DGR/pulls)
