@@ -43,11 +43,11 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 The M3DGR project is an open and collaborative effort. 
 We encourage you to adapt and evaluate your SLAM or localization algorithms on top of the M3DGR dataset!
 Our goal is to build an open and dynamic community, where researchers can not only use the dataset, but also contribute back by:
--  Integrating your algorithms as baseline methods
--  Sharing configuration files, evaluation results, and insights
+-  **Integrating your algorithms as baseline methods, which can enable fair comparison and promote your algorithm.**
+-  Sharing configuration files, evaluation results, and insights.
 
 Let’s make M3DGR a growing hub for robust, reproducible SLAM research! You can 
-- Submit a Pull Request to contribute new algorithms, configuration files, or improvements via Github [Pull Request](https://github.com/sjtuyinjie/M3DGR/pulls)
+- **Submit a Pull Request to contribute new algorithms, configuration files, or improvements via Github [Pull Request](https://github.com/sjtuyinjie/M3DGR/pulls)**
 - Report bugs or request features via GitHub [Issues](https://github.com/sjtuyinjie/M3DGR/issues).
 - Join discussions or ask questions on GitHub [Discussions](https://github.com/sjtuyinjie/M3DGR/discussions).
 
