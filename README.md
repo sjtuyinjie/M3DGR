@@ -351,8 +351,10 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
 > - Ithe dataset lacks external trigger between sensors, instead, we perform synchronization via software synchronization.  
 
 ## 6. Supported SLAM Algorithm List🔥
-- We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
-- 
+We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
+
+### 6.1 Original 40 SLAM in Paper
+
   - 💡 **Measurement**:
 
     - ① Wheel Odom from [M3DGR](https://github.com/sjtuyinjie/M3DGR)'s wheel speedometer solution
@@ -449,5 +451,9 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
 > - Please note that experimental performance may exhibit variability across runs and hardware platforms; the results reported in the paper represent averaged outcomes under our testing conditions.  
 > - It is possible to further improve performance through careful parameter tuning and repeated evaluation in specific scenarios.
 > - We not provide performance evaluation when multiple sensors (e.g., vision and LiDAR) simultaneously degrade or fail, which are too extreme and adverse.
+
+
+### 6.2 Open-source Contribution
+Waiting for your algorithms!
 
 
