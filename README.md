@@ -36,6 +36,20 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 
 
 
+## 🚀 Bring Your Algorithms to M3DGR
+
+The M3DGR project is an open and collaborative effort. 
+We encourage you to adapt and evaluate your SLAM or localization algorithms on top of the M3DGR dataset!
+Our goal is to build an open and dynamic community, where researchers can not only use the dataset, but also contribute back by:
+-  Integrating your algorithms as baseline methods
+-  Sharing configuration files, evaluation results, and insights
+-  Helping to expand the benchmark coverage across real-world corner cases
+
+Let’s make M3DGR a growing hub for robust, reproducible SLAM research! You can 
+- Submit a Pull Request to contribute new algorithms, configuration files, or improvements via Github [Pull Request](https://github.com/sjtuyinjie/M3DGR/pulls)
+- Report bugs or request features via GitHub [Issues](https://github.com/sjtuyinjie/M3DGR/issues).
+- Join discussions or ask questions on GitHub [Discussions](https://github.com/sjtuyinjie/M3DGR/discussions).
+
 
 ## 1. SENSOR SETUP
 ### Acquisition Platform
@@ -333,7 +347,7 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
 > - The RGB images collected by the D434I and X4 cameras are rolling shutter, which might affect the performance of some visual SLAM systems which require global shutter.  
 > - Ithe dataset lacks external trigger between sensors, instead, we perform synchronization via software synchronization.  
 
-## 🔥 3. SLAM Benchmark
+## 🔥 3. Supporting SLAM List
 - We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
 - 
   - 💡 **Measurement**:
