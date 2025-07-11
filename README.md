@@ -15,7 +15,6 @@
 
 
 
-
 ## 1. Project Overview 🎯
 
 This repository contains the official implementation of our **IROS 2025** paper:
@@ -29,7 +28,7 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 
 
 ## 2. Latest Updates 📢
-
+### News
 **2025.06.16:** Our paper has been accepted to IROS 2025! We will release all datasets and code soon. Please stay tuned!
 
 ### TODO
