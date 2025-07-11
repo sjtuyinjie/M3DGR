@@ -12,18 +12,11 @@
 
 ---
 
-## 📢 Notice
-
-**2025.06.16:** Our paper has been accepted to IROS 2025! We will release all datasets and code soon. Please stay tuned!
 
 
-## TODO
-- [x] Release camera-ready version paper.[[paper](https://github.com/sjtuyinjie/M3DGR/blob/main/_IROS2025_GroundFusion2_M3DGR.pdf)]
-- [ ] Release Ground-Fusion++ code.
-- [ ] Release M3DGR dataset with GT and calibration files.
-- [ ] Release 40 SLAM codes adapted for M3DGR dataset.
 
-## 🎯 Introduction
+
+## 1. Project Overview 🎯
 
 This repository contains the official implementation of our **IROS 2025** paper:
 
@@ -31,12 +24,22 @@ This repository contains the official implementation of our **IROS 2025** paper:
 
 In this work, we propose a complete solution for robust SLAM on ground robots operating under degraded conditions. Our key contributions are:
 
-- 📦 **M3DGR Benchmark(this repo)**: A comprehensive multi-sensor, multi-scenario SLAM benchmark for evaluating performance in challenging environments.  
-- 🚀 **Ground-Fusion++ ([Link](https://github.com/sjtuyinjie/Ground-Fusion2))**: A resilient and modular SLAM framework integrating heterogeneous sensors for robust localization and high-quality mapping.
+-  **M3DGR Benchmark(this repo)**: A comprehensive multi-sensor, multi-scenario SLAM benchmark for evaluating performance in challenging environments.  
+-  **Ground-Fusion++ ([Link](https://github.com/sjtuyinjie/Ground-Fusion2))**: A resilient and modular SLAM framework integrating heterogeneous sensors for robust localization and high-quality mapping.
 
 
+## 2. Latest Updates 📢
 
-## 🚀 Bring Your Algorithms to M3DGR
+**2025.06.16:** Our paper has been accepted to IROS 2025! We will release all datasets and code soon. Please stay tuned!
+
+### TODO
+- [x] Release camera-ready version paper.[[paper](https://github.com/sjtuyinjie/M3DGR/blob/main/_IROS2025_GroundFusion2_M3DGR.pdf)]
+- [ ] Release Ground-Fusion++ code.
+- [ ] Release M3DGR dataset with GT and calibration files.
+- [ ] Release 40 SLAM codes adapted for M3DGR dataset.
+
+
+## 3. Contribute to M3DGR
 
 The M3DGR project is an open and collaborative effort. 
 We encourage you to adapt and evaluate your SLAM or localization algorithms on top of the M3DGR dataset!
@@ -50,8 +53,10 @@ Let’s make M3DGR a growing hub for robust, reproducible SLAM research! You can
 - Join discussions or ask questions on GitHub [Discussions](https://github.com/sjtuyinjie/M3DGR/discussions).
 
 
-## 1. SENSOR SETUP
-### Acquisition Platform
+
+
+## 4. SENSOR SETUP
+### 4.1 Acquisition Platform
 Physical drawings and schematics of the ground robot. (a) Side view of the robot. (b) Sensor arrangement on the top layer. (c) Sensor arrangement on the middle and bottom layers. All dimensions are provided in centimeters.
 
 <div align=center>
@@ -59,7 +64,7 @@ Physical drawings and schematics of the ground robot. (a) Side view of the robot
 </div>
 <p align="center">Figure 1. The directions of the sensors are marked in different colors,red for X,green for Y and blue for Z.</p>
 
-### Sensor parameters
+### 4.2 Sensor parameters
 
 All the sensors and track devices and their most important parameters are listed as below:
 
@@ -107,7 +112,7 @@ The rostopics of our rosbag sequences are listed as follows:
 `/livox/avia/imu`,  
 `/livox/mid360/imu`  
 
-## 2. DATASET SEQUENCES
+## 5. DATASET SEQUENCES
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
@@ -240,7 +245,7 @@ An overview of **M3DGR** is given in the table below:
 ³ stands for sharp turn  
 ⁴ stands for rough road
 
-### Standard
+### 5.1 Standard
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/outdoor.jpg" width="600px">
 <p align="center">Figure 3. Outdoor01 Sequences</p>
@@ -253,7 +258,7 @@ Outdoor01|2025-01-03|6.10g|411s|Outdoor|[Rosbag]|[GT]
 Outdoor04|2025-01-03|13.4g|782s|Outdoor|[Rosbag]|[GT]
 </div>
 
-### 📷 Visual Challenge
+### 5.2 Visual Challenge 📷
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/light01_processed.jpg" width="600px">
 <p align="center">Figure 4. Light01 Sequences</p>
@@ -291,7 +296,7 @@ Dark03|2024-11-25|2.21g|206s|Night|[Rosbag]|[GT]
 Dark04|2024-11-25|7.57g|710s|Night|[Rosbag]|[GT]
 </div>
 
-### 🌐 LiDAR Degeneration
+### 5.3 LiDAR Degeneration 🌐
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/corridor.jpg" width="600px">
 <p align="center">Figure 5. corridor01 Sequences</p>
@@ -303,7 +308,7 @@ Corridor02|2025-01-21|4.62g|293s|Long Corridor|[Rosbag]|[GT]
 Elevator01|2025-01-21|11.2g|699s|Long Corridor,Elevator|[Rosbag]|[GT]
 </div>
 
-### 🚗 Wheel Slippage
+### 5.4 Wheel Slippage 🚗
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/grass.jpg" width="600px">
 <p align="center">Figure 6. Wheelfloat01 Sequences</p>
@@ -331,7 +336,7 @@ Grass03 |2025-01-21|3.58g|172s|Wheel Float|[Rosbag]|[GT]
 Z-Rough-Road01|2025-01-14|10.4g|533s|Z Rough Road|[Rosbag]|[GT]
 </div>
 
-### 🛰️ GNSS Denied
+### 5.5 🛰️ GNSS Denied
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="600px">
 <p align="center">Figure 7. GNSS_Denied01 Sequences</p>
@@ -343,10 +348,10 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
 </div>
 
 > ⚠️ **Known Issues**:  
-> - The RGB images collected by the D434I and X4 cameras are rolling shutter, which might affect the performance of some visual SLAM systems which require global shutter.  
+> - The RGB images collected by the D435i and X4 cameras are rolling shutter, which might affect the performance of some visual SLAM systems which require global shutter.  
 > - Ithe dataset lacks external trigger between sensors, instead, we perform synchronization via software synchronization.  
 
-## 🔥 3. Supporting SLAM List
+## 6. Supported SLAM Algorithm List🔥
 - We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
 - 
   - 💡 **Measurement**:
