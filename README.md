@@ -450,7 +450,6 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
 > ⚠️ **Known Issues**:  
 > - Please note that experimental performance may exhibit variability across runs and hardware platforms; the results reported in the paper represent averaged outcomes under our testing conditions.  
 > - It is possible to further improve performance through careful parameter tuning and repeated evaluation in specific scenarios.
-> - We not provide performance evaluation when multiple sensors (e.g., vision and LiDAR) simultaneously degrade or fail, which are too extreme and adverse.
 
 
 ### 6.2 Open-source Contribution
