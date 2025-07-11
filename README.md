@@ -353,7 +353,7 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag]|[GT]
 ## 6. Supported SLAM Algorithm List🔥
 We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
 
-### 6.1 Original 40 SLAM in Paper
+### 6.1 40 SLAM in IROS2025 Paper
 
   - 💡 **Measurement**:
 
