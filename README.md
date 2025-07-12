@@ -453,8 +453,20 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
 
 
 ### 6.2 Open-source Contribution
-Waiting for your algorithms!
-
-    - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
-    - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+- 💡 **VO system**:
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+- 💡 **VIO system**:
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+- 💡 **LO system**:
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+- 💡 **LIO system**:
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+- 💡 **LVIO system**:
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
+  - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
     
+Waiting for your algorithms!
