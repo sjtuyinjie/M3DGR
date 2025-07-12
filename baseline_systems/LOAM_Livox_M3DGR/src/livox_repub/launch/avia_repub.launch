@@ -1,0 +1,6 @@
+<launch>
+   <node pkg="livox_repub" type="livox_repub_online_node" name="livox_repub_online_node" output="screen" >
+      <param name="livox_raw_message_name"    type="string"   value="/livox/avia/lidar" />
+      <param name="livox_points_message_name"    type="string"   value="/livox/lidar" />
+   </node>
+</launch>

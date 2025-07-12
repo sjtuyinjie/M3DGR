@@ -1,0 +1,5 @@
+# CMake
+build/ 
+doc/
+msg/
+LICENSE.txt

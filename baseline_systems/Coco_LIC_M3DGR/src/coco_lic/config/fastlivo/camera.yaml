@@ -1,0 +1,26 @@
+%YAML:1.0
+
+# be cautious that whether the rosmsg of the image is compressed
+if_compressed: false
+image_topic: /left_camera/image
+# if_compressed: true
+# image_topic: /left_camera/image/compressed
+
+image_width: 640 
+image_height: 512 
+cam_fx: 431.795259219
+cam_fy: 431.550090267
+cam_cx: 310.833037316
+cam_cy: 266.985989326
+cam_d0: -0.0944205499243979
+cam_d1: 0.0946727677776504
+cam_d2: -0.00807970960613932
+cam_d3: 8.07461209775283e-05
+cam_d4: 0.0
+
+CameraExtrinsics:  # camera to imu
+    time_offset: 0.000
+    Trans: [0.134701, 0.0644568, 0.00210379]
+    Rot: [ 0.00162756, -0.0126748, 0.999918,
+           -0.999991, -0.00392989, 0.00157786,
+           0.00390957, -0.999912, -0.012681]

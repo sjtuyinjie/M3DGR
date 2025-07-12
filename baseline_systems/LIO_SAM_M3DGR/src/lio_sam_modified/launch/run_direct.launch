@@ -1,0 +1,20 @@
+<launch>
+
+    <arg name="project" default="lio_sam"/>
+    <arg name="rviz" default="true" />
+    
+    <!-- Parameters -->
+    <!-- <rosparam file="$(find lio_sam)/config/params.yaml" command="load" /> -->
+    <rosparam file="$(find lio_sam)/config/params_livox.yaml" command="load" />
+
+    <!--- LOAM -->
+    <node pkg="$(arg project)" type="$(arg project)_imuPreintegration"   name="$(arg project)_imuPreintegration"    output="screen" 	required="true" />
+    <node pkg="$(arg project)" type="$(arg project)_cloudProcess"        name="$(arg project)_cloudProcess"         output="screen"     required="true" />
+    <node pkg="$(arg project)" type="$(arg project)_mapOptmization2"     name="$(arg project)_mapOptmization2"       output="screen"     required="true" />
+
+    <!--- Run Rviz-->
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="$(arg project)_rviz" args="-d $(find lio_sam)/launch/rviz.rviz" />
+    </group>
+
+</launch>

@@ -1,0 +1,71 @@
+# project name
+PROJECT_NAME: "lvi_sam"
+
+lvi_sam:
+
+  # Topics
+  pointCloudTopic: "/livox/lidar"               # Point cloud data
+  imuTopic: "/camera/imu"                         # IMU data
+
+  # Heading
+  useImuHeadingInitialization: false          # if using GPS data, set to "true"
+  
+  # Export settings
+  savePCD: false                              # https://github.com/TixiaoShan/LIO-SAM/issues/3
+  savePCDDirectory: "/home/ljl/Documents/results/LIV_SAM_saveMap/"        # in your home folder, starts and ends with "/". Warning: the code deletes "LOAM" folder then recreates it. See "mapOptimization" for implementation
+
+  # Sensor Settings
+  N_SCAN: 6                                  # number of lidar channel (i.e., 16, 32, 64, 128)
+  Horizon_SCAN: 6000                         # lidar horizontal resolution (Velodyne:1800, Ouster:512,1024,2048)
+  timeField: "time"                           # point timestamp field, Velodyne - "time", Ouster - "t"
+  downsampleRate: 1                           # default: 1. Downsample your data if too many points. i.e., 16 = 64 / 4, 16 = 16 / 1 
+
+  # IMU Settings
+  imuAccNoise: 1.2374091609523514e-02
+  imuGyrNoise: 3.0032654435730201e-03
+  imuAccBiasN: 1.9218003442176448e-04
+  imuGyrBiasN: 5.4692100664858005e-05
+  imuGravity: 9.79
+  
+  # Extrinsics (lidar -> IMU)
+  extrinsicTrans: [-0.19501, 0.0471106, 0.0870882]
+  extrinsicRot: [0.0502661, -0.0116117, 0.998668, -0.99829,  0.0292847, 0.0505876, -0.0298331, -0.999504, -0.0101199]
+  extrinsicRPY: [0.0502661, -0.99829, -0.0298331, -0.0116117, 0.0292847, -0.999504, 0.998668, 0.0505876, -0.0101199]
+
+  # LOAM feature threshold
+  edgeThreshold: 1.0
+  surfThreshold: 0.1
+  edgeFeatureMinValidNum: 10
+  surfFeatureMinValidNum: 100
+
+  # voxel filter paprams
+  odometrySurfLeafSize: 0.4                     # default: 0.4
+  mappingCornerLeafSize: 0.2                    # default: 0.2
+  mappingSurfLeafSize: 0.4                      # default: 0.4
+
+  # robot motion constraint (in case you are using a 2D robot)
+  z_tollerance: 1000        # meters
+  rotation_tollerance: 1000 # radians
+
+  # CPU Params
+  numberOfCores: 4                              # number of cores for mapping optimization
+  mappingProcessInterval: 0.15                  # seconds, regulate mapping frequency
+
+  # Surrounding map
+  surroundingkeyframeAddingDistThreshold: 1.0   # meters, regulate keyframe adding threshold
+  surroundingkeyframeAddingAngleThreshold: 0.2  # radians, regulate keyframe adding threshold
+  surroundingKeyframeDensity: 2.0               # meters, downsample surrounding keyframe poses   
+  surroundingKeyframeSearchRadius: 50.0         # meters, within n meters scan-to-map optimization (when loop closure disabled)
+
+  # Loop closure
+  loopClosureEnableFlag: true
+  surroundingKeyframeSize: 25                   # submap size (when loop closure enabled)
+  historyKeyframeSearchRadius: 15.0             # meters, key frame that is within n meters from current pose will be considerd for loop closure
+  historyKeyframeSearchTimeDiff: 30.0           # seconds, key frame that is n seconds older will be considered for loop closure
+  historyKeyframeSearchNum: 25                  # number of hostory key frames will be fused into a submap for loop closure
+  historyKeyframeFitnessScore: 0.3              # icp threshold, the smaller the better alignment
+
+  # Visualization
+  globalMapVisualizationSearchRadius: 1000.0    # meters, global map visualization radius
+  globalMapVisualizationPoseDensity: 10.0       # meters, global map visualization keyframe density
+  globalMapVisualizationLeafSize: 1.0           # meters, global map visualization cloud density

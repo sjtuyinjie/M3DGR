@@ -1,0 +1,13 @@
+imu_topic:  /livox/imu 
+
+imu_excite_threshold: 0.5  # statical initialization, do not move!s
+gravity_mag: 9.81
+if_normalized: true  # imu acc is normalized in FAST-LIVO dataset
+if_use_init_bg: false
+
+IMUExtrinsics:  # imu to imu
+    time_offset: 0.000
+    Trans: [0, 0, 0]
+    Rot: [ 1, 0, 0,
+           0, 1, 0,
+           0, 0,  1]

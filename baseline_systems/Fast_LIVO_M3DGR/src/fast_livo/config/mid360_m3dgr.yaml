@@ -1,0 +1,45 @@
+feature_extract_enable : 0
+point_filter_num : 2
+max_iteration : 10
+dense_map_enable : 1
+filter_size_surf : 0.15
+filter_size_map : 0.3
+cube_side_length : 20
+grid_size : 40
+patch_size : 8
+img_enable : 1
+lidar_enable : 1
+outlier_threshold : 300 # 78 100 156
+ncc_en: false
+ncc_thre: 0
+img_point_cov : 100 # 1000
+laser_point_cov : 0.001 # 0.001
+delta_time: 0.0
+
+common:
+    lid_topic:  "/livox/mid360/lidar"
+    imu_topic:  "/livox/mid360/imu"
+
+preprocess:
+    lidar_type: 1 # 1:Livox Avia LiDAR  2:VELO16  3:OUST64  4:XT32 
+    scan_line: 4 # 16  64  32
+    blind: 5 # blind x m disable
+
+mapping:
+    acc_cov_scale: 100
+    gyr_cov_scale: 10000
+    extrinsic_T: [ -0.011, -0.02329, 0.04412 ]
+    extrinsic_R: [ 1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1]
+
+pcd_save:
+    pcd_save_en: false
+
+camera:
+    img_topic: /camera/color/image_raw
+    Rcl: [0.0722207,  0.5210047,  0.8504930,
+         -0.9973866,  0.0394820,  0.0605080,
+          -0.0020542, -0.8526402,  0.5224945]
+    Pcl: [0.07433266794297944, -0.038064684622738675, -0.43920868647350303]
+    

@@ -1,0 +1,105 @@
+%YAML:1.0
+
+# Project
+project_name: "lvi_sam" 
+
+#common parameters
+imu_topic: "/camera/imu"
+image_topic: "/camera/infra1/image_rect_raw"
+point_cloud_topic: "lvi_sam/lidar/deskew/cloud_deskewed"
+
+# Lidar Params
+use_lidar: 1                     # whether use depth info from lidar or not
+lidar_skip: 3                    # skip this amount of scans
+align_camera_lidar_estimation: 1 # align camera and lidar estimation for visualization
+
+# lidar to camera extrinsic
+lidar_to_cam_tx: 0.0398946
+lidar_to_cam_ty: -0.111613
+lidar_to_cam_tz: -0.110938
+lidar_to_cam_rx: -1.58432
+lidar_to_cam_ry: -0.00517069
+lidar_to_cam_rz: 3.14111
+
+# imu to lidar extrinsic 
+imu_to_lidar_tx: 0.0368063
+imu_to_lidar_ty: -0.126738
+imu_to_lidar_tz: -0.118555
+imu_to_lidar_rx: -1.58037
+imu_to_lidar_ry: 0.00435929
+imu_to_lidar_rz: 3.13845 
+# camera model
+model_type: PINHOLE
+camera_name: camera
+
+image_width: 640
+image_height: 480
+distortion_parameters:
+   k1: 0.0
+   k2: 0.0
+   p1: 0.0
+   p2: 0.0
+projection_parameters:
+   fx: 382.25116042947064
+   fy: 378.96199224070352
+   cx: 322.32833278836199
+   cy: 243.69059923371992
+
+
+#imu parameters       The more accurate parameters you provide, the worse performance
+acc_n: 2.8204438138836063e-02         # accelerometer measurement noise standard deviation.
+gyr_n: 2.4927177105924072e-03         # gyroscope measurement noise standard deviation.
+acc_w: 4.0739558582909998e-04        # accelerometer bias random work noise standard deviation.
+gyr_w: 1.7029730578800357e-05       # gyroscope bias random work noise standard deviation.
+g_norm: 9.81007       # gravity magnitude
+imu_hz: 400         # frequency of imu
+
+# Extrinsic parameter between IMU and Camera.
+estimate_extrinsic: 0   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
+                        # 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
+                        # 2  Don't know anything about extrinsic parameters. You don't need to give R,T. We will try to calibrate it. Do some rotation movement at beginning. 
+#Rotation from camera frame to imu frame, imu^R_cam
+extrinsicRotation: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 0.99995824,0.003922,-0.00825459,
+           -0.00388915,0.99998447,0.00399195, 
+           0.00827012,-0.00395968,0.99995796]
+#Translation from camera frame to imu frame, imu^T_cam
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [0.00304159, 0.00742751,0.01522853]
+
+#feature traker paprameters
+max_cnt: 150            # max feature number in feature tracking
+min_dist: 20            # min distance between two features 
+freq: 20                # frequence (Hz) of publish tracking result. At least 10Hz for good estimation. If set 0, the frequence will be same as raw image 
+F_threshold: 1.0        # ransac threshold (pixel)
+show_track: 1           # publish tracking image as topic
+equalize: 1             # if image is too dark or light, trun on equalize to find enough features
+fisheye: 0              # if using fisheye, trun on it. A circle mask will be loaded to remove edge noisy points
+
+#optimization parameters
+max_solver_time: 0.035   # max solver itration time (ms), to guarantee real time
+max_num_iterations: 10   # max solver itrations, to guarantee real time
+keyframe_parallax: 10.0  # keyframe selection threshold (pixel)
+
+#unsynchronization parameters
+estimate_td: 0           # online estimate time offset between camera and imu
+td: -0.004492987156480011                   # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)
+
+#rolling shutter parameters
+rolling_shutter: 0       # 0: global shutter camera, 1: rolling shutter camera
+rolling_shutter_tr: 0    # unit: s. rolling shutter read out time per frame (from data sheet). 
+
+#loop closure parameters
+loop_closure: 1                    # start loop closure
+skip_time: 0.0
+skip_dist: 0.0
+debug_image: 0                      # save raw image in loop detector for visualization prupose; you can close this function by setting 0 
+match_image_scale: 0.5
+vocabulary_file: "/config/brief_k10L6.bin"
+brief_pattern_file: "/config/brief_pattern.yml"

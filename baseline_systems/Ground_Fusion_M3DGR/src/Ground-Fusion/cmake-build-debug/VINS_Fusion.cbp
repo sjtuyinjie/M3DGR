@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="VINS_Fusion"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VINS_Fusion">
+				<Option output="/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/VINS_Fusion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/calib"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/chessboard"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/gpl"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/sparse_graph"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/src"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/include"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DVision"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/utility"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/featureTracker"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 VINS_Fusion"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VINS_Fusion/fast">
+				<Option output="/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/VINS_Fusion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/calib"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/chessboard"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/gpl"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/sparse_graph"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/src"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/include"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DVision"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/utility"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/featureTracker"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial"/>
+					<Add directory="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 VINS_Fusion/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/LICENCE">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/README.md">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/CMakeLists.txt">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0000.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0001.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0002.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0003.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0004.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0005.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0006.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0007.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0008.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0009.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0010.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0011.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0012.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0013.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0014.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0015.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0016.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0017.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0018.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0019.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0020.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0021.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0022.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0023.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0024.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0025.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0026.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0027.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0028.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0029.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0030.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0031.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0032.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0033.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0034.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0035.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0036.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0037.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0038.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0039.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0040.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0041.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0042.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0043.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0044.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0045.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0046.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0047.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0048.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0049.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0050.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0051.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0052.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0053.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0054.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0055.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0056.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0057.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0058.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0059.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0060.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0061.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0062.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0063.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0064.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0065.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0066.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0067.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0068.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0069.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0070.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0071.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0072.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0073.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0074.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0075.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0076.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0077.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0078.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0079.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0080.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0081.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0082.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0083.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/calibrationdata/left-0084.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/camera_calib_example/readme.txt">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/cmake/FindEigen.cmake">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/calib/CameraCalibration.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/Camera.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/CameraFactory.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/CataCamera.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/CostFunctionFactory.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/EquidistantCamera.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/PinholeCamera.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/PinholeFullCamera.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/camera_models/ScaramuzzaCamera.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/chessboard/Chessboard.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/chessboard/ChessboardCorner.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/chessboard/ChessboardQuad.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/chessboard/Spline.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/gpl/EigenQuaternionParameterization.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/gpl/EigenUtils.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/gpl/gpl.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/include/camodocal/sparse_graph/Transform.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/package.xml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/readme.md">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/calib/CameraCalibration.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/Camera.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/CameraFactory.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/CataCamera.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/CostFunctionFactory.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/EquidistantCamera.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/PinholeCamera.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/PinholeFullCamera.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/camera_models/ScaramuzzaCamera.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/chessboard/Chessboard.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/gpl/EigenQuaternionParameterization.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/gpl/gpl.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/intrinsic_calib.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/camera_models/src/sparse_graph/Transform.cc">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/A3_ptgrey/a3_ptgrey_mono_imu_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/A3_ptgrey/a3_ptgrey_stereo_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/A3_ptgrey/a3_ptgrey_stereo_imu_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/A3_ptgrey/left.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/A3_ptgrey/right.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/euroc/cam0_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/euroc/cam0_pinhole.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/euroc/cam1_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/euroc/cam1_pinhole.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/euroc/euroc_mono_imu_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/euroc/euroc_stereo_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/euroc/euroc_stereo_imu_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/extrinsic_parameter_example.pdf">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/fisheye_mask.jpg">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/fisheye_mask_752x480.jpg">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/cam00-02.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/cam03.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/cam04-12.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/cam13-21.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/kitti_config00-02.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/kitti_config03.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/kitti_config04-12.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_odom/kitti_config13-21.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_raw/cam_09_30.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_raw/cam_10_03.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_raw/kitti_09_30_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/kitti_raw/kitti_10_03_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/mynteye/left_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/mynteye/mynteye_mono_imu_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/mynteye/mynteye_stereo_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/mynteye/mynteye_stereo_imu_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/mynteye/right_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/realsense/cam0_pinhole.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/realsense/cam1_pinhole.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/realsense/realsense_d435i_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/realsense/realsense_stereo_imu_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/simulation/cam0_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/simulation/cam1_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/simulation/simulation_config.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/vi_car/cam0_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/vi_car/cam0_pinhole.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/vi_car/cam1_mei.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/vi_car/cam1_pinhole.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/vi_car/vi_car.yaml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/config/vins_rviz_config.rviz">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/CMakeLists.txt">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/include/Config.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/include/Constants.hpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/include/Geocentric.hpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/include/LocalCartesian.hpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/include/Math.hpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/src/Geocentric.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/src/LocalCartesian.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/ThirdParty/GeographicLib/src/Math.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/models/car.dae">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/models/hummingbird.mesh">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/package.xml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/src/Factors.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/src/globalOpt.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/src/globalOpt.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/src/globalOptNode.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/global_fusion/src/tic_toc.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/CMakeLists.txt">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/cmake/FindEigen.cmake">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/package.xml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/BowVector.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/BowVector.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/DBoW2.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/FBrief.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/FBrief.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/FClass.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/FeatureVector.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/FeatureVector.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/QueryResults.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/QueryResults.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/ScoringObject.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/ScoringObject.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/TemplatedDatabase.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DBoW/TemplatedVocabulary.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils/DException.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils/DUtils.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils/Random.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils/Random.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils/Timestamp.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DUtils/Timestamp.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DVision/BRIEF.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DVision/BRIEF.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/DVision/DVision.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/VocabularyBinary.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/ThirdParty/VocabularyBinary.hpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/keyframe.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/keyframe.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/parameters.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/pose_graph.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/pose_graph.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/pose_graph_node.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/utility/CameraPoseVisualization.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/utility/CameraPoseVisualization.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/utility/tic_toc.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/utility/utility.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/dense_map/src/utility/utility.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/brief_k10L6.bin">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/brief_pattern.yml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/car.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/car_gif.gif">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/euroc.gif">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/kitti.gif">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/kitti.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/kitti_rank.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/vins.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/vins_black.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/image/vins_logo.png">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/paper/VINS-Mono: A Robust and Versatile Monocular
+Visual-Inertial State Estimator.pdf">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/support_files/paper_bib.txt">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/CMakeLists.txt">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/cmake/FindEigen.cmake">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/launch/vins_rviz.launch">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/package.xml">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIGPSTest.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/KITTIOdomTest.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator/estimator.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator/estimator.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator/feature_manager.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator/feature_manager.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator/parameters.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/estimator/parameters.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/imu_factor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/initial_bias_factor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/initial_pose_factor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/integration_base.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/marginalization_factor.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/marginalization_factor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/pose_local_parameterization.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/pose_local_parameterization.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projectionOneFrameTwoCamFactor.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projectionOneFrameTwoCamFactor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projectionTwoFrameOneCamFactor.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projectionTwoFrameOneCamFactor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projectionTwoFrameTwoCamFactor.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projectionTwoFrameTwoCamFactor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projection_factor.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/factor/projection_factor.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/featureTracker/feature_tracker.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/featureTracker/feature_tracker.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/initial_aligment.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/initial_alignment.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/initial_ex_rotation.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/initial_ex_rotation.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/initial_sfm.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/initial_sfm.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/solve_5pts.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/initial/solve_5pts.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/rosNodeTest.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility/CameraPoseVisualization.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility/CameraPoseVisualization.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility/tic_toc.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility/utility.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility/utility.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility/visualization.cpp">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/vins_estimator/src/utility/visualization.h">
+			<Option target="VINS_Fusion"/>
+		</Unit>
+		<Unit filename="/home/xuduo/catkin_ws/src/VINS-Fusion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,4 @@
+<launch>
+	<node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz_fastlio" args="-d $(find fast_lio)/rviz_cfg/loam_livox.rviz" />
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rvizscpgo" args="-d $(find aloam_velodyne)/rviz_cfg/aloam_velodyne.rviz" />
+</launch>

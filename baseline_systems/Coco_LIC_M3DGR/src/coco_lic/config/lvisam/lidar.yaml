@@ -1,0 +1,39 @@
+lidar0:
+    topic: /points_raw
+    is_livox: false
+    Extrinsics:  # lidar to imu
+        time_offset: 0.000
+        Trans: [0.0, 0.0, 0.0]
+        Rot: [1, 0, 0,
+              0, 1, 0,
+              0, 0, 1]
+num_lidars: 1
+lidar_timestamp_end: false  # if the timestamp of a lidar scan is set at the end of the scan
+
+### FeatureExtraction ###
+VLP16:  # Velodyne-VLP16
+    N_SCAN: 16
+    Horizon_SCAN: 1800
+    edge_threshold: 1.0
+    surf_threshold: 0.1
+    odometry_surface_leaf_size: 0.4
+    min_distance: 0.5
+    max_distance: 200.0
+
+### Odometry ###
+use_corner_feature: false
+current_scan_param:
+    corner_leaf_size: 0.2
+    surface_leaf_size: 0.4
+    edge_min_valid_num: 10
+    surf_min_valid_num: 100
+    correspondence_downsample: 1 #2
+keyframe_strategy:
+    angle_degree: 10
+    dist_meter: 1.0
+    time_second: 10
+map_param:    
+    keyframe_search_radius: 50.0
+    keyframe_search_time: 10.0
+    keyframe_density: 2
+    cloud_reserved_time: -1  # [s]

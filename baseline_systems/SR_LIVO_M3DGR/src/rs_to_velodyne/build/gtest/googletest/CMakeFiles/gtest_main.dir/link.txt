@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libgtest_main.so -o ../lib/libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -Wl,-rpath,/media/zjj/Newsmy/linux/sr_livo/src/rs_to_velodyne/build/gtest/lib ../lib/libgtest.so -lpthread 

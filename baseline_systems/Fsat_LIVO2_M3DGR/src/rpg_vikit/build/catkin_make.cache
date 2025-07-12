@@ -1,0 +1,2 @@
+vikit_common:vikit_py:vikit_ros
+-DCATKIN_DEVEL_PREFIX=/media/zjj/Elements/CQU_ZJJ/FAST-LIVO2/src/rpg_vikit/devel -DCMAKE_INSTALL_PREFIX=/media/zjj/Elements/CQU_ZJJ/FAST-LIVO2/src/rpg_vikit/install -G Unix Makefiles

@@ -1,0 +1,36 @@
+odometry_mode: 1  # LIO = 0, LICO = 1
+
+log_path: /home/zjj/.ros/log
+config_path: /media/zjj/Newsmy/linux/Coco-LIC/src/coco_lic/config
+lidar_yaml: /m3dgr/avia.yaml
+imu_yaml: /m3dgr/avia_imu.yaml
+camera_yaml: /m3dgr/avia_camera.yaml
+
+bag_path: /media/zjj/Elements/CQU_ZJJ/M3DGR/visual/indoor/over_exposure_1.bag  # degenerate_seq_01.bag、degenerate_seq_02.bag、hku_campus_seq_00.bag
+bag_start: 0.
+bag_durr: -1
+
+
+### SplineParams ###
+t_add: 0.1  # [s] trajectory is updated every delta_t seconds, no adjustment needed
+distance0: 0.03  # [s] the time duration corresponding to the first 4 control points, no adjustment needed
+non_uniform: true  # true for non-uniform b-spline, false for uniform b-spline
+division_coarse: 1  # if it is uniform, decide how many control points to place in every delta_t seconds, must be a non-zero integer
+
+
+### OptimizationParams ###
+t_begin_add_cam: 5.0  # [s] visual constraints will be added after the system has been successfully initialized for a while
+lidar_iter: 2
+use_lidar_scale: true  # scale the lidar weight
+lidar_weight: 500.0
+image_weight: 4.0
+# imu：BMI088（200Hz）
+# derived from data manual https://terra-1-g.djicdn.com/65c028cd298f4669a7f0e40e50ba1131/demo/avia/Livox%20AVIA%20User%20Manual_CHS.pdf
+gyroscope_noise_density: 3.45557556e-03
+gyroscope_random_walk: 2.617993833e-07                    
+accelerometer_noise_density: 2.425376259e-02
+accelerometer_random_walk: 1.96e-06         
+
+
+### EvalutaionParams ###
+is_evo_viral: false

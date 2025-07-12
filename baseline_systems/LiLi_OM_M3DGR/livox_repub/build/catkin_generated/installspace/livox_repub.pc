@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: livox_repub
+Description: Description of livox_repub
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs sensor_msgs message_runtime

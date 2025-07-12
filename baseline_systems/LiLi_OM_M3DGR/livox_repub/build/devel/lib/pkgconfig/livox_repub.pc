@@ -1,0 +1,8 @@
+prefix=/media/zjj/Elements/CQU_ZJJ/lili-om/livox_repub/build/devel
+
+Name: livox_repub
+Description: Description of livox_repub
+Version: 0.0.0
+Cflags: -I/media/zjj/Elements/CQU_ZJJ/lili-om/livox_repub/build/devel/include -I/media/zjj/Elements/CQU_ZJJ/lili-om/livox_repub/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs sensor_msgs message_runtime

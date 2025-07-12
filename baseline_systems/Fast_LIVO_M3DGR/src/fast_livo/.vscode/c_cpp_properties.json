@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/media/zjj/Newsmy/linux/FAST-LIVO_modified/devel/include/**",
+        "/media/zjj/Newsmy/linux/FAST-LIVO_modified/src/fast_livo/include/**",
+        "/media/zjj/Newsmy/linux/FAST-LIVO_modified/src/imu_transformer/include/**",
+        "/media/zjj/Newsmy/linux/FAST-LIVO_modified/src/rpg_vikit/vikit_common/include/**",
+        "/media/zjj/Newsmy/linux/FAST-LIVO_modified/src/rpg_vikit/vikit_ros/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

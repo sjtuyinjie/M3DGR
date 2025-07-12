@@ -1,0 +1,8 @@
+prefix=/media/zjj/Newsmy/linux/sr_livo/src/rs_to_velodyne/devel
+
+Name: rs_to_velodyne
+Description: Description of rs_to_velodyne
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

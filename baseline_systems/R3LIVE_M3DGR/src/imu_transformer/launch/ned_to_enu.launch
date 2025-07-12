@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Sample launch file, transforms NED referenced data in imu_link_ned to ENU equivalent data in imu_link -->
+
+  <!-- Static tfs -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="tf_imu_ned_enu"
+        args="0 0 0 -1.5707963 1.5707963 0 camera_imu_optical_frame rslidar" output="screen"/>
+
+  <!-- Transforms NED IMU data pulished in frame imu_link_ned on topics /imu/data_ned and /imu/mag_ned to
+   ENU data in frame imu_link published on /imu/data_enu and /imu/mag_enu -->
+  <node pkg="imu_transformer" type="imu_transformer_node" name="imu_data_transformer" output="screen">
+    <remap from="imu_in" to="camera"/>
+    <remap from="imu_out" to="trans"/>
+    <param name="target_frame" value="rslidar"/>
+  </node>
+
+</launch>

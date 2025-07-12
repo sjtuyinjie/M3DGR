@@ -1,0 +1,54 @@
+lidar0:
+    topic: /livox/lidar
+    is_livox: true
+    Extrinsics:  # lidar to imu
+        time_offset: 0.000
+        Trans: [0.04165, 0.02326, -0.0284]
+        Rot: [1, 0, 0,
+              0, 1, 0,
+              0, 0, 1]
+num_lidars: 1
+lidar_timestamp_end: false  # if the timestamp of a lidar scan is set at the end of the scan
+
+### FeatureExtraction ###
+Livox:  # Avia
+    n_scan: 6
+    blind: 0.0
+    group_size: 8
+    point_filter_num: 1
+    inf_bound: 4
+    disA: 0.01
+    disB: 0.1
+    limit_maxmid: 6.25
+    limit_midmin: 6.25
+    limit_maxmin: 3.24
+    p2l_ratio: 225
+    jump_up_limit: 170.0
+    jump_down_limit: 8.0
+    edgea: 2
+    edgeb: 0.1
+    smallp_intersect: 172.5
+    smallp_ratio: 1.2
+    edge_threshold: 1.0
+    surf_threshold: 0.1
+    odometry_surface_leaf_size: 0.2
+    min_distance: 1.0
+    max_distance: 100.0
+
+### Odometry ###
+use_corner_feature: false
+current_scan_param:
+    corner_leaf_size: 0.3
+    surface_leaf_size: 0.3
+    edge_min_valid_num: 10
+    surf_min_valid_num: 100
+    correspondence_downsample: 2
+keyframe_strategy:
+    angle_degree: 10
+    dist_meter: 1.0
+    time_second: 10
+map_param:    
+    keyframe_search_radius: 35.0
+    keyframe_search_time: 10.0
+    keyframe_density: 0.5
+    cloud_reserved_time: -1  # [s]

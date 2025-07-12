@@ -1,0 +1,5 @@
+accelerometer_noise_density: 1.2374091609523514e-02
+gyroscope_noise_density: 3.0032654435730201e-03
+accelerometer_random_walk: 1.9218003442176448e-04
+gyroscope_random_walk: 5.4692100664858005e-05
+integration_sigma: 0.316227

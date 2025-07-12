@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/media/zjj/Newsmy/linux/point-lio-ivox/devel/include/**",
+        "/media/zjj/Newsmy/linux/point-lio-ivox/src/imu_transformer/include/**",
+        "/media/zjj/Newsmy/linux/point-lio-ivox/src/Point-LIO-ivox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

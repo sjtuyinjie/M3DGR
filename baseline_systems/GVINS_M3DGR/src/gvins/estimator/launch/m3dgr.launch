@@ -1,0 +1,17 @@
+<launch>
+    <node name="image_transport_1" pkg="image_transport" type="republish" args="compressed in:=/camera/color/image_raw raw out:=/camera/color/image_raw" />
+    <node name="image_transport_2" pkg="image_transport" type="republish" args="compressedDepth in:=/camera/aligned_depth_to_color/image_raw raw out:=/camera/aligned_depth_to_color/image_raw" />
+    <arg name="config_path" default = "$(find gvins)/../config/visensor_f9p/m3dgr.yaml" />
+	  <arg name="gvins_path" default = "$(find gvins)/../" />
+    
+    <node name="gvins_feature_tracker" pkg="gvins_feature_tracker" type="gvins_feature_tracker" output="log">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="gvins_folder" type="string" value="$(arg gvins_path)" />
+    </node>
+
+    <node name="gvins" pkg="gvins" type="gvins" output="screen">
+       <param name="config_file" type="string" value="$(arg config_path)" />
+       <param name="gvins_folder" type="string" value="$(arg gvins_path)" />
+    </node>
+
+</launch>

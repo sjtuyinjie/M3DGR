@@ -1,0 +1,179 @@
+%YAML:1.0
+
+
+imu: 1
+wheel: 1
+depth: 1
+gnss_enable: 0
+w_replace: 1
+wdetect: 1
+stationary_detect: 1
+use_motion: 0
+use_line: 0
+use_mcc: 0  #wheel-aided mcc.  do not use when wheel slip severel y, like loop2
+plane: 0
+use_yolo: 0  #only support mono version
+num_of_cam: 1
+equalize: 0      
+depth_threshold: 3  #  7 for parking1  2 for others
+
+imu_topic: "/camera/imu"
+wheel_topic: "/odom"  
+image0_topic: "/camera/color/image_raw"
+image1_topic: "/camera/aligned_depth_to_color/image_raw"
+output_path: "/home/car/Downloads/newproject9/groundfusion_ws/src/Ground-Fusion/z_output/m2dgrp/"
+
+cam0_calib: "wt_cam.yaml"
+cam1_calib: "wt_cam.yaml"
+image_width: 640
+image_height: 480
+   
+#gnss part
+
+gnss_meas_topic: "/ublox_driver/range_meas"           # GNSS raw measurement topic
+gnss_ephem_topic: "/ublox_driver/ephem"               # GPS, Galileo, BeiDou ephemeris
+gnss_glo_ephem_topic: "/ublox_driver/glo_ephem"       # GLONASS ephemeris
+gnss_iono_params_topic: "/ublox_driver/iono_params"   # GNSS broadcast ionospheric parameters
+gnss_tp_info_topic: "/ublox_driver/time_pulse_info"   # PPS time info
+gnss_elevation_thres: 30            # satellite elevation threshold (degree)
+gnss_psr_std_thres: 2.0             # pseudo-range std threshold
+gnss_dopp_std_thres: 2.0            # doppler std threshold  2.0org
+gnss_track_num_thres: 5            # number of satellite tracking epochs before entering estimator
+gnss_ddt_sigma: 0.1
+
+gnss_local_online_sync: 0                      # if perform online synchronization betwen GNSS and local time
+local_trigger_info_topic: "/external_trigger"   # external trigger info of the local sensor, if `gnss_local_online_sync` is 1
+gnss_local_time_diff: 18.0                      # difference between GNSS and local time (s), if `gnss_local_online_sync` is 0
+
+gnss_iono_default_parameters: !!opencv-matrix
+   rows: 1
+   cols: 8
+   dt: d
+   data: [0.1118E-07,  0.2235E-07, -0.4172E-06,  0.6557E-06,
+          0.1249E+06, -0.4424E+06,  0.1507E+07, -0.2621E+06]
+
+
+##################################
+
+
+# Extrinsic parameter between IMU and Camera.
+estimate_extrinsic: 0   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
+  # 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
+# 2  Don't know anything about extrinsic parameters. You don't need to give R,T. We will try to calibrate it. Do some rotation movement at beginning.
+#If you choose 0 or 1, you should write down the following matrix.
+
+extrinsic_type: 3 # 0 ALL
+                  # 1 Only translation
+                  # 2 Only Rotation
+                  # 3 no z
+                  # 4 no rotation and no z
+
+
+
+
+
+body_T_cam0: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 1.00 , 0.0, 0.0 , 0.0,
+           -0.00  ,1.0, -0.00 ,-0.0,
+             -0.0 , 0.0  ,1.0 , 0.0,
+            0.     ,     0.     ,     0.  ,        1.     ]
+
+
+body_T_cam1: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 1.00 , 0.0, 0.0 , 0.0,
+           -0.00  ,1.0, -0.00 ,-0.0,
+             -0.0 , 0.0  ,1.0 , 0.0,
+            0.     ,     0.     ,     0.  ,        1.     ]
+
+# Extrinsic parameter between IMU and Wheel.
+estimate_wheel_extrinsic: 1  # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
+# 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
+# 2  Don't know anything about extrinsic parameters. You don't need to give R,T. We will try to calibrate it. Do some rotation movement at beginning.
+#If you choose 0 or 1, you should write down the following matrix.
+
+extrinsic_type_wheel: 0 # 0 ALL
+                        # 1 Only translation
+                        # 2 Only Rotation
+                        # 3 no z
+                        # 4 no rotation and no z
+
+
+body_T_wheel: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: d
+  data: [0.352551 ,  -0.935764, -0.00734672,0.0497956,
+        0.0145238   ,0.0133214,   -0.999806,1.06332,
+        0.93568   , 0.352375  , 0.0182873,-0.037465,
+           0, 0, 0, 1]
+
+
+
+#plane noise
+#mono:0.01 stereo:0.005
+roll_n: 0.01
+#mono:0.01  stereo:0.005
+pitch_n: 0.01
+#mono:0.05 stereo:0.025
+zpw_n: 0.05  #0.05
+
+
+#Multiple thread support
+multiple_thread: 1
+
+#feature traker paprameters
+max_cnt: 150            # max feature number in feature tracking
+min_dist: 30            # min distance between two features 
+freq: 10                # frequence (Hz) of publish tracking result. At least 10Hz for good estimation. If set 0, the frequence will be same as raw image 
+F_threshold: 1.0        # ransac threshold (pixel)
+show_track: 1           # publish tracking image as topic
+flow_back: 1            # perform forward and backward optical flow to improve feature tracking accuracy
+
+#optimization parameters
+max_solver_time: 0.04  # max solver itration time (ms), to guarantee real time
+max_num_iterations: 8   # max solver itrations, to guarantee real time
+keyframe_parallax: 10.0 # keyframe selection threshold (pixel)
+
+#imu parameters       The more accurate parameters you provide, the better performance
+acc_n: 1.2374091609523514e-02         # accelerometer measurement noise standard deviation. #0.2   0.04
+gyr_n: 3.0032654435730201e-03       # gyroscope measurement noise standard deviation.     #0.05  0.004
+acc_w: 1.9218003442176448e-04         # accelerometer bias random work noise standard deviation.  #0.002
+gyr_w: 5.4692100664858005e-05      # gyroscope bias random work noise standard deviation.     #4.0e-5
+g_norm: 9.805         # gravity magnitude
+
+
+wheel_gyro_noise_sigma: 0.004
+#　m/s mono:0.01  stereo:0.006
+wheel_velocity_noise_sigma: 0.01
+
+estimate_wheel_intrinsic: 0
+sx: 1.0
+sy: 1.0
+sw: 1.0
+
+
+#unsynchronization parameters
+estimate_td: 0                      # online estimate time offset between camera and imu
+td: 0.00                             # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)
+#unsynchronization parameters
+estimate_td_wheel: 0                      # online estimate time offset between camera and wheel
+td_wheel: 0.0                             # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)
+#loop closure parameters
+load_previous_pose_graph: 0        # load and reuse previous pose graph; load from 'pose_graph_save_path'
+pose_graph_save_path: "//home/car/Downloads/newproject/vinsrgbdfusion_ws/src/VINS-Fusion-RGBD/z_posegraph/" # save and load path
+save_image: 0                   # save image in pose graph for visualization prupose; you can close this function by setting 0 
+
+# depth below
+load_grid_map: 0
+grid_map_save_path: "//home/car/Downloads/newproject/vinsrgbdfusion_ws/src/VINS-Fusion-RGBD/z_gridmap/"
+
+#PCL parameters
+depth_dist: 10
+depth_boundary: 10
+resolution: 0.0005 #0.05

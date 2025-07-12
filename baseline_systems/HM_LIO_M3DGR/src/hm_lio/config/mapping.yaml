@@ -1,0 +1,46 @@
+YAML: 1.0
+
+preprocess:
+  point_filter_num: 1
+  lidar_type: 4 #2-velodyne 3-ouster  4-robosense
+
+common:
+  imu_topic: /livox/mid360/imu #/imu_raw   /gps/gtimu  /os_cloud_node/imu
+  lid_topic: /livox/lidar  #/points_raw  /rslidar_points   /os_cloud_node/points
+  time_sync_en: false
+
+mapping:
+  extrinsic_T: [ -0.011, -0.02329, 0.04412]
+  extrinsic_R: [ 1, 0, 0, 0, 1 , 0, 0, 0, 1] # fastlio2 lidar-->IMU
+
+delay_time: 0.15
+
+odometry:
+  surf_res: 0.5
+  log_print: false
+  extrinsic_est_en: false
+  num_max_iterations: 8
+
+  size_voxel_map: 1.0                         # The voxel size of in the voxel map
+  min_distance_points: 0.15
+  max_num_points_in_voxel: 20                 # The maximum number of points per voxel of the map
+  max_distance: 500.0                        # The threshold of the distance to suppress voxels from the map
+  weight_alpha: 0.9
+  weight_neighborhood: 0.1
+  max_dist_to_plane_icp: 0.3
+  init_num_frames: 20
+  voxel_neighborhood: 1
+  max_number_neighbors: 20
+  threshold_voxel_occupancy: 1
+  estimate_normal_from_neighborhood: true
+  min_number_neighbors: 20                    # The minimum number of neighbor points to define a valid neighborhood
+  power_planarity: 2.0
+  num_closest_neighbors: 1
+
+  sampling_rate: 1.5
+  max_num_residuals: 1000
+  min_num_residuals: 300
+
+
+  thres_translation_norm: 0.01            # m
+  thres_orientation_norm: 0.1             # deg

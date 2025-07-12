@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/media/zjj/Newsmy/linux/Ground-Fusion/devel/include/**",
+        "/media/zjj/Newsmy/linux/Ground-Fusion/src/Ground-Fusion/camera_models/include/**",
+        "/media/zjj/Newsmy/linux/Ground-Fusion/src/gnss_comm/include/**",
+        "/media/zjj/Newsmy/linux/Ground-Fusion/src/Ground-Fusion/vins_estimator/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

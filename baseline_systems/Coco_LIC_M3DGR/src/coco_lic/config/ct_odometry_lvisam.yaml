@@ -1,0 +1,36 @@
+odometry_mode: 0  # LIO = 0, LICO = 1
+
+log_path: /home/jerry/log
+config_path: /home/jerry/catkin_ws/src/Coco-LIC/config
+lidar_yaml: /lvisam/lidar.yaml
+imu_yaml: /lvisam/imu.yaml
+camera_yaml: /lvisam/camera.yaml
+
+bag_path: /home/jerry/dataset/handheld.bag  # jackal.bag、garden.bag
+bag_start: 0.
+bag_durr: -1
+
+
+### SplineParams ###
+t_add: 0.1  # [s] trajectory is updated every delta_t seconds, no adjustment needed
+distance0: 0.03  # [s] the time duration corresponding to the first 4 control points, no adjustment needed
+non_uniform: true  # true for non-uniform b-spline, false for uniform b-spline
+division_coarse: 1  # if it is uniform, decide how many control points to place in every delta_t seconds, must be a non-zero integer
+
+
+### OptimizationParams ###
+t_begin_add_cam: 5.0  # [s] visual constraints will be added after the system has been successfully initialized for a while
+lidar_iter: 2
+use_lidar_scale: true  # scale the lidar weight
+lidar_weight: 500.0
+image_weight: 4.0
+# imu：MicroStrain 3DM-GX5-25（500Hz）
+# derived from data manual https://www.microstrain.com/sites/default/files/3dm-gx5-25_datasheet_8400-0093.pdf
+gyroscope_noise_density: 1.951337392e-03 #1.951337392e-02
+gyroscope_random_walk: 3.878509383e-05
+accelerometer_noise_density: 5.478366545e-02 #5.478366545e-03
+accelerometer_random_walk: 3.92e-04    
+
+
+### EvalutaionParams ###
+is_evo_viral: false

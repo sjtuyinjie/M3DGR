@@ -1,0 +1,407 @@
+%YAML:1.0
+
+#common parameters
+#support: 1 imu 1 cam; 1 imu 2 cam: 2 cam; 
+imu: 1
+wheel: 1
+depth: 1
+only_initial_with_wheel: 0 #只利用wheel进行初始化，不加入因子图
+plane: 0
+use_yolo: 0
+stationary_ini: 1
+num_of_cam: 1
+
+imu_topic: "/camera/imu"
+wheel_topic: "/odom"   #"/ridgeback_velocity_controller/odom"， “/odometry/filtered”
+#TODO check the distortion
+image0_topic: "/camera/color/image_raw"
+image1_topic: "/camera/aligned_depth_to_color/image_raw"
+output_path: "/home/car/Downloads/newproject5/groundfusion_ws/src/RGBD-WINS-Fusion/z_output/"
+# /home/car/Downloads/newproject5/groundfusion_ws/src
+cam0_calib: "gctestcam.yaml"
+cam1_calib: "cam0_pinhole.yaml"
+image_width: 640
+image_height: 480
+   
+
+# Extrinsic parameter between IMU and Camera.
+estimate_extrinsic: 0   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
+  # 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
+# 2  Don't know anything about extrinsic parameters. You don't need to give R,T. We will try to calibrate it. Do some rotation movement at beginning.
+#If you choose 0 or 1, you should write down the following matrix.
+
+extrinsic_type: 3 # 0 ALL
+                  # 1 Only translation
+                  # 2 Only Rotation
+                  # 3 no z
+                  # 4 no rotation and no z
+
+# body_T_cam0: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: d
+#    data: [ 0.0,   0.0,   1.0,  0.041,
+#           -1.0,   0.0,   0.0,  0.307,
+#            0.0,  -1.0,   0.0,  0.544,
+#            0,     0,     0,    1 ]
+
+body_T_cam0: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 0.99964659,  0.01635721 ,-0.02095566,  0.02394606,
+          -0.01617333 , 0.99982947 , 0.00891423  ,0.01898134,
+           0.0210979,  -0.00857216,  0.99974066 ,-0.01885226,
+           0,     0,     0,    1 ]
+
+# [[ 0.99964659  0.01635721 -0.02095566  0.02394606]
+#  [-0.01617333  0.99982947  0.00891423  0.01898134]
+#  [ 0.0210979  -0.00857216  0.99974066 -0.01885226]
+#  [ 0.          0.          0.          1.        ]]
+
+# body_T_cam1: !!opencv-matrix
+#    rows: 4
+#    cols: 4
+#    dt: d
+#    data: [ 0.0,   0.0,   1.0,  0.041,
+#            -1.0,   0.0,   0.0, 0.258,
+#            0.0,  -1.0,   0.0,  0.544,
+#            0,     0,     0,    1 ]
+
+
+body_T_cam1: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 0.99964659,  0.01635721 ,-0.02095566,  0.02394606,
+          -0.01617333 , 0.99982947 , 0.00891423  ,0.01898134,
+           0.0210979,  -0.00857216,  0.99974066 ,-0.01885226,
+           0,     0,     0,    1 ]
+# Extrinsic parameter between IMU and Wheel.
+estimate_wheel_extrinsic: 1   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
+# 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
+# 2  Don't know anything about extrinsic parameters. You don't need to give R,T. We will try to calibrate it. Do some rotation movement at beginning.
+#If you choose 0 or 1, you should write down the following matrix.
+
+extrinsic_type_wheel: 0 # 0 ALL
+                        # 1 Only translation
+                        # 2 Only Rotation
+                        # 3 no z
+                        # 4 no rotation and no z
+
+
+
+#online market1
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [-0.0477273  , 0.998429  , 0.029368,3.04838,
+#           -0.992541  ,-0.050707 ,  0.110869,0.0524019,
+#           0.112184, -0.0238575 ,  0.993401,-0.0101497,
+#          0, 0, 0, 1]
+
+
+#wheel to body
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [1, 0, 0, -0.208,
+#          0, 1, 0, 0.290,
+#          0, 0, 1, -0.168,
+#          0, 0, 0, 1]
+
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [0, -1.0, 0, 0.0,
+#          0, 0, -1.0, 0.0,
+#          1.0, 0, 0.0, 0.0,
+#          0, 0, 0, 1]
+
+# -0.0487594   0.998157 -0.0361184
+#   -0.93486  -0.058339  -0.350191
+#  -0.351653  0.0166905   0.935982
+
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [-0.0487594 ,  0.998157, -0.0361184,0.726,
+#           -0.93486 , -0.058339,  -0.350191,1.2527,
+#         -0.351653 , 0.0166905 ,  0.935982,-0.0474,
+#          0, 0, 0, 1]
+
+
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [1,  0 , 0,0,
+#          0, 1,  0,0,
+#          0 ,0, 1,0.0,
+#          0, 0, 0, 1]
+
+
+
+body_T_wheel: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: d
+  data: [1,  0 , 0,0,
+         0, -1,  0,0,
+         0 ,0, -1,0.0,
+         0, 0, 0, 1]
+
+# fine result
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [0,  -1 , 0,0,
+#          0, 0,  -1,0,
+#          1 ,0, 0.0,0,
+#          0, 0, 0, 1]
+
+#home2
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [0.3074708,  0.95100836,  0.03232352,0.0,
+#               -0.95134765,  0.30793897 ,-0.01054696,0.0,
+#               -0.01998392 ,-0.02750802,  0.99942181,0.0,
+#               0, 0, 0, 1]
+#home2
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [0.3075,  -0.9513,  -0.02,0.0,
+#               0.9510,  0.3079 ,-0.0275,0.0,
+#               0.0323 ,-0.0105,  0.99942181,0.0,
+#               0, 0, 0, 1]
+
+#home3
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  -0.05286588 ,-0.99851119, -0.01343867,0,
+#                  0.99809334, -0.05240487, -0.03261001,0,
+#                   0.03185721, -0.015137 ,   0.9993778,0,
+#                    0, 0, 0, 1]
+
+
+#home4：
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  0.60585153  ,0.79545519, -0.01396288,-3.76,
+#            -0.79491499 , 0.60596983 , 0.03017831,-1.79,
+#             0.03246658 ,-0.00718427 , 0.999447,-0.23,
+#              0,0,0,1]
+
+#home5
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  0.19144367 , 0.98132701,  0.01861766,2.3,
+#           -0.98090853 , 0.19063275 , 0.0384398 ,-4.15,
+#            0.03417288, -0.02562128,  0.99908747,0,
+#            0,0,0,1]
+
+# #corridor1
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  1, 0, 0,-3,
+#            0 ,1,0,1.5,
+#             0 , 0  , 1,0.18,
+#               0,0,0,1]
+
+
+#corridor1
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  0.82558041 , 0.56425393  ,0.0058734,-0.6544,
+#             -0.56427526,  0.82558173 , 0.00287183,-4.5414,
+#             -0.00322853, -0.00568514,  0.99997863,-1.1876,
+#               0,0,0,1]
+
+#corridor2
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  -0.9073851 ,  0.41805806 ,-0.04335595,33.35,
+#             -0.41750544, -0.90841917 ,-0.02153642,-13.32,
+#              -0.04838885 ,-0.00144048 , 0.99882753,-9.396,
+#               0,0,0,1]
+
+#corridor3
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [ -9.59524440e-01  ,-2.81623608e-01 ,  9.96011896e-04,37,
+#            2.81608400e-01  ,-9.59499446e-01 , -7.58433877e-03,-11,
+#             3.09160171e-03 , -6.99687310e-03,   9.99970742e-01,0.06,
+#               0,0,0,1]
+
+
+#corridor4
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [ 0.71476717 ,-0.69928215 ,-0.01059984,39,
+#            0.6993378  , 0.71478719  ,0.00243215,-17,
+#             0.00587587, -0.0091513 ,  0.99994086,0.07,
+#               0,0,0,1]
+
+# #corridor5
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [ -0.53084531, 0.84734703, -0.01436196,29,
+#           -0.84730378, -0.53100012, -0.01073213,25,
+#            -0.01672005 , 0.00647184 , 0.99983926,-0.53,
+#               0,0,0,1]
+
+#market1
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  -0.12347802,  0.99122649 ,-0.04715099,7.90,
+#             -0.99234276 ,-0.12348181,  0.00284363,0.064,
+#               -0.00300361 , 0.04714107 , 0.99888373,-1.00,
+#               0,0,0,1]
+
+#market2
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  -0.98518957 , 0.1641261,  -0.04964014,12.42,
+#             -0.16536995 ,-0.98598493,  0.02205652,-6.49,
+#               -0.04532438 , 0.02993884  ,0.99852359,-1.55,
+#               0,0,0,1]
+
+
+#market
+# body_T_wheel: !!opencv-matrix
+#   rows: 4
+#   cols: 4
+#   dt: d
+#   data: [  -0.23409006,  0.97048381, -0.05799145,5.4953,
+#            -0.9721971  ,-0.23403007 , 0.00791996,0.92,
+#             -0.00588555 , 0.0582331  , 0.99828566,-2.4526,
+#               0,0,0,1]
+
+
+# -5.09768692e-01  -8.60274616e-01  -7.96657274e-03]
+#  [  8.60311343e-01  -5.09752364e-01  -4.11337602e-03]
+#  [ -5.22346309e-04  -8.95060321e-03   9.99959806e-01
+#plane noise
+#mono:0.01 stereo:0.005
+roll_n: 0.01
+#mono:0.01  stereo:0.005
+pitch_n: 0.01
+#mono:0.05 stereo:0.025
+zpw_n: 0.05
+
+
+#Multiple thread support
+multiple_thread: 1
+
+#feature traker paprameters
+max_cnt: 200           # max feature number in feature tracking
+min_dist: 15            # min distance between two features 
+freq: 10                # frequence (Hz) of publish tracking result. At least 10Hz for good estimation. If set 0, the frequence will be same as raw image 
+F_threshold: 1.0        # ransac threshold (pixel)
+show_track: 1           # publish tracking image as topic
+flow_back: 1            # perform forward and backward optical flow to improve feature tracking accuracy
+equalize: 0         #new
+#optimization parameters
+max_solver_time: 0.04  # max solver itration time (ms), to guarantee real time
+max_num_iterations: 8   # max solver itrations, to guarantee real time
+keyframe_parallax: 10.0 # keyframe selection threshold (pixel)
+
+#imu parameters       The more accurate parameters you provide, the better performance
+# acc_n: 2.67809809884e-04     # accelerometer measurement noise standard deviation. #0.2   0.04
+# gyr_n: 1.02960602817e-05        # gyroscope measurement noise standard deviation.     #0.05  0.004
+# acc_w: 2.49999993684e-05         # accelerometer bias random work noise standard deviation.  #0.002
+# gyr_w: 2.49999999369e-07       # gyroscope bias random work noise standard deviation.     #4.0e-5
+
+# above are original calib file from openloris
+
+
+# # rgbd
+# acc_n: 0.1         # accelerometer measurement noise standard deviation. #0.2   0.04
+# gyr_n: 0.05        # gyroscope measurement noise standard deviation.     #0.05  0.004
+# acc_w: 7.1765713730075628e-04         # accelerometer bias random work noise standard deviation.  #0.002
+# gyr_w: 4.0e-05       # gyroscope bias random work noise standard deviation.     #4.0e-5
+#g_norm: 9.805         # gravity magnitude
+
+
+#realsense
+#first full log
+# acc_n: 0.02 #2.9840535876578939e-02          # accelerometer measurement noise standard deviation. #0.2
+# gyr_n: 0.005 #4.8602774318549456e-03         # gyroscope measurement noise standard deviation.     #0.05
+# acc_w: 0.01 #9.2450042830019173e-03        # accelerometer bias random work noise standard deviation.  #0.02
+# gyr_w: 3.0e-5 #3.0172667291423203e-05       # gyroscope bias random work noise standard deviation.     #4.0e-5
+# g_norm: 9.805         # gravity magnitude
+
+#m2dgr
+gyr_n: 2.4710787075320089e-03
+gyr_w: 1.7963145905200798e-05
+acc_n: 2.6848761610624401e-02
+acc_w: 8.5216274964016023e-04
+g_norm: 9.805       # gravity magnitude
+
+#wheel parameters
+# rad/s mono:0.004 stereo:0.002
+wheel_gyro_noise_sigma: 0.004
+#　m/s mono:0.01  stereo:0.006
+wheel_velocity_noise_sigma: 0.01
+
+estimate_wheel_intrinsic: 0
+# 0  Have an accurate intrinsic parameters. We will trust the following sx, sy, sw, don't change it.
+# 1  Have an initial guess about intrinsic parameters. We will optimize around your initial guess.
+# 2  TODO Don't know anything about intrinsic parameters. You don't need to give sx, sy, sw. We will try to calibrate it. Do some rotation movement at beginning.
+#If you choose 0 or 1, you should write down the following sx, sy, sw.
+# wheel intrinsic
+sx: 1.0
+sy: 1.0
+sw: 1.0
+
+
+#unsynchronization parameters
+estimate_td: 0                      # online estimate time offset between camera and imu
+td: 0.00                             # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)
+#unsynchronization parameters
+estimate_td_wheel: 0                      # online estimate time offset between camera and wheel
+td_wheel: 0.0                             # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)
+#loop closure parameters
+load_previous_pose_graph: 0        # load and reuse previous pose graph; load from 'pose_graph_save_path'
+pose_graph_save_path: "/home/car/Downloads/newproject/vinsrgbdfusion_ws/src/VINS-Fusion-RGBD/z_posegraph/" # save and load path
+save_image: 0                   # save image in pose graph for visualization prupose; you can close this function by setting 0 
+
+# depth below
+load_grid_map: 0
+grid_map_save_path: "//home/car/Downloads/newproject/vinsrgbdfusion_ws/src/VINS-Fusion-RGBD/z_gridmap/"
+
+#PCL parameters
+depth_dist: 10 #10
+depth_boundary: 10 #10
+resolution: 0.05 #0.05

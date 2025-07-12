@@ -1,0 +1,76 @@
+common:
+    lidar_topic:  "/velodyne_points"
+    imu_topic:  "/handsfree/imu"
+    image_topic:  "/camera/color/image_raw/compressed"
+    image_type:  COMPRESSED    # 1 RGB8   2 COMPRESSED
+    point_filter_num: 4
+    time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
+    gravity_acc: [ 0.0, 0.0, 9.81 ]
+    
+lidar_parameter:
+    lidar_type: 2                # 1 for Livox serials LiDAR, 2 for Velodyne LiDAR, 3 for ouster LiDAR, 
+    N_SCANS: 32
+    SCAN_RATE: 10                # only need to be set for velodyne, unit: Hz,
+    time_unit: 3            # the unit of time/t field in the PointCloud2 rostopic: 0-second, 1-milisecond, 2-microsecond, 3-nanosecond.
+    blind: 0.1
+    fov_degree:    360
+    det_range:     200.0
+
+imu_parameter:
+    acc_cov: 1.2820343288774358e-01
+    gyr_cov: 2.1309311394972831e-02
+    b_acc_cov: 1.3677912958097768e-02
+    b_gyr_cov: 3.6603917782528627e-04
+    time_diff_enable: false
+    
+camera_parameter:
+    image_width: 640
+    image_height: 480
+    camera_intrinsic: [ 617.971050917033, 0.0, 327.710279392468, #[fx, 0, cx]
+                        0.0,  616.445131524790, 253.976983707814, #[0, fy, cy] 
+                        0.0, 0.0, 1.0 ]
+    camera_dist_coeffs: [ 0.148000794688248, -0.217835187249065, 0, 0, 0 ]  #k1, k2, p1, p2, k3
+
+extrinsic_parameter:
+    extrinsic_enable:  false      # true: enable the online estimation of IMU-LiDAR extrinsic,
+    extrinsic_t_imu_lidar: [ 0.29, 0.0, 0.17 ]
+    extrinsic_R_imu_lidar: [ 1, 0, 0, 
+                             0, 1, 0, 
+                             0, 0, 1 ]
+    extrinsic_t_imu_camera: [ 0.57711, 0.0, 0.83333 ]
+    #extrinsic_t_imu_camera: [ 0, 0, 0 ]
+    extrinsic_R_imu_camera: [ 0.0, 0.0, 1.0,
+                              1.0, 0.0, 0.0,
+                             0.0, -1.0, 0.0 ]
+
+odometry_options:
+    voxel_size: 0.1 # The voxel size for the grid sampling of the new frame (before keypoints extraction) -1: don't down sampling
+    sample_voxel_size: 1.5 # The size of a voxel for the selection of `keypoints` by grid sampling
+    max_distance: 2000.0 # The threshold of the distance to suppress voxels from the map
+    max_num_points_in_voxel: 20 # The maximum number of points per voxel of the map
+    init_num_frames: 20
+    min_distance_points: 0.15 # 0.15 0.01
+    distance_error_threshold: 100.0 # The motion of the sensor between two frames which is considered erroneous (stops the odometry)
+    motion_compensation: IMU # The profile of the motion compensation (IMU, CONSTANT_VELOCITY)
+    initialization: INIT_IMU # [INIT_IMU, INIT_CONSTANT_VELOCITY]
+
+icp_options:
+    size_voxel_map: 1.0 # 1.0 0.1 The voxel size of in the voxel map
+    num_iters_icp: 5 # The number of iterations of the ICP
+    min_number_neighbors: 20 # 20 5 The minimum number of neighbor points to define a valid neighborhood
+    voxel_neighborhood: 1
+    max_number_neighbors: 20
+    max_dist_to_plane_ct_icp: 0.3
+    threshold_orientation_norm: 0.1 # Threshold on orientation changes (in degrees) for early termination of the ICP
+    threshold_translation_norm: 0.01 # Threshold on distance changes (in m) for early termination of the ICP
+    debug_print: false
+    num_closest_neighbors: 1
+    min_num_residuals: 200 # The minimum number of residuals for a valid ICP problem
+    max_num_residuals: 600 # The maximum number of residuals considered (if more keypoints exist, residuals are randomly sampled)
+    
+map_options:
+    size_voxel_map: 0.1 # The voxel size of in the voxel map for visualization
+    max_num_points_in_voxel: 100 # The maximum number of points per voxel of the map for visualization
+    min_distance_points: 0.01 # The minimum distance of two points for visualization
+    add_point_step: 1  # The point step of adding point to color map. [default = 4]
+    pub_point_minimum_views: 3  # Publish points which have been render up to "pub_pt_minimum_views" time. [default = 3]

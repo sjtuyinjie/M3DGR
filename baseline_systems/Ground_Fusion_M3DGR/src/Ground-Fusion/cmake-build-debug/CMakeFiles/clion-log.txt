@@ -1,0 +1,4 @@
+/home/xuduo/clion-2018.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/xuduo/catkin_ws/src/VINS-Fusion
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xuduo/catkin_ws/src/VINS-Fusion/cmake-build-debug

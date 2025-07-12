@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/media/zjj/Elements/CQU_ZJJ/GVINS/devel/include/**",
+        "/media/zjj/Elements/CQU_ZJJ/GVINS/src/gnss_comm/include/**",
+        "/media/zjj/Elements/CQU_ZJJ/GVINS/src/gvins/camera_model/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

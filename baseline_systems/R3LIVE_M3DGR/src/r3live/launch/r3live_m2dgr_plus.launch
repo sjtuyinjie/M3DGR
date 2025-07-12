@@ -1,0 +1,38 @@
+<launch>
+    <!-- <arg name="intrinsics_file" default="$(find calibration_bringup)/calibration/intrinsic.yaml"/>
+    <arg name="image_src" default="/flir_adk/image_raw" />
+    <arg name="camera_info_src" default="/camera_info" />
+    <arg name="target_frame" default="lidar"/>
+    <arg name="camera_frame" default="camera"/>
+    <node pkg="calibration_publisher" type="calibration_publisher" name="calibration_publisher">
+        <param name="register_lidar2camera_tf" type="bool" value="false"/>
+        <param name="publish_extrinsic_mat" type="bool" value="false"/>
+        <param name="publish_camera_info" type="bool" value="true"/>
+        <param name="image_topic_src" value="$(arg image_src)"/>
+        <param name="calibration_file" value="$(arg intrinsics_file)"/>
+        <param name="target_frame" type="str" value="$(arg target_frame)"/>
+        <param name="camera_frame" type="str" value="$(arg camera_frame)"/>
+    </node>
+    <node name="decompress" type="republish" pkg="image_transport" output="screen" args="compressed in:=$(arg image_src) raw out:=$(arg image_src)" />
+    <node pkg="image_processor" type="image_rectifier" name="rectifier" output="screen">
+        <param name="image_src" value="$(arg image_src)" />
+        <param name="camera_info_src" value="$(arg camera_info_src)" />
+    </node> -->
+
+    <node pkg="image_transport" type="republish" name="republish" args="compressed in:=/camera/color/image_raw raw out:=/camera/color/image_raw" output="screen" respawn="true"/>
+
+    <!-- Subscribed topics -->
+    <param name="/LiDAR_pointcloud_topic" type="string" value= "/laser_cloud_flat" />
+    <param name="/IMU_topic" type="string" value= "/rslidar/imu" />
+    <param name="/Image_topic" type="string" value= "/camera/color/image_raw" />
+    <param name="map_output_dir" type="string" value="$(env HOME)/r3live_output" />
+    <rosparam command="load" file="$(find r3live)/../config/r3live_m2dgr_plus.yaml" />
+        
+    <node pkg="r3live" type="r3live_LiDAR_front_end" name="r3live_LiDAR_front_end"  output="screen" required="true"/>
+    <node pkg="r3live" type="r3live_mapping" name="r3live_mapping" output="screen" required="true" />
+    
+    <arg name="rviz" default="1" />
+    <group if="$(arg rviz)">
+        <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find r3live)/../config/rviz/r3live_rviz_config_ouster.rviz" />
+    </group>
+ </launch>

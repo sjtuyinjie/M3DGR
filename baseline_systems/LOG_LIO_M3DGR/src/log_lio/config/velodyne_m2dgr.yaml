@@ -1,0 +1,71 @@
+common:
+    lid_topic:  "/velodyne_points"
+    imu_topic:  "/handsfree/imu"
+    time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
+    time_offset_lidar_to_imu: 0.0 # Time offset between lidar and IMU calibrated by other algorithms, e.g. LI-Init (can be found in README).
+                                  # This param will take effect no matter what time_sync_en is. So if the time offset is not known exactly, please set as 0.0
+
+preprocess:
+    lidar_type: 2                # 1 for Livox serials LiDAR, 2 for Velodyne LiDAR, 3 for ouster LiDAR, 
+    scan_line: 32
+    scan_rate: 10                # only need to be set for velodyne, unit: Hz,
+    timestamp_unit: 2            # the unit of time/t field in the PointCloud2 rostopic: 0-second, 1-milisecond, 2-microsecond, 3-nanosecond.
+    Horizon_SCAN: 1800           # lidar horizontal resolution (Velodyne:1800, Ouster:512,1024,2048)
+    blind: 2
+
+mapping:
+    acc_cov: 3.7686306102624571e-02
+    gyr_cov: 2.3417543020438883e-03
+    b_acc_cov: 1.1416642385952368e-03
+    b_gyr_cov: 1.4428407712885209e-05
+    fov_degree:    180
+    det_range:     100.0
+    extrinsic_est_en:  false      # true: enable the online estimation of IMU-LiDAR extrinsic,
+    extrinsic_T: [0.27255, -0.00053, 0.17954]
+    extrinsic_R: [ 1, 0, 0, 
+                   0, 1, 0, 
+                   0, 0, 1]
+    #voxel map
+    voxel_hash_en: false        # for association
+    voxel_size: 1.0
+    max_layer: 4                # 4 layer, 0, 1, 2, 3
+    layer_point_size: [ 5, 5, 5, 5, 5 ]   # min points plane update threshold
+    plannar_threshold: 0.01
+    max_points_size: 1000
+    max_cov_points_size: 1000
+
+publish:
+    path_en:  true
+    scan_publish_en:  true       # false: close all the point cloud output
+    dense_publish_en: true       # false: low down the points number in a global-frame point clouds scan.
+    scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+
+pcd_save:
+    pcd_save_en: false
+    interval: -1                 # how many LiDAR frames saved in each pcd file; 
+                                 # -1 : all frames will be saved in ONE pcd file, may lead to memory crash when having too much frames.
+    save_ikdtree_map: false
+    save_final_map: false
+
+normal:
+    compute_table: false
+    ring_table_dir: "/config/m2dgr"
+    compute_normal: true
+    check_normal: true
+
+surfel:
+    surfel_points_min: 25          # points inside the voxel larger than the value, do pca
+    surfel_points_max: 100          # max points inside a voxel
+    planarity: 0.6              # larger than the value is plane [0, 1.0]
+    mid2min: 100.0              # larger than the value is plane
+    angle_threshold: 30.0       # angle between ring Fals and surfel normal
+    cloud_surfel: true          # point-to-neighbor surfel association
+    point_surfel: true         # point-to-point surfel association
+
+# prism or RTK in IMU frame
+ground_truth:
+    extrinsic_T: [ 0.16, 0.0, 0.84 ]   ## GNSS in IMU frame
+#    extrinsic_T: [ 0.27255, -0.00053, 0.17954]    ## LiDAR in IMU frame
+    extrinsic_R: [ 1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1 ]

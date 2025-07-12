@@ -1,0 +1,60 @@
+common:
+  # Topics
+  pointCloudTopic:  "/livox/lidar" #"/os_cloud_node/points" #"velodyne_points"    "points_raw"     rslidar_points      # Point cloud data
+  imuTopic: "/livox/mid360/imu" # "/imu_correct" #"/os_cloud_node/imu" #"imu_data" #"imu_raw"      # IMU data
+  gpsTopic: "/gps/gpfpd"
+
+feature_extract:
+  # Frames
+  lidarFrame: "base_link"
+
+  # Sensor Settings
+  sensor: livox #velodyne                            # lidar sensor type, either 'velodyne' or 'ouster' 'robosense' 'livox'
+  N_SCAN: 4                                  # number of lidar channel (i.e.,Velodyne/Ouster/Robosense: 16, 32, 64, 128,Livox Horizon:6)
+  Horizon_SCAN: 1800                          # lidar horizontal resolution (Velodyne:1800, Ouster:512,1024,2048,Livox Horizon: 4000)
+  downsampleRate: 1                           # default: 1. Downsample your data if too many points. i.e., 16 = 64 / 4, 16 = 16 / 1
+  lidarMinRange: 1.0                          # default: 1.0, minimum lidar range to be used
+  lidarMaxRange: 1000.0                       # default: 1000.0, maximum lidar range to be used
+  feature_enabled: 0                          # default: 1. use feature or not
+  pointFilterRate: 5                          # default:1
+
+  # LOAM feature threshold
+  edgeThreshold: 1.0
+  surfThreshold: 0.1
+  edgeFeatureMinValidNum: 10
+  surfFeatureMinValidNum: 100
+
+  # voxel filter paprams
+  odometrySurfLeafSize: 0.5                     # default: 0.4 - outdoor, 0.2 - indoor  only use surf ds here
+
+  useAuxiliaryLidar: false
+  auxiliaryCloudTopic: "/right/velodyne_points"
+  auxiliarySensor: velodyne
+  auxiliaryN_SCAN: 16
+  auxiliaryHorizon_SCAN: 1800
+  auxiliaryDSRate: 1
+  auxiliaryLidarMinRange: 1.0
+  auxiliaryLidarMaxRange: 200.0
+  auxiliaryFeatureEnable: true
+  auxiliaryPointFilterRate: 4
+  extrinsic_T_auxiliray_to_primary: [0.323744, -0.00124153, -0.200876]
+  extrinsic_R_auxiliray_to_primary: [ 0.566085, 0.0347042, 0.823616, 
+                                      -0.0296934, 0.999323, -0.0216991, 
+                                      -0.823812, -0.0121725, 0.566732]
+  
+
+
+mapping:
+  dense_map_enable: true
+  use_gps: false
+  gf_method: "full" #full--rnd--gfs
+  save_tum_traj: true
+  max_iteration: 10 #10
+  filter_size_surf: 0.4
+  filter_size_map: 0.4
+  cube_side_length: 1000                    # default 1000.
+  extrinsic_est_en:  false      # true: enable the online estimation of IMU-LiDAR extrinsic
+  extrinsic_T: [ -0.011, -0.02329, 0.04412] # lidar to imu
+  extrinsic_R: [ 1,0,0,
+                  0,1,0,
+                  0,0,1]
