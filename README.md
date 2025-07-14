@@ -33,7 +33,7 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 
 ### 2.2 TODO
 - [x] Release camera-ready version paper.[[paper](https://github.com/sjtuyinjie/M3DGR/blob/main/_IROS2025_GroundFusion2_M3DGR.pdf)]
-- [x] Release 40 SLAM codes adapted for M3DGR dataset.[codes](https://github.com/sjtuyinjie/M3DGR?tab=readme-ov-file#6-supported-slam-algorithm-list)
+- [x] Release 40 SLAM codes adapted for M3DGR dataset.[[codes](https://github.com/sjtuyinjie/M3DGR?tab=readme-ov-file#6-supported-slam-algorithm-list)]
 - [ ] Release M3DGR dataset with GT and calibration files.
 - [ ] Release Ground-Fusion++ code.
 
