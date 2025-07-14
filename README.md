@@ -49,7 +49,7 @@ Our goal is to build an open and dynamic community, where researchers can not on
 -  Sharing configuration files, evaluation results, and insights.
 
 Let’s make M3DGR a growing hub for robust, reproducible SLAM research! You can 
-- **Submit a Pull Request to contribute new algorithms, configuration files, or improvements via Github [Pull Request](https://github.com/sjtuyinjie/M3DGR/pulls)**
+- **Submit a Pull Request to contribute new algorithms, configuration files, or improvements via Github [Pull Request](https://github.com/sjtuyinjie/M3DGR/pulls) to post your adapted codes [[here](https://github.com/sjtuyinjie/M3DGR?tab=readme-ov-file#6-supported-slam-algorithm-list)]**
 - Report bugs or request features via GitHub [Issues](https://github.com/sjtuyinjie/M3DGR/issues).
 - Join discussions or ask questions on GitHub [Discussions](https://github.com/sjtuyinjie/M3DGR/discussions).
 
