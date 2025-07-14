@@ -337,7 +337,7 @@ Grass03 |2025-01-21|3.58g|172s|Wheel Float|[Rosbag]|[GT]
 Z-Rough-Road01|2025-01-14|10.4g|533s|Z Rough Road|[Rosbag]|[GT]
 </div>
 
-### 5.5 🛰️ GNSS Denied
+### 5.5 GNSS Denied 🛰️
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/GPS_denied.jpg" width="600px">
 <p align="center">Figure 7. GNSS_Denied01 Sequences</p>
