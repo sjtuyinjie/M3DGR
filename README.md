@@ -472,3 +472,10 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
     
 Waiting for your algorithms!
+
+
+
+## ⭐️ 7. Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=sjtuyinjie/M3DGR&type=Timeline)](https://star-history.com/#Ashutosh00710/github-readme-activity-graph&Timeline)
+
