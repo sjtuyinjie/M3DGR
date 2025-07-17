@@ -7,7 +7,7 @@
 📝 [[Paper]](https://arxiv.org/abs/2507.08364) &emsp; 
 ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; 
 ⭐️ [[Pre Video]](TBD) &emsp; 
-🔥 [[News]](TBD)
+🔥 [[News]](https://mp.weixin.qq.com/s/2dVvuS3z6YDXbCG9-EOYuw)
 
 [![Author](https://img.shields.io/badge/Author-Jie%20Yin-blue)](https://sjtuyinjie.github.io/)
 [![Website](https://img.shields.io/badge/Website-M3DGR--web-green)](https://sjtuyinjie.github.io/M3DGR-website/)
