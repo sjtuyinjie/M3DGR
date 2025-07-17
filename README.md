@@ -9,6 +9,16 @@
 ⭐️ [[Presentation Video]](TBD) &emsp; 
 🔥 [[News]](TBD)
 
+[![Author](https://img.shields.io/badge/Author-Jie%20Yin-blue)](https://sjtuyinjie.github.io/)
+[![Website](https://img.shields.io/badge/Website-M3DGR--web-green)](https://sjtuyinjie.github.io/M3DGR-website/)
+[![Paper](https://img.shields.io/badge/Paper-2507.08364-yellow)](https://arxiv.org/abs/2507.08364)
+[![Code](https://img.shields.io/badge/Code-Ground--Fusion2-red)](https://github.com/sjtuyinjie/Ground-Fusion2)
+[![stars](https://img.shields.io/github/stars/sjtuyinjie/M3DGR.svg)](https://github.com/sjtuyinjie/M3DGR)
+[![forks](https://img.shields.io/github/forks/sjtuyinjie/M3DGR.svg)](https://github.com/sjtuyinjie/M3DGR)
+[![open issues](https://img.shields.io/github/issues-raw/sjtuyinjie/M3DGR)](https://github.com/sjtuyinjie/M3DGR/issues)
+[![closed issues](https://img.shields.io/github/issues-closed-raw/sjtuyinjie/M3DGR)](https://github.com/sjtuyinjie/M3DGR/issues)
+
+
 <div align="center">
   <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logov3.png" width="600px" alt="M3DGR Logo">
 </div>
