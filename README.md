@@ -45,6 +45,7 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 - [ ] Release representative M3DGR sequences with GT and calibration files to make sure all results in the IROS paper can be reproduced.
 - [ ] Release ALL M3DGR sequences upon journal version of M3DGR acception.
 
+> 🔍 For those interested in accessing the unreleased M3DGR sequences in advance, we recommend first thoroughly evaluating your methods on the already released sequences. After that, feel free to contact us at **zhangjunjie587@gmail.com** to request early access for research purposes.
 
 
 ## 3. Contribute to M3DGR
