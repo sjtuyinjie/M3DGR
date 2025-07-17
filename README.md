@@ -3,7 +3,7 @@
 
 
 💎 Projcet Leader: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp; 
-🌐 [[Website]](https://sjtuyinjie.github.io/M3DGR-website/)
+🌐 [[Website]](https://sjtuyinjie.github.io/M3DGR-website/)&emsp; 
 📝 [[Paper]](https://arxiv.org/abs/2507.08364) &emsp; 
 ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; 
 ⭐️ [[Presentation Video]](TBD) &emsp; 
