@@ -2,7 +2,12 @@
 
 
 
-💎 Projcet Leader: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp;  📝 [[Paper]](https://arxiv.org/abs/2507.08364) &emsp; ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; ⭐️ [[Presentation Video]](TBD) &emsp; 🔥 [[News]](TBD)
+💎 Projcet Leader: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp; 
+🌐 [[Website]](https://sjtuyinjie.github.io/M3DGR-website/)
+📝 [[Paper]](https://arxiv.org/abs/2507.08364) &emsp; 
+➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; 
+⭐️ [[Presentation Video]](TBD) &emsp; 
+🔥 [[News]](TBD)
 
 <div align="center">
   <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/logov3.png" width="600px" alt="M3DGR Logo">
