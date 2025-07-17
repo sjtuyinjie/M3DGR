@@ -6,7 +6,7 @@
 🌐 [[Website]](https://sjtuyinjie.github.io/M3DGR-website/)&emsp; 
 📝 [[Paper]](https://arxiv.org/abs/2507.08364) &emsp; 
 ➡️ [[Algorithm Code]](https://github.com/sjtuyinjie/Ground-Fusion2) &emsp; 
-⭐️ [[Presentation Video]](TBD) &emsp; 
+⭐️ [[Pre Video]](TBD) &emsp; 
 🔥 [[News]](TBD)
 
 [![Author](https://img.shields.io/badge/Author-Jie%20Yin-blue)](https://sjtuyinjie.github.io/)
