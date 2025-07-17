@@ -121,16 +121,19 @@ The rostopics of our rosbag sequences are listed as follows:
 <p align="center">Figure 2. All trajectories are mapped in different colors.</p>
 </div>
 
+<div align=center>
 <table>
   <tr>
-    <td align="center">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif" width="600px">
+    <td align="center" width="300px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif" width="1000px">
     </td>
-    <td align="center">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" width="600px">
+    <td align="center" width="300px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" width="1000px">
     </td>
   </tr>
 </table>
+</div>
+
 
 An overview of **M3DGR** is given in the table below:
 <div align=center>
