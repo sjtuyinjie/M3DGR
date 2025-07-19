@@ -141,14 +141,14 @@ The rostopics of our rosbag sequences are listed as follows:
 <div align=center>
 <table>
   <tr>
-    <td align="center" width="200px">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif" width="200px">
+    <td align="center" width="250px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif" width="250px">
     </td>
-    <td align="center" width="200px">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" width="200px">
+    <td align="center" width="250px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" width="250px">
     </td>
-    <td align="center" width="200px">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/groundfusionpp_grass.gif" width="200px">
+    <td align="center" width="250px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/groundfusionpp_grass.gif" width="250px">
     </td>
   </tr>
 </table>
