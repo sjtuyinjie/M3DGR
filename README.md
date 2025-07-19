@@ -275,8 +275,8 @@ An overview of **M3DGR** is given in the table below:
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|GT
 --|:--|:--:|--:|--:|--:|--:
-Longtime01|2025-01-14|30.2g|1799s|long time|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCtKEAAAAAABwuEzGBGvColt9Q87Y4Wi1A?e=gDpFLo)
-Longtime02|2025-01-18|36.3g|2118s|long time|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCtMEAAAAAAB_kasW3UKEs7ORjJ09baugQ?e=U23jcl)
+Longtime01|2025-01-14|30.2g|1799s|Long Time|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCtKEAAAAAABwuEzGBGvColt9Q87Y4Wi1A?e=gDpFLo)
+Longtime02|2025-01-18|36.3g|2118s|Long Time|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCtMEAAAAAAB_kasW3UKEs7ORjJ09baugQ?e=U23jcl)
 Outdoor01|2025-01-03|6.10g|411s|Outdoor|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCtLEAAAAAABkYZk3nHvsmV_KQ1o5-6fdw?e=BfWfty)
 Outdoor04|2025-01-03|13.4g|782s|Outdoor|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCtNEAAAAAABIZ7TtoQPhpkJhlT1t8eVUA?e=egPxew)
 </div>
@@ -298,8 +298,8 @@ Occlusion01|2024-11-24|1.46g|142s|Full Occlusion|[Rosbag](https://1drv.ms/u/c/2b
 Occlusion02|2024-11-24|1.48g|144s|Full Occlusion|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCsPEAAAAAAByz5Npco0eHKUqodFYDM_og?e=sC1dlB)
 Varying-illu01|2024-11-24|1.84g|154s|Varying Illumination|[Rosbag](https://1drv.ms/u/c/2b4bfc0edf421186/EYYRQt8O_EsggCvwDwAAAAABxWIYcPmhqIz9obJGlAJe_g?e=n9QZa1)|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCsREAAAAAAB46eVZ0ErQZ9r1OS348S_5Q?e=qlUyK7)
 Varying-illu02|2024-11-24|1.75g|146s|Varying Illumination|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCsQEAAAAAAByj1BrBH4wew2SF92YnGdbw?e=Ef1Kpn)
-Dark03|2024-11-24|2.01g|170s|Dark room|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCsUEAAAAAABKHLQ0e1-Vp2saX0_ZDNYig?e=rrsULa)
-Dark04|2024-11-24|1.90g|161s|Dark room|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCsVEAAAAAABsjReWdUKAdd4u6s7SGC4gg?e=AVYKtw)
+Dark03|2024-11-24|2.01g|170s|Dark Room|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCsUEAAAAAABKHLQ0e1-Vp2saX0_ZDNYig?e=rrsULa)
+Dark04|2024-11-24|1.90g|161s|Dark Room|[Rosbag]|[GT](https://1drv.ms/t/c/2b4bfc0edf421186/EYYRQt8O_EsggCsVEAAAAAABsjReWdUKAdd4u6s7SGC4gg?e=AVYKtw)
 </div>
 
 #### Outdoor:
