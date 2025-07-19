@@ -147,6 +147,9 @@ The rostopics of our rosbag sequences are listed as follows:
     <td align="center" width="300px">
       <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" width="800px">
     </td>
+    <td align="center" width="300px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/groundfusionpp_grass.gif" width="800px">
+    </td>
   </tr>
 </table>
 </div>
