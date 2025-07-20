@@ -402,13 +402,13 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
       
     - ⑧ [Sensors2019] VINS-RGBD: RGBD-inertial trajectory estimation and mapping for ground robots [[paper](https://www.mdpi.com/1424-8220/19/10/2251)][[code](https://github.com/STAR-Center/VINS-RGBD)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_RGBD_M3DGR)] (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis) 
       
-    - ⑨ [T-RO2022] GVINS: Tightly coupled GNSS–visual–inertial fusion for smooth and consistent state estimation [[paper](https://arxiv.org/abs/2103.07899)][[code](https://github.com/HKUST-Aerial-Robotics/GVINS)]
+    - ⑨ [T-RO2022] GVINS: Tightly coupled GNSS–visual–inertial fusion for smooth and consistent state estimation [[paper](https://arxiv.org/abs/2103.07899)][[code](https://github.com/HKUST-Aerial-Robotics/GVINS)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/GVINS_M3DGR)] (Sensors: D435I RGB camera \ Realsense D435i IMU 6-axis \ GNSS) 
       
-    - ⑩ [2021] VIW-Fusion: visual-inertial-wheel fusion odometry [[code](https://github.com/TouchDeeper/VIW-Fusion)]
+    - ⑩ [2021] VIW-Fusion: visual-inertial-wheel fusion odometry [[code](https://github.com/TouchDeeper/VIW-Fusion)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VIW_Fusion_M3DGR)] (Sensors: D435I RGB camera \ Realsense D435i IMU 6-axis \ WHEELTEC ) 
       
-    - ⑪ [2021] VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS [[code](https://github.com/Wallong/VINS-GPS-Wheel)]
+    - ⑪ [2021] VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS [[code](https://github.com/Wallong/VINS-GPS-Wheel)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_GPS_Wheel_M3DGR)] (Sensors: D435I RGB camera \ Realsense D435i IMU 6-axis \ WHEELTEC \GNSS )
       
-    - ⑫ [ICRA2024] Ground-fusion: A low-cost ground slam system robust to corner cases [[paper](https://arxiv.org/abs/2402.14308)][[code](https://github.com/SJTU-ViSYS/Ground-Fusion)]
+    - ⑫ [ICRA2024] Ground-fusion: A low-cost ground slam system robust to corner cases [[paper](https://arxiv.org/abs/2402.14308)][[code](https://github.com/SJTU-ViSYS/Ground-Fusion)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Ground_Fusion_M3DGR)] (Sensors: D435I RGB camera \ Realsense D435i IMU 6-axis \ WHEELTEC \GNSS )
       
   - 💡 **LO system**:
     
