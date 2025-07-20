@@ -497,8 +497,42 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
 Waiting for your algorithms!
 
 
+## 7. Citation 📄
 
-## ⭐️ 7. Star History
+```bibtex
+@article{zhang2025towards,
+  title={Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework},
+  author={Zhang, Deteng and Zhang, Junjie and Sun, Yan and Li, Tao and Yin, Hao and Xie, Hongzhao and Yin, Jie},
+  journal={arXiv preprint arXiv:2507.08364},
+  year={2025}
+}
+
+@inproceedings{yin2024ground,
+  title={Ground-fusion: A low-cost ground slam system robust to corner cases},
+  author={Yin, Jie and Li, Ang and Xi, Wei and Yu, Wenxian and Zou, Danping},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={8603--8609},
+  year={2024},
+  organization={IEEE}
+}
+@article{yin2021m2dgr,
+  title={M2dgr: A multi-sensor and multi-scenario slam dataset for ground robots},
+  author={Yin, Jie and Li, Ang and Li, Tao and Yu, Wenxian and Zou, Danping},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={2},
+  pages={2266--2273},
+  year={2021},
+  publisher={IEEE}
+}
+
+```
+
+## 8. Star History ⭐️
 
 [![Star History Chart](https://api.star-history.com/svg?repos=sjtuyinjie/M3DGR&type=Timeline)](https://star-history.com/#Ashutosh00710/github-readme-activity-graph&Timeline)
+
+
+
+
 
