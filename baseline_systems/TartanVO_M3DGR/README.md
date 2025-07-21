@@ -1,5 +1,7 @@
 # TartanVO: A Generalizable Learning-based VO
 
+Quickly run on M3DGR:
+
 ## 1. Compile
 ```
 cd ~/catkin_ws/src
