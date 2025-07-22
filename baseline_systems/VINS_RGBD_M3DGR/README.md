@@ -16,7 +16,7 @@ roslaunch vins_estimator vins_rviz.launch
 source devel/setup.bash
 roslaunch vins_estimator m3dgr.launch
 ```
-## 3. Run N2DGR-Plus example
+## 3. Run M2DGR-Plus example
 ```
 source devel/setup.bash
 roslaunch vins_estimator vins_rviz.launch
