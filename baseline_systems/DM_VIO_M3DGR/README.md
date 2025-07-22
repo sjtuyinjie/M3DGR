@@ -1,6 +1,6 @@
 # DM-VIO
 Quickly run on M3DGR and M2DGR-Plus:
-## Compile
+## 1. Compile
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/DM_VIO_M3DGR
 
@@ -17,7 +17,7 @@ export DMVIO_BUILD=../build
 catkin_make
 ```
 
-## Run M3DGR example
+## 2. Run M3DGR example
 ```
 roscore
 
@@ -30,7 +30,7 @@ rosbag play dynamic_person_1.bag
 
 ```
 
-## Run M2DGR-Plus example
+## 3. Run M2DGR-Plus example
 ```
 roscore
 
