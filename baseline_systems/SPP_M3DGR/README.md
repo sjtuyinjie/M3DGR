@@ -1,4 +1,4 @@
-# spp
+# GNSS SPP Solution
 This is a GNSS SPP solution demo：
 
 ## 1. Compile:
