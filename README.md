@@ -142,39 +142,16 @@ The rostopics of our rosbag sequences are listed as follows:
 <table>
   <tr>
     <td align="center" width="400px">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif" height="200px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif" width="250px" height="200px">
     </td>
     <td align="center" width="400px">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" height="200px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif" width="250px" height="200px">
     </td>
     <td align="center" width="400px">
-      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/groundfusionpp_grass.gif" height="200px">
+      <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/groundfusionpp_grass.gif" width="250px" height="200px">
     </td>
   </tr>
 </table>
-</div>
-
-<style>
-.same-size-img {
-  width: 250px;
-  height: 200px;
-  object-fit: cover;
-}
-</style>
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="250px">
-        <img class="same-size-img" src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/mnggiflab-compressed-3.gif">
-      </td>
-      <td align="center" width="250px">
-        <img class="same-size-img" src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/2.gif">
-      </td>
-      <td align="center" width="250px">
-        <img class="same-size-img" src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/groundfusionpp_grass.gif">
-      </td>
-    </tr>
-  </table>
 </div>
 
 An overview of **M3DGR** is given in the table below:
