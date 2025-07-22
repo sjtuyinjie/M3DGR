@@ -1,7 +1,7 @@
 # ORB-SLAM2
 Quickly run on M3DGR:
 
-## Compile
+## 1. Compile
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/ORB_SLAM2_M3DGR
 
@@ -15,7 +15,7 @@ export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:PATH/ORB_SLAM2/Examples/ROS
 
 ```
 
-## Run example
+## 2. Run example
 ```
 roscore
 
