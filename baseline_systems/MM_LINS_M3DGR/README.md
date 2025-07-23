@@ -1,4 +1,5 @@
 # MM-LINS
+Quickly run on M3DGR:
 ## m3dgr
 ```
 source devel/setup.bash
