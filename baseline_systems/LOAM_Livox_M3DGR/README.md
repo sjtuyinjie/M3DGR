@@ -9,7 +9,7 @@ cd LOAM_Livox_M3DGR
 
 catkin_make
 ```
-## Run M3DGR example
+## 2. Run M3DGR example
 ```
  source devel/setup.bash
  roslaunch loam_livox rosbag.launch
