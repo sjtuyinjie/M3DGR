@@ -9,7 +9,7 @@ cd A_LOAM_M3DGR
 
 catkin_make
 ```
-## M3DGR
+## 2. Run M3DGR example
 ```
  source devel/setup.bash
  roslaunch aloam_velodyne aloam_velodyne_VLP_16.launch    # aloam_velodyne_HDL_32.launch
