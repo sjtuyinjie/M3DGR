@@ -9,7 +9,7 @@ cd HM_LIO_M3DGR
 
 catkin_make
 ```
-## 2. Run M3DGR eexample
+## 2. Run M3DGR example
 ```
 source devel/setup.bash
 roslaunch livox_repub mid360_repub.launch
