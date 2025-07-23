@@ -1,11 +1,11 @@
-# CT-LIO
+# CT-LO
 Quickly run on M3DGR:
 
 ## 1. Compile
 ```
-git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/VINS_Mono_M3DGR
+git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/CTLO_M3DGR
 
-cd VINS_Mono_M3DGR
+cd CTLO_M3DGR
 
 catkin_make
 ```
