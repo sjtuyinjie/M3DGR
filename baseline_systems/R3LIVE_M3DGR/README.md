@@ -14,7 +14,7 @@ sudo apt-get install ros-noetic-tf2-sensor-msgs
 
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/R3LIVE_M3DGR
 
-cd R3LIVE_M3DGR
+cd baseline_systems/R3LIVE_M3DGR
 
 catkin_make
 ```
