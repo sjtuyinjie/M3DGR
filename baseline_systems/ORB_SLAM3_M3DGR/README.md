@@ -14,7 +14,7 @@ export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:PATH/ORB_SLAM3/Examples/ROS
 ./build_ros.sh
 ```
 
-## 2. Run example
+## 2. Run M3DGR example
 ```
 roscore
 
