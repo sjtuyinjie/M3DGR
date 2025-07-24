@@ -4,7 +4,7 @@ Quickly run on M3DGR and M2DGR-Plus:
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/DM_VIO_M3DGR
 
-cd DM_VIO_M3DGR
+cd baseline_systems/DM_VIO_M3DGR
 
 mkdir build && cd build 
 cmake ..
