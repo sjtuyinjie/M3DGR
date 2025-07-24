@@ -467,7 +467,7 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
       
     - ㊳ [RA-L2024] SR-LIVO: LiDAR-Inertial-Visual Odometry and Mapping with Sweep Reconstruction [[paper](https://arxiv.org/abs/2312.16800)][[code](https://github.com/ZikangYuan/sr_livo)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/SR_LIVO_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
       
-    - ㊴ [T-RO2024] FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2408.14035)][[code](https://github.com/hku-mars/FAST-LIVO2)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fsat_LIVO2_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
+    - ㊴ [T-RO2024] FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2408.14035)][[code](https://github.com/hku-mars/FAST-LIVO2)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fast_LIVO2_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
       
     - ㊵ [IROS2025] Ground-Fusion++: Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework [[paper](https://arxiv.org/abs/2507.08364)][[adapted_code](https://github.com/sjtuyinjie/Ground-Fusion2)].  (Sensors: Livox MID-360, D435I RGB camera, Realsense D435i IMU 6-axis, WHEELTEC Wheel Odometer and GNSS)
 
