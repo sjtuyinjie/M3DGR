@@ -19,6 +19,8 @@ roslaunch fast_lio mapping_avia.launch
 # for mid360
 source devel/setup.bash   
 roslaunch fast_lio mapping_mid360.launch
+
+rosbag play Dynamic01.bag
 ```
 
 ## 3. Run N2DGR-Plus example
@@ -31,4 +33,6 @@ rosrun rs_to_velodyne rs_to_velodyne m2dgrplus XYZIRT
 
 source devel/setup.bash
 roslaunch imu_transformer ned_to_enu.launch
+
+rosbag play tree3.bag
 ```
