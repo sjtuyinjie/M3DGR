@@ -3,9 +3,9 @@ Quickly run on M3DGR:
 
 ## 1. Compile
 ```
-git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/FAST_LIVO2_M3DGR
+git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/Fast_LIVO2_M3DGR
 
-cd FAST_LIVO2_M3DGR
+cd Fast_LIVO2_M3DGR
 
 catkin_make
 ```
