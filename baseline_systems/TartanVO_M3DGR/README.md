@@ -6,7 +6,7 @@ Quickly run on M3DGR:
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/TartanVO_M3DGR
 
-cd TartanVO_M3DGR
+cd baseline_systems/TartanVO_M3DGR
 ```
 
 ## 2. Environment Preparation
