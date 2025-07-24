@@ -1,8 +1,0 @@
-prefix=/media/zjj/Elements/CQU_ZJJ/FAST-LIVO2/src/rpg_vikit/devel
-
-Name: vikit_py
-Description: Description of vikit_py
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
