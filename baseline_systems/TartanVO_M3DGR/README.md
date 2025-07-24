@@ -4,9 +4,7 @@ Quickly run on M3DGR:
 
 ## 1. Compile
 ```
-cd ~/catkin_ws/src
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/TartanVO_M3DGR
-
 ```
 
 ## 2. Rum M3DGR example
