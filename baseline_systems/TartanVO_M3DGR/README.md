@@ -2,12 +2,21 @@
 
 Quickly run on M3DGR:
 
-## 1. Compile
+## 1. Pull Project 
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/TartanVO_M3DGR
+
+cd TartanVO_M3DGR
 ```
 
-## 2. Rum M3DGR example
+## 2. Environment Preparation
+```
+pip install numpy matplotlib scipy torch==1.4.0 opencv-python==4.2.0.32 cupy==6.7.0
+pip uninstall numpy
+pip install numpy==1.22.4
+```
+
+## 3. Rum M3DGR example
 We have prepared the Dynamic01 sequence, which you can run directly：
 ```
 roscore
@@ -19,7 +28,7 @@ python tartanvo_node.py
 python publish_image_from_folder.py
 ```
 
-## 3. Prepare other M3DGR data
+## 4. Prepare other M3DGR data
 Save the image in the "data" folder:
 
 ```
