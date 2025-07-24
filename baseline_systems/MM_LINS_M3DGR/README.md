@@ -5,7 +5,7 @@ Quickly run on M3DGR:
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/MM_LINS_M3DGR
 
-cd MM_LINS_M3DGR
+cd baseline_systems/MM_LINS_M3DGR
 
 catkin_make
 ```
