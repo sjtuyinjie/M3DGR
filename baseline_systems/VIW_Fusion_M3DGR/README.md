@@ -5,7 +5,7 @@ Quickly run on M3DGR and M2DGR-Plus:
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/VIW_Fusion_M3DGR
 
-cd VIW_Fusion_M3DGR
+cd baseline_systems/VIW_Fusion_M3DGR
 
 catkin_make
 ```
