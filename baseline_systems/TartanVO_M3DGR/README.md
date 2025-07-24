@@ -10,7 +10,7 @@ cd ../..
 catkin_make
 ```
 
-## 2. Rum example
+## 2. Rum M3DGR example
 We have prepared the Dynamic01 sequence, which you can run directly：
 ```
 roscore
