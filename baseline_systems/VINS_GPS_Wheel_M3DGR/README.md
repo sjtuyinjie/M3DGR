@@ -5,7 +5,7 @@ Quickly run on M3DGR and M2DGR-Plus:
 ```
 git clone https://github.com/sjtuyinjie/M3DGR.git && cd M3DGR && git sparse-checkout set --no-cone baseline_systems/VINS_GPS_Wheel_M3DGR
 
-cd VINS_GPS_Wheel_M3DGR
+cd baseline_systems/VINS_GPS_Wheel_M3DGR
 
 catkin_make
 ```
