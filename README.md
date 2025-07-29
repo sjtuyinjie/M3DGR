@@ -54,7 +54,7 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 - [x] Release Ground-Fusion++ code, with examples on M3DGR on M2DGR-plus. [[code](https://github.com/sjtuyinjie/Ground-Fusion2)]
 - [x] Release most sequences in the paper included with GT and calibration files to make sure all results can be reproduced.[[data](https://github.com/sjtuyinjie/M3DGR?tab=readme-ov-file#5-dataset-sequences)]
 - [ ] Release long-term sequences upon our journal paper acception.
-- [ ] Release a much more competitive and robust SLAM system upon our journal paper acception. Please look forward to our ongoing research!
+
 
 > 🔍 For those interested in accessing the unreleased M3DGR sequences in advance, we recommend first thoroughly evaluating your methods on the already released sequences. After that, feel free to contact us at **zhangjunjie587@gmail.com** to request early access for research purposes.
 
