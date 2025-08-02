@@ -135,6 +135,9 @@ def main():
 
             tracking_rate = (eval_total_time / ref_total_time) * 100
 
+            if tracking_rate > 100:
+                 tracking_rate = 100
+
             results.append([
                 traj_est_file, 
                 f"{translation_error:.2f}", 
