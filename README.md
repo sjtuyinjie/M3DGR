@@ -387,7 +387,7 @@ pip install numpy colorama tabulate evo
 
 python ArUco_evaluate.py <GT_file_path> <evaluation_dir_path> [options] 
 ```
-<GT_file_path>: GT file path. <evaluation_dir_path>: folder path where the tum format file to be evaluated is stored. [options]: -t: sort the results by translation error, -r: sort by rotation error, -a: sort by root mean square error. Default sorting is based on translation error. For example：
+```<GT_file_path>```: GT file path. ```<evaluation_dir_path>```: folder path where the tum format file to be evaluated is stored. ```[options]```: -t: sort the results by translation error, -r: sort by rotation error, -a: sort by root mean square error. Default sorting is based on translation error. For example：
 ```
 python ArUco_evaluate.py ./m3dgr/GTcorridor01.txt ./M3DGR
 ```
@@ -397,10 +397,10 @@ python ArUco_evaluate.py ./m3dgr/GTcorridor01.txt ./M3DGR
 
 [Paper](https://arxiv.org/pdf/2507.08364) uses a more stringent translation error. The Tracking Rate is calculated based on the recording time and the actual trajectory change time. If the algorithm crashes prematurely or the trajectory stops updating, the Tracking Rate will be less than 100%. If the algorithm's computational efficiency is too low, it may exceed 100%.
 
-## 6. Supported SLAM Algorithm List🔥
+## 7. Supported SLAM Algorithm List🔥
 We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
 
-### 6.1 40 Evaluated SLAM Methods
+### 7.1 40 Evaluated SLAM Methods
 
   - 💡 **Measurement**:
 
@@ -499,7 +499,7 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
 > - It is possible to further improve performance through careful parameter tuning and repeated evaluation in specific scenarios.
 
 
-### 6.2 Open-source Contribution
+### 7.2 Open-source Contribution
 - 💡 **VO system**:
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
@@ -519,7 +519,7 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
 Waiting for your algorithms!
 
 
-## 7. Citation 📄
+## 8. Citation 📄
 
 ```bibtex
 @article{zhang2025towards,
@@ -550,7 +550,7 @@ Waiting for your algorithms!
 
 ```
 
-## 8. Star History ⭐️
+## 9. Star History ⭐️
 
 [![Star History Chart](https://api.star-history.com/svg?repos=sjtuyinjie/M3DGR&type=Timeline)](https://star-history.com/#Ashutosh00710/github-readme-activity-graph&Timeline)
 
