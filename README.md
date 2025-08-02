@@ -390,7 +390,7 @@ python ArUco_evaluate.py <GT_file_path> <evaluation_dir_path> [options]
 ```
 ```<GT_file_path>```: GT file path. ```<evaluation_dir_path>```: folder path where the tum format file to be evaluated is stored. ```[options]```: -t: sort the results by translation error, -r: sort by rotation error, -a: sort by root mean square error. Default sorting is based on translation error. For example：
 ```
-python ArUco_evaluate.py ./m3dgr/GTcorridor01.txt ./M3DGR
+python ArUco_evaluate.py GTCorridor01.txt ./M3DGR
 ```
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/aruco_evaluated.png" width="800px">
