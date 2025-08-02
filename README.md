@@ -2,6 +2,7 @@
 
 
 
+
 💎 Projcet Leader: [**Jie Yin 殷杰**](https://sjtuyinjie.github.io/)&emsp; 
 🌐 [[Website]](https://sjtuyinjie.github.io/M3DGR-website/)&emsp; 
 📝 [[Paper]](https://arxiv.org/abs/2507.08364) &emsp; 
