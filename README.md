@@ -376,12 +376,13 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag](https://1drv
 
 ## 6. Evaluation
 
-You can quickly get the trajectory in TUM format through the TF tree method like [this](https://github.com/Zjj587/Trajectory_saving_for_SLAM). If the GT is obtained by RTK/Mocap, you can directly use [evo](https://github.com/MichaelGrupp/evo) to evaluate：
+You can quickly get the trajectory in TUM format through the TF tree method like [this](https://github.com/Zjj587/Trajectory_saving_for_SLAM). 
+- If the GT is obtained by RTK/Mocap, you can directly use [evo](https://github.com/MichaelGrupp/evo) to evaluate：
 ```
 evo_ape tum GTDynamic01.txt Dynamic01.txt -ap
 ```
 
-If the GT is obtained by ArUco, you can use our script to evaluate：
+- If the GT is obtained by ArUco, you can use our script to evaluate：
 ```
 pip install numpy colorama tabulate evo
 
