@@ -393,10 +393,10 @@ python ArUco_evaluate.py <GT_file_path> <evaluation_dir_path> [options]
 python ArUco_evaluate.py ./m3dgr/GTcorridor01.txt ./M3DGR
 ```
 <div align=center>
-<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/aruco_evaluate.png" width="800px">
+<img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/aruco_evaluated.png" width="800px">
 </div>
 
-Our [paper](https://arxiv.org/pdf/2507.08364) uses a more stringent translation error. The Tracking Rate is calculated based on the recording time and the actual trajectory change time. If the algorithm crashes prematurely or the trajectory stops updating, the Tracking Rate will be less than 100%. If the algorithm's computational efficiency is too low, it may exceed 100%.
+Our [paper](https://arxiv.org/pdf/2507.08364) uses a more stringent translation error. The Tracking Rate is calculated based on the recording time and the actual trajectory change time. If the algorithm crashes prematurely or the trajectory stops updating, the Tracking Rate will be less than 100%.
 
 ## 7. Supported SLAM Algorithm List🔥
 We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
