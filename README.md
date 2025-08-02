@@ -374,6 +374,26 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[Rosbag](https://1drv
 > - The RGB images collected by the D435i and X4 cameras are rolling shutter, which might affect the performance of some visual SLAM systems which require global shutter.  
 > - Ithe dataset lacks external trigger between sensors, instead, we perform synchronization via software synchronization.  
 
+## 6. Evaluation
+
+You can quickly get the trajectory in TUM format through the TF tree method like [this](https://github.com/Zjj587/Trajectory_saving_for_SLAM). If the GT is obtained by RTK/Mocap, you can directly use [evo](https://github.com/MichaelGrupp/evo) to evaluate：
+```
+evo_ape tum GTDynamic01.txt Dynamic01.txt -ap
+```
+
+If the GT is obtained by ArUco, you can use our script to evaluate：
+```
+pip install numpy colorama tabulate evo
+
+python ArUco_evaluate.py <GT_file_path> <evaluation_dir_path> [options] 
+```
+<GT_file_path>: GT file path. <evaluation_dir_path>: folder path where the tum format file to be evaluated is stored. [options]: -t: sort the results by translation error, -r: sort by rotation error, -a: sort by root mean square error. Default sorting is based on translation error. For example：
+```
+python ArUco_evaluate.py ./m3dgr/GTcorridor01.txt ./M3DGR
+```
+
+As you can see in the results above, [paper](https://arxiv.org/pdf/2507.08364) uses a more stringent translation error. The Tracking Rate is calculated based on the recording time and the actual trajectory change time. If the algorithm crashes prematurely or the trajectory stops updating, the Tracking Rate will be less than 100%. If the algorithm's computational efficiency is too low, it may exceed 100%.
+
 ## 6. Supported SLAM Algorithm List🔥
 We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
 
