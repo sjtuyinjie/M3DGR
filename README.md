@@ -558,5 +558,33 @@ Waiting for your algorithms!
 
 
 
+## 10. Contributing 👷‍♂️
+
+We appreciate all contributions to improving M3DGR.
+
+<a href="https://github.com/sjtuyinjie/M3DGR/graphs/contributors" target="_blank">
+  <table>
+    <tr>
+      <th colspan="2">
+        <br><img src="https://contrib.rocks/image?repo=sjtuyinjie/M3DGR"><br><br>
+      </th>
+    </tr>
+  </table>
+</a>
+
+## 11. Acknowledgements 🤝
+
+
+Thanks to everyone for supporting this project.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://reporoster.com/stars/dark/sjtuyinjie/M3DGR" />
+  <source media="(prefers-color-scheme: light)" srcset="https://reporoster.com/stars/sjtuyinjie/M3DGR" />
+  <img alt="github-stargazers" src="https://github.com/sjtuyinjie/M3DGR/stargazers" />
+</picture>
+
+<p align="right"><a href="#top">🔝Back to top</a></p>
+
+
 
 
