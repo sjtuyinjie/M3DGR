@@ -376,7 +376,8 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[OneDrive](https://1d
 > - The dataset lacks external trigger between sensors, instead, we perform synchronization via software synchronization.  
 
 ### 5.6 Download
-We offer two download options for each M3DGR sequence: OneDrive (recommended) and Alipan(阿里云盘). If you use Alipan to download sequences as a folder, you need to double-click the ```双击合并.bat``` file in the folder in Win10/Win11 to  merge the original data automatically.
+We offer two download options for each M3DGR sequence: OneDrive (recommended) and Alipan(阿里云盘). 
+If you use Alipan to download sequences as a folder, you need to double-click the ```双击合并.bat``` file in the folder in Win10/Win11 to  merge the original data automatically.
 
 ## 6. Evaluation
 
