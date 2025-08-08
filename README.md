@@ -92,7 +92,7 @@ Physical drawings and schematics of the ground robot. (a) Side view of the robot
 All the sensors and track devices and their most important parameters are listed as below:
 
 <details>
-<summary>Sensor Information:</summary>
+<summary>Sensor Specs:</summary>
 
 * **LiDAR1** Livox Avia, Non-repetitive, 70.4° Horizontal Field of View (FOV), 77.2° vertical FOV, 10HZ, Max Range 450m, Range Precision 2cm, Angular Precision 0.05º, IMU 6-axis 200HZ.
   
@@ -110,7 +110,12 @@ All the sensors and track devices and their most important parameters are listed
   
 * **Motion-capture System** OptiTrack, localization accuracy 1mm, 360HZ.
 
+</details>
+
 The rostopics of our rosbag sequences are listed as follows:
+
+<details>
+<summary>ROS topics:</summary>
 
 * LiDAR1: `/livox/avia/lidar`
 
