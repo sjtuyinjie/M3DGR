@@ -50,6 +50,8 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 **2025.06.16:** Our paper has been accepted to IROS 2025! We will release all datasets and code soon. Please stay tuned!
 
 ### 2.2 TODO
+
+  
 - [x] Release camera-ready version of IROS2025 paper.[[paper](https://arxiv.org/abs/2507.08364)]
 - [x] Release 40 SLAM codes adapted for M3DGR dataset.[[codes](https://github.com/sjtuyinjie/M3DGR?tab=readme-ov-file#6-supported-slam-algorithm-list)]
 - [x] Release Ground-Fusion++ code, with examples on M3DGR on M2DGR-plus. [[code](https://github.com/sjtuyinjie/Ground-Fusion2)]
@@ -88,6 +90,9 @@ Physical drawings and schematics of the ground robot. (a) Side view of the robot
 ### 4.2 Sensor parameters
 
 All the sensors and track devices and their most important parameters are listed as below:
+
+<details>
+<summary>Sensor Information:</summary>
 
 * **LiDAR1** Livox Avia, Non-repetitive, 70.4° Horizontal Field of View (FOV), 77.2° vertical FOV, 10HZ, Max Range 450m, Range Precision 2cm, Angular Precision 0.05º, IMU 6-axis 200HZ.
   
@@ -132,6 +137,8 @@ The rostopics of our rosbag sequences are listed as follows:
 `/camera/imu`,  
 `/livox/avia/imu`,  
 `/livox/mid360/imu`  
+
+</details>
 
 ## 5. DATASET SEQUENCES
 <div align=center>
@@ -406,98 +413,117 @@ Our [paper](https://arxiv.org/pdf/2507.08364) uses a more stringent translation 
 We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well-tuned parameters. **We will release all these custom baseline codes upon paper acceptance!**. The testing configuration is detailed below:
 
 ### 7.1 40 Evaluated SLAM Methods
-
-  - 💡 **Measurement**:
-
-    - ① Wheel Odom from [M3DGR](https://github.com/sjtuyinjie/M3DGR)'s wheel speedometer solution.
-      
-    - ② GNSS SPP from Ground-Fusion++ [code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/SPP_M3DGR) solution.
+<details>
+<summary>💡 Measurement</summary>
   
-  - 💡 **VO system**:
+  - ① Wheel Odom from [M3DGR](https://github.com/sjtuyinjie/M3DGR)'s wheel speedometer solution.
+    
+  - ② GNSS SPP from Ground-Fusion++ [code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/SPP_M3DGR) solution.
+
+</details>
+
+<details>
+<summary>💡 VO system</summary>
+
+
+  - ③ [PMLR2021] Tartanvo: A generalizable learning-based vo [[paper](https://arxiv.org/abs/2011.00359)][[code](https://github.com/castacks/tartanvo)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/TartanVO_M3DGR)].  (Sensors: D435I RGB camera)
+    
+  - ④ [T-RO2017] Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras [[paper](https://arxiv.org/abs/1610.06475)][[code](https://github.com/raulmur/ORB_SLAM2)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/ORB_SLAM2_M3DGR)].  (Sensors: D435I RGB camera)
+
+   </details>
+<details>
+<summary>💡 VIO system</summary>
+ 
+    
+  - ⑤ [T-RO2021] Orb-slam3: An accurate open-source library for visual, visual–inertial, and multimap slam [[paper](https://arxiv.org/abs/2007.11898)][[code](https://github.com/UZ-SLAMLab/ORB_SLAM3)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/ORB_SLAM3_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis)
+    
+  - ⑥ [RA-L2022] DM-VIO: Delayed marginalization visual-inertial odometry [[paper](https://arxiv.org/abs/2201.04114)][[code](https://github.com/lukasvst/dm-vio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/DM_VIO_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis) 
+    
+  - ⑦ [T-RO2018] Vins-mono: A robust and versatile monocular visual-inertial state estimator [[paper](https://arxiv.org/abs/1708.03852)][[code](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_Mono_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis) 
+    
+  - ⑧ [Sensors2019] VINS-RGBD: RGBD-inertial trajectory estimation and mapping for ground robots [[paper](https://www.mdpi.com/1424-8220/19/10/2251)][[code](https://github.com/STAR-Center/VINS-RGBD)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_RGBD_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis) 
+    
+  - ⑨ [T-RO2022] GVINS: Tightly coupled GNSS–visual–inertial fusion for smooth and consistent state estimation [[paper](https://arxiv.org/abs/2103.07899)][[code](https://github.com/HKUST-Aerial-Robotics/GVINS)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/GVINS_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis and GNSS) 
+    
+  - ⑩ [2021] VIW-Fusion: visual-inertial-wheel fusion odometry [[code](https://github.com/TouchDeeper/VIW-Fusion)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VIW_Fusion_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis  and WHEELTEC Wheel Odometer ) 
+    
+  - ⑪ [2021] VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS [[code](https://github.com/Wallong/VINS-GPS-Wheel)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_GPS_Wheel_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis, WHEELTEC Wheel Odometer and GNSS )
+    
+  - ⑫ [ICRA2024] Ground-fusion: A low-cost ground slam system robust to corner cases [[paper](https://arxiv.org/abs/2402.14308)][[code](https://github.com/SJTU-ViSYS/Ground-Fusion)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Ground_Fusion_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis, WHEELTEC Wheel Odometer and GNSS )
+
+   </details>
+
+<details>
+<summary>💡 LO system</summary>
+
   
-    - ③ [PMLR2021] Tartanvo: A generalizable learning-based vo [[paper](https://arxiv.org/abs/2011.00359)][[code](https://github.com/castacks/tartanvo)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/TartanVO_M3DGR)].  (Sensors: D435I RGB camera)
-      
-    - ④ [T-RO2017] Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras [[paper](https://arxiv.org/abs/1610.06475)][[code](https://github.com/raulmur/ORB_SLAM2)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/ORB_SLAM2_M3DGR)].  (Sensors: D435I RGB camera)
-      
-  - 💡 **VIO system**:
+  - ⑬ [RSS2014] LOAM: Lidar odometry and mapping in real-time [[paper](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf)][[code](https://github.com/HKUST-Aerial-Robotics/A-LOAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/A_LOAM_M3DGR)].  (Sensors: Livox MID-360 )
     
-    - ⑤ [T-RO2021] Orb-slam3: An accurate open-source library for visual, visual–inertial, and multimap slam [[paper](https://arxiv.org/abs/2007.11898)][[code](https://github.com/UZ-SLAMLab/ORB_SLAM3)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/ORB_SLAM3_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis)
-      
-    - ⑥ [RA-L2022] DM-VIO: Delayed marginalization visual-inertial odometry [[paper](https://arxiv.org/abs/2201.04114)][[code](https://github.com/lukasvst/dm-vio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/DM_VIO_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis) 
-      
-    - ⑦ [T-RO2018] Vins-mono: A robust and versatile monocular visual-inertial state estimator [[paper](https://arxiv.org/abs/1708.03852)][[code](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_Mono_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis) 
-      
-    - ⑧ [Sensors2019] VINS-RGBD: RGBD-inertial trajectory estimation and mapping for ground robots [[paper](https://www.mdpi.com/1424-8220/19/10/2251)][[code](https://github.com/STAR-Center/VINS-RGBD)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_RGBD_M3DGR)].  (Sensors: D435I RGB camera and Realsense D435i IMU 6-axis) 
-      
-    - ⑨ [T-RO2022] GVINS: Tightly coupled GNSS–visual–inertial fusion for smooth and consistent state estimation [[paper](https://arxiv.org/abs/2103.07899)][[code](https://github.com/HKUST-Aerial-Robotics/GVINS)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/GVINS_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis and GNSS) 
-      
-    - ⑩ [2021] VIW-Fusion: visual-inertial-wheel fusion odometry [[code](https://github.com/TouchDeeper/VIW-Fusion)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VIW_Fusion_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis  and WHEELTEC Wheel Odometer ) 
-      
-    - ⑪ [2021] VINS-GPS-Wheel: Visual-Inertial Odometry Coupled with Wheel Encoder and GNSS [[code](https://github.com/Wallong/VINS-GPS-Wheel)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VINS_GPS_Wheel_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis, WHEELTEC Wheel Odometer and GNSS )
-      
-    - ⑫ [ICRA2024] Ground-fusion: A low-cost ground slam system robust to corner cases [[paper](https://arxiv.org/abs/2402.14308)][[code](https://github.com/SJTU-ViSYS/Ground-Fusion)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Ground_Fusion_M3DGR)].  (Sensors: D435I RGB camera, Realsense D435i IMU 6-axis, WHEELTEC Wheel Odometer and GNSS )
-      
-  - 💡 **LO system**:
+  - ⑭ [ICRA2020] Loam livox: A fast, robust, high-precision LiDAR odometry and mapping package for LiDARs of small FoV [[paper](https://ieeexplore.ieee.org/abstract/document/9197440)][[code](https://github.com/hku-mars/loam_livox)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LOAM_Livox_M3DGR)].  (Sensors: Livox MID-360 )
     
-    - ⑬ [RSS2014] LOAM: Lidar odometry and mapping in real-time [[paper](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf)][[code](https://github.com/HKUST-Aerial-Robotics/A-LOAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/A_LOAM_M3DGR)].  (Sensors: Livox MID-360 )
-      
-    - ⑭ [ICRA2020] Loam livox: A fast, robust, high-precision LiDAR odometry and mapping package for LiDARs of small FoV [[paper](https://ieeexplore.ieee.org/abstract/document/9197440)][[code](https://github.com/hku-mars/loam_livox)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LOAM_Livox_M3DGR)].  (Sensors: Livox MID-360 )
-      
-    - ⑮ [2023] CTLO: Continuous-Time LiDAR Odometry [[code](https://github.com/chengwei0427/CTLO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/CTLO_M3DGR)].  (Sensors: Livox MID-360 )
-      
-    - ⑯ [IROS2018] Lego-loam: Lightweight and ground-optimized lidar odometry and mapping on variable terrain [[paper](https://ieeexplore.ieee.org/abstract/document/8594299)][[code](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LeGO_LOAM_M3DGR)].  (Sensors: Livox Avia )
-      
-  - 💡 **LIO system**:
+  - ⑮ [2023] CTLO: Continuous-Time LiDAR Odometry [[code](https://github.com/chengwei0427/CTLO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/CTLO_M3DGR)].  (Sensors: Livox MID-360 )
     
-    - ⑰ [ICRA 2019] LIO-mapping: Tightly coupled 3d lidar inertial odometry and mapping [[paper](https://ieeexplore.ieee.org/abstract/document/8793511)][[code](https://github.com/hyye/lio-mapping)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIO_mapping_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis)
-      
-    - ⑱ [IROS2020] Lio-sam: Tightly-coupled lidar inertial odometry via smoothing and mapping [[paper](https://arxiv.org/abs/2007.00258)][[code](https://github.com/TixiaoShan/LIO-SAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIO_SAM_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ⑲ [ICRA2020] Lins: A lidar-inertial state estimator for robust and efficient navigation [[paper](https://arxiv.org/abs/1907.02233)][[code](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LINS_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ⑳ [RA-L2021] LiLi-OM: Towards high-performance solid-state-lidar-inertial odometry and mapping [[paper](https://arxiv.org/abs/2010.13150)][[code](https://github.com/KIT-ISAS/lili-om)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LiLi_OM_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ㉑ [2021] LIO-Livox: A Robust LiDAR-Inertial Odometry for Livox LiDAR [[code](https://github.com/Livox-SDK/LIO-Livox)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIO_Livox_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis)
-      
-    - ㉒ [RA-L2022] Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels [[paper](https://ieeexplore.ieee.org/document/9718203)][[code](https://github.com/gaoxiang12/faster-lio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Faster_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ㉓ [2022] IESKF-LIO: reference to fast_lio1.0 [[code](https://github.com/Livox-SDK/LIO-Livox)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/IESKF_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ㉔ [RA-L2022] VoxelMap: Efficient and probabilistic adaptive voxel mapping method for LiDAR odometry [[paper](https://arxiv.org/abs/2109.07082)][[code](https://github.com/hku-mars/VoxelMap)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VoxelMap_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ㉕ [T-RO2022] Fast-lio2: Fast direct lidar-inertial odometry [[paper](https://ieeexplore.ieee.org/abstract/document/9697912)][[code](https://github.com/hku-mars/FAST_LIO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fast_LIO2_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ㉖ [AIS2023] Point-LIO: Robust High-Bandwidth Lidar-Inertial Odometry [[paper](https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/aisy.202200459)][[code](https://github.com/hku-mars/Point-LIO)][[adaptde_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Point_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox MID-360 and Realsense D435i IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis / Livox Avia and Realsense D435i IMU 6-axis)
-      
-    - ㉗ [RA-L2023] LOG-LIO: A LiDAR-Inertial Odometry with Efficient Local Geometric Information Estimation [[paper](https://arxiv.org/abs/2307.09531)][[code](https://github.com/tiev-tongji/LOG-LIO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LOG_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
-      
-    - ㉘ [2023] CT-LIO: Continuous-Time LiDAR-Inertial Odometry [[code](https://github.com/chengwei0427/ct-lio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/CT_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
-      
-    - ㉙ [ICRA2023] DLIO: Direct LiDAR-Inertial Odometry: Lightweight LIO with Continuous-Time Motion Correction [[paper](https://arxiv.org/abs/2203.03749)][[code](https://github.com/vectr-ucla/direct_lidar_inertial_odometry)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/DLIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
-      
-    - ㉚ [2023] HM-LIO: A Hash Map based LiDAR-Inertial Odometry [[code](https://github.com/chengwei0427/hm-lio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/HM_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
-      
-    - ㉛ [T-IV2024] MM-LINS: a Multi-Map LiDAR-Inertial System for Over-Degenerate Environments [[paper](https://ieeexplore.ieee.org/document/10557776)][[code](https://github.com/lian-yue0515/MM-LINS)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/MM_LINS_M3DGR)].  (Sensors: Livox Avia and Livox Avia IMU 6-axis)
-      
-    - ㉜ [T-RO2025] LIGO: Tightly Coupled LiDAR-Inertial-GNSS Odometry based on a Hierarchy Fusion Framework for Global Localization with Real-time Mapping [[paper](https://dl.acm.org/doi/10.1109/TRO.2025.3530298)][[code](https://github.com/Joanna-HE/LIGO.)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIGO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
-      
-  - 💡 **LVIO system**:
+  - ⑯ [IROS2018] Lego-loam: Lightweight and ground-optimized lidar odometry and mapping on variable terrain [[paper](https://ieeexplore.ieee.org/abstract/document/8594299)][[code](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LeGO_LOAM_M3DGR)].  (Sensors: Livox Avia )
+
+   </details>
+<details>
+<summary>💡 LIO system</summary>
+
     
-    - ㉝ [ICRA2021] LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping [[paper](https://arxiv.org/abs/2104.10831)][[code](https://github.com/TixiaoShan/LVI-SAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LVI_SAM_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Realsense D435i IMU 6-axis / Livox Avia, D435I RGB camera and Realsense D435i IMU 6-axis)
-      
-    - ㉞ [RA-L2021] R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping [[paper](https://arxiv.org/abs/2102.12400)][[code](https://github.com/hku-mars/r2live)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/R2LIVE_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
-      
-    - ㉟ [ICRA2022] R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package [[paper](https://arxiv.org/abs/2109.07982)][[code](https://github.com/hku-mars/r3live)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/R3LIVE_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis /  Livox MID-360, D435I RGB camera and Realsense D435i IMU 6-axis / Livox Avia, D435I RGB camera and Realsense D435i IMU 6-axis)
-      
-    - ㊱ [IROS2022] FAST-LIVO: Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2203.00893)][[code](https://github.com/hku-mars/FAST-LIVO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fast_LIVO_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
+  - ⑰ [ICRA 2019] LIO-mapping: Tightly coupled 3d lidar inertial odometry and mapping [[paper](https://ieeexplore.ieee.org/abstract/document/8793511)][[code](https://github.com/hyye/lio-mapping)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIO_mapping_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis)
     
-    - ㊲ [RA-L2023] Coco-LIC: Continuous-Time Tightly-Coupled LiDAR-Inertial-Camera Odometry using Non-Uniform B-spline [[paper](https://arxiv.org/abs/2309.09808)][[code](https://github.com/APRIL-ZJU/Coco-LIC)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Coco_LIC_M3DGR)].  (Sensors: Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
-      
-    - ㊳ [RA-L2024] SR-LIVO: LiDAR-Inertial-Visual Odometry and Mapping with Sweep Reconstruction [[paper](https://arxiv.org/abs/2312.16800)][[code](https://github.com/ZikangYuan/sr_livo)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/SR_LIVO_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
-      
-    - ㊴ [T-RO2024] FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2408.14035)][[code](https://github.com/hku-mars/FAST-LIVO2)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fast_LIVO2_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
-      
-    - ㊵ [IROS2025] Ground-Fusion++: Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework [[paper](https://arxiv.org/abs/2507.08364)][[adapted_code](https://github.com/sjtuyinjie/Ground-Fusion2)].  (Sensors: Livox MID-360, D435I RGB camera, Realsense D435i IMU 6-axis, WHEELTEC Wheel Odometer and GNSS)
+  - ⑱ [IROS2020] Lio-sam: Tightly-coupled lidar inertial odometry via smoothing and mapping [[paper](https://arxiv.org/abs/2007.00258)][[code](https://github.com/TixiaoShan/LIO-SAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIO_SAM_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ⑲ [ICRA2020] Lins: A lidar-inertial state estimator for robust and efficient navigation [[paper](https://arxiv.org/abs/1907.02233)][[code](https://github.com/ChaoqinRobotics/LINS---LiDAR-inertial-SLAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LINS_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ⑳ [RA-L2021] LiLi-OM: Towards high-performance solid-state-lidar-inertial odometry and mapping [[paper](https://arxiv.org/abs/2010.13150)][[code](https://github.com/KIT-ISAS/lili-om)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LiLi_OM_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ㉑ [2021] LIO-Livox: A Robust LiDAR-Inertial Odometry for Livox LiDAR [[code](https://github.com/Livox-SDK/LIO-Livox)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIO_Livox_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis)
+    
+  - ㉒ [RA-L2022] Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels [[paper](https://ieeexplore.ieee.org/document/9718203)][[code](https://github.com/gaoxiang12/faster-lio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Faster_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ㉓ [2022] IESKF-LIO: reference to fast_lio1.0 [[code](https://github.com/Livox-SDK/LIO-Livox)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/IESKF_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ㉔ [RA-L2022] VoxelMap: Efficient and probabilistic adaptive voxel mapping method for LiDAR odometry [[paper](https://arxiv.org/abs/2109.07082)][[code](https://github.com/hku-mars/VoxelMap)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/VoxelMap_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ㉕ [T-RO2022] Fast-lio2: Fast direct lidar-inertial odometry [[paper](https://ieeexplore.ieee.org/abstract/document/9697912)][[code](https://github.com/hku-mars/FAST_LIO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fast_LIO2_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ㉖ [AIS2023] Point-LIO: Robust High-Bandwidth Lidar-Inertial Odometry [[paper](https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/aisy.202200459)][[code](https://github.com/hku-mars/Point-LIO)][[adaptde_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Point_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox MID-360 and Realsense D435i IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis / Livox Avia and Realsense D435i IMU 6-axis)
+    
+  - ㉗ [RA-L2023] LOG-LIO: A LiDAR-Inertial Odometry with Efficient Local Geometric Information Estimation [[paper](https://arxiv.org/abs/2307.09531)][[code](https://github.com/tiev-tongji/LOG-LIO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LOG_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
+    
+  - ㉘ [2023] CT-LIO: Continuous-Time LiDAR-Inertial Odometry [[code](https://github.com/chengwei0427/ct-lio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/CT_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
+    
+  - ㉙ [ICRA2023] DLIO: Direct LiDAR-Inertial Odometry: Lightweight LIO with Continuous-Time Motion Correction [[paper](https://arxiv.org/abs/2203.03749)][[code](https://github.com/vectr-ucla/direct_lidar_inertial_odometry)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/DLIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
+    
+  - ㉚ [2023] HM-LIO: A Hash Map based LiDAR-Inertial Odometry [[code](https://github.com/chengwei0427/hm-lio)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/HM_LIO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis )
+    
+  - ㉛ [T-IV2024] MM-LINS: a Multi-Map LiDAR-Inertial System for Over-Degenerate Environments [[paper](https://ieeexplore.ieee.org/document/10557776)][[code](https://github.com/lian-yue0515/MM-LINS)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/MM_LINS_M3DGR)].  (Sensors: Livox Avia and Livox Avia IMU 6-axis)
+    
+  - ㉜ [T-RO2025] LIGO: Tightly Coupled LiDAR-Inertial-GNSS Odometry based on a Hierarchy Fusion Framework for Global Localization with Real-time Mapping [[paper](https://dl.acm.org/doi/10.1109/TRO.2025.3530298)][[code](https://github.com/Joanna-HE/LIGO.)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LIGO_M3DGR)].  (Sensors: Livox MID-360 and Livox MID-360 IMU 6-axis / Livox Avia and Livox Avia IMU 6-axis)
+
+</details>
+<details>
+<summary>💡 LVIO system</summary>
+
+
+  - ㉝ [ICRA2021] LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping [[paper](https://arxiv.org/abs/2104.10831)][[code](https://github.com/TixiaoShan/LVI-SAM)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/LVI_SAM_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Realsense D435i IMU 6-axis / Livox Avia, D435I RGB camera and Realsense D435i IMU 6-axis)
+    
+  - ㉞ [RA-L2021] R2LIVE: A Robust, Real-time, LiDAR-Inertial-Visual tightly-coupled state Estimator and mapping [[paper](https://arxiv.org/abs/2102.12400)][[code](https://github.com/hku-mars/r2live)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/R2LIVE_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
+    
+  - ㉟ [ICRA2022] R3LIVE: A Robust, Real-time, RGB-colored, LiDAR-Inertial-Visual tightly-coupled state Estimation and mapping package [[paper](https://arxiv.org/abs/2109.07982)][[code](https://github.com/hku-mars/r3live)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/R3LIVE_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis /  Livox MID-360, D435I RGB camera and Realsense D435i IMU 6-axis / Livox Avia, D435I RGB camera and Realsense D435i IMU 6-axis)
+    
+  - ㊱ [IROS2022] FAST-LIVO: Fast and Tightly-coupled Sparse-Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2203.00893)][[code](https://github.com/hku-mars/FAST-LIVO)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fast_LIVO_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
+  
+  - ㊲ [RA-L2023] Coco-LIC: Continuous-Time Tightly-Coupled LiDAR-Inertial-Camera Odometry using Non-Uniform B-spline [[paper](https://arxiv.org/abs/2309.09808)][[code](https://github.com/APRIL-ZJU/Coco-LIC)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Coco_LIC_M3DGR)].  (Sensors: Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
+    
+  - ㊳ [RA-L2024] SR-LIVO: LiDAR-Inertial-Visual Odometry and Mapping with Sweep Reconstruction [[paper](https://arxiv.org/abs/2312.16800)][[code](https://github.com/ZikangYuan/sr_livo)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/SR_LIVO_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
+    
+  - ㊴ [T-RO2024] FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry [[paper](https://arxiv.org/abs/2408.14035)][[code](https://github.com/hku-mars/FAST-LIVO2)][[adapted_code](https://github.com/sjtuyinjie/M3DGR/tree/main/baseline_systems/Fast_LIVO2_M3DGR)].  (Sensors: Livox MID-360, D435I RGB camera and Livox MID-360 IMU 6-axis / Livox Avia, D435I RGB camera and Livox Avia IMU 6-axis)
+    
+  - ㊵ [IROS2025] Ground-Fusion++: Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework [[paper](https://arxiv.org/abs/2507.08364)][[adapted_code](https://github.com/sjtuyinjie/Ground-Fusion2)].  (Sensors: Livox MID-360, D435I RGB camera, Realsense D435i IMU 6-axis, WHEELTEC Wheel Odometer and GNSS)
+</details>
+
 
 > ⚠️ **Known Issues**:  
 > - Please note that experimental performance may exhibit variability across runs and hardware platforms; the results reported in the paper represent averaged outcomes under our testing conditions.  
@@ -505,22 +531,38 @@ We have tested following cutting-edge methods on **M3DGR**🦄 dataset with well
 
 
 ### 7.2 Open-source Contribution
-- 💡 **VO system**:
+
+<details>
+<summary>💡 VO system</summary>
+  
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
-- 💡 **VIO system**:
+</details>
+<details>
+<summary>💡 VIO system</summary>
+
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
-- 💡 **LO system**:
+
+</details>
+<details>
+<summary>💡 LO system</summary>
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
-- 💡 **LIO system**:
+</details>
+<details>
+<summary>💡 LIO system</summary>
+  
+
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
-- 💡 **LVIO system**:
+</details>
+<details>
+<summary>💡 LVIO system</summary>
+  
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
   - [XXXX2025]Your Paper Name [[your paper link](TBD)][[your adapted code](TBD)]
-    
+</details>
 Waiting for your algorithms!
 
 
