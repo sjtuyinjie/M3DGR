@@ -48,9 +48,9 @@ def main():
     parser = argparse.ArgumentParser(description="Evaluate APE of trajectories.")
     parser.add_argument("reference_file", help="Path to the reference trajectory file.")
     parser.add_argument("evaluation_dir", help="Path to the directory or file containing evaluation trajectories.")
-    parser.add_argument("-t", action="store_true", help="Sort by ATE Translation(m)")
-    parser.add_argument("-r", action="store_true", help="Sort by ATE Rotation")
-    parser.add_argument("-a", action="store_true", help="Sort by ATE RMSE")
+    parser.add_argument("-t", action="store_true", help="Sort by Translation error(m)")
+    parser.add_argument("-r", action="store_true", help="Sort by Rotation error(m)")
+    parser.add_argument("-a", action="store_true", help="Sort by  RMSE")
     args = parser.parse_args()
 
     reference_file = args.reference_file
@@ -163,9 +163,9 @@ def main():
     
     headers = [f"{Fore.RED}Index{Style.RESET_ALL}", 
            f"{Fore.RED}File{Style.RESET_ALL}", 
-           f"{Fore.RED}ATE Translation(m){Style.RESET_ALL}", 
-           f"{Fore.RED}ATE Rotation{Style.RESET_ALL}", 
-           f"{Fore.RED}ATE RMSE{Style.RESET_ALL}", 
+           f"{Fore.RED}Translation error(m){Style.RESET_ALL}", 
+           f"{Fore.RED}Rotation error(m){Style.RESET_ALL}", 
+           f"{Fore.RED} RMSE{Style.RESET_ALL}", 
            f"{Fore.RED}Tracking Rate (%){Style.RESET_ALL}"]
 
     print(tabulate(results_with_index, headers=headers, tablefmt="grid"))
