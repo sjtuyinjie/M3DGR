@@ -390,6 +390,18 @@ GNSS-denial02|2025-01-21|12.7g|750s|Long time,GNSS Denial |[OneDrive](https://1d
 ### 5.6 Download
 We offer two download options for each M3DGR sequence: OneDrive (recommended) and Alipan(阿里云盘). If you use Alipan to download sequences as a folder, you need to double-click the ```双击合并.bat``` file in the folder in Win10/Win11 to  merge the original data automatically. Download all our public sequences at once through this [link](https://www.alipan.com/s/1EQfYBY5nHM).
 
+### 5.7 Data inspection
+We provide the [SHA256 value](https://github.com/sjtuyinjie/M3DGR/blob/main/checksums.txt) for users to check the integrity of rosbag. The file format is ```<SHA256><two-spaces><path\**.rosbag>```.
+You can run on Linux:
+```
+sha256sum path/to/your_download_bag.bag
+```
+or Windows:
+```
+(Get-FileHash -Algorithm SHA256 -Path '\path\to\your_download_bag.bag').Hash
+```
+Compare the hash output above with the hash of the corresponding line in [checksums.txt](https://github.com/sjtuyinjie/M3DGR/blob/main/checksums.txt). If they match exactly, the comparison is successful.
+
 ## 6. Evaluation
 
 You can quickly get the trajectory in TUM format through the TF tree method like [this](https://github.com/Zjj587/Trajectory_saving_for_SLAM). 
