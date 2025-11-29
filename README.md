@@ -392,6 +392,7 @@ We offer two download options for each M3DGR sequence: OneDrive (recommended) an
 
 ### 5.7 Data inspection
 We provide the [SHA256 value](https://github.com/sjtuyinjie/M3DGR/blob/main/checksums.txt) for users to check the integrity of rosbag. The file format is ```<SHA256><two-spaces><path\**.rosbag>```.
+
 You can run on Linux:
 ```
 sha256sum path/to/your_download_bag.bag
