@@ -1,0 +1,15 @@
+<launch>
+    <arg name="device_id" default="6" />
+    <arg name="image_width" default="2880" />
+    <arg name="image_height" default="1440" />
+
+    <node name="cv_camera" pkg="cv_camera" type="cv_camera_node" output="screen" >
+        <param name="device_id" value="$(arg device_id)" />
+        <param name="image_width" value="$(arg image_width)" />
+        <param name="image_height" value="$(arg image_height)" />
+    </node>
+<!--    <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">-->
+<!--        <remap from="image" to="/cv_camera/image_raw" />-->
+<!--        <param name="autosize" value="true" />-->
+<!--    </node>-->
+</launch>
