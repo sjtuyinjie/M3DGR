@@ -98,7 +98,8 @@ All the sensors and track devices and their most important parameters are listed
   
 * **LiDAR2** Livox MID-360, Non-repetitive, 360° Horizontal Field of View (FOV), -7° to +52° vertical FOV,  10Hz, Max Range 40 m, Range Resolution 3 cm, Angular Resolution 0.15°, IMU 6-axis, 200HZ.
   
-* **V-I Sensor** Realsense d435i, RGB/Depth 640*480, 69°H-FOV, 42.5°V-FOV,15Hz; IMU 6-axis, 200Hz. (If you also want to use the same camera in ROS, we provide the [Insta360 X4 driver ROS package](https://github.com/sjtuyinjie/M3DGR/tree/main/x4_cam/src) that supports real-time data streaming. You should be able to adapt it by modifying the device ID in the launch file to match your Insta360 X4.)
+* **V-I Sensor** Realsense d435i, RGB/Depth 640*480, 69°H-FOV, 42.5°V-FOV,15Hz; IMU 6-axis, 200Hz.
+  (If you also want to use the same camera in ROS, we provide the [Insta360 X4 driver ROS package](https://github.com/sjtuyinjie/M3DGR/tree/main/x4_cam/src) that supports real-time data streaming. You should be able to adapt it by modifying the device ID in the launch file to match your Insta360 X4.)
   
 * **Omnidirectional Camera** Insta360 X4,  RGB 2880*1440, 360°H-FOV, 360°V-FOV, 15HZ.
   
