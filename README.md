@@ -49,7 +49,15 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 ### 2.1 News
 **2025.06.16:** Our paper has been accepted to IROS 2025! We will release all datasets and code soon. Please stay tuned!
 
-### 2.2 TODO
+
+### 2.2 🔥 Recent works citing M3DGR(Updating!)
+We are excited to see that M3DGR continues to inspire follow-up works. To facilitate tracking the latest developments, we provide a curated list of papers citing M3DGR:
+ - [R-VoxelMap](https://github.com/NKU-MobFly-Robotics/R-VoxelMap)   
+ - [Surfel-LIO](https://github.com/93won/lidar_inertial_odometry)
+ - [Pizza-LIO](https://ieeexplore.ieee.org/abstract/document/11407979/)
+ - [LIVOX-CAM](https://ieeexplore.ieee.org/abstract/document/11151754/)
+
+### 2.3 TODO
 
   
 - [x] Release camera-ready version of IROS2025 paper.[[paper](https://arxiv.org/abs/2507.08364)]
