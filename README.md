@@ -50,6 +50,7 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 ### 2.1 🔥 Recent works citing M3DGR(Updating!)
 We are excited to see that M3DGR continues to inspire follow-up works. To facilitate tracking the latest developments, we provide a curated list of papers citing M3DGR:
  - [RAL2026] R-VoxelMap: Accurate Voxel Mapping With Recursive Plane Fitting for Online LiDAR Odometry,  [[Paper](https://arxiv.org/pdf/2601.12377)], [[code](https://github.com/NKU-MobFly-Robotics/R-VoxelMap)]
+ - [Arxiv2026] GenZ-LIO: Generalizable LiDAR-Inertial Odometry Beyond Indoor–Outdoor Boundaries, [[Paper](https://arxiv.org/pdf/2603.16273)]
  - [Arxiv2026] Surfel-LIO: Fast LiDAR-Inertial Odometry with Pre-computed Surfels and Hierarchical Z-order Voxel Hashing, [[paper](https://arxiv.org/pdf/2512.03397)] [[code](https://github.com/93won/lidar_inertial_odometry)]
  - [TIM2026] Pizza-LIO: Intensity-Enhanced LiDAR-Inertial Odometry with Adaptive Scan Slicing, [[paper](https://ieeexplore.ieee.org/abstract/document/11407979/)]
  - [RAL2025] LIVOX-CAM: Adaptive Coarse-to-Fine Visual-assisted LiDAR Odometry for Solid-State LiDAR, {[paper](https://ieeexplore.ieee.org/abstract/document/11151754/)]
