@@ -414,6 +414,69 @@ or Windows:
 ```
 Compare the hash output above with the hash of the corresponding line in [checksums.txt](https://github.com/sjtuyinjie/M3DGR/blob/main/checksums.txt). If they match exactly, the comparison is successful.
 
+### 5.8 Convert ROS 1 Bags to ROS 2 Humble Format
+
+M3DGR sequences are provided as ROS 1 bag files. If you want to use them in ROS 2 Humble, you can convert a ROS 1 bag into a ROS 2 bag directory with `rosbags-convert`.
+
+Install the `rosbags` command line tools:
+
+```bash
+pip install rosbags
+```
+
+Make sure the source bag file is available in your current working directory. For example:
+
+```bash
+ls Occlusion01.bag
+```
+
+Run the following command to convert a ROS 1 Noetic bag into a ROS 2 Humble bag:
+
+```bash
+rosbags-convert \
+  --dst-version 8 \
+  --src-typestore ros1_noetic \
+  --dst-typestore ros2_humble \
+  --src Occlusion01.bag \
+  --dst Occlusion01_humble
+```
+
+Single-line version:
+
+```bash
+rosbags-convert --dst-version 8 --src-typestore ros1_noetic --dst-typestore ros2_humble --src Occlusion01.bag --dst Occlusion01_humble
+```
+
+Parameter notes:
+
+- `--dst-version 8`: Writes rosbag2 metadata in a format that can be read directly by ROS 2 Humble tools.
+- `--src-typestore ros1_noetic`: Reads message definitions using the ROS 1 Noetic type store.
+- `--dst-typestore ros2_humble`: Writes message definitions using the ROS 2 Humble type store.
+- `--src Occlusion01.bag`: Specifies the input ROS 1 bag file.
+- `--dst Occlusion01_humble`: Specifies the output ROS 2 bag directory.
+
+After conversion, `Occlusion01_humble` should contain the ROS 2 bag metadata and storage files.
+
+Note: With `rosbags` 0.11.3, the default destination version is `9`. A version 9 bag may be created successfully, but `ros2 bag info` from ROS 2 Humble can fail when parsing `metadata.yaml`. Use `--dst-version 8` for Humble compatibility.
+
+If ROS 2 Humble is available in the environment, inspect the converted bag:
+
+```bash
+ros2 bag info Occlusion01_humble
+```
+
+You can also play the converted bag:
+
+```bash
+ros2 bag play Occlusion01_humble
+```
+
+Troubleshooting:
+
+- If conversion fails because of missing message definitions, make sure all custom message packages used by the original ROS 1 bag are available to `rosbags-convert`.
+- If `ros2 bag play` skips Livox topics such as `/livox/mid360/lidar` or `/livox/avia/lidar`, install and source the corresponding ROS 2 message packages, for example `livox_ros_driver2` and `livox_ros_driver`.
+- If the destination directory already exists, remove it or choose a new output directory before running the conversion again.
+
 ## 6. Evaluation
 
 You can quickly get the trajectory in TUM format through the TF tree method like [this](https://github.com/Zjj587/Trajectory_saving_for_SLAM). 
@@ -658,7 +721,6 @@ Thanks to everyone for supporting this project.
 </picture>
 
 <p align="right"><a href="#top">🔝Back to top</a></p>
-
 
 
 
