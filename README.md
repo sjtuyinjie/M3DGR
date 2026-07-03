@@ -156,6 +156,10 @@ The rostopics of our rosbag sequences are listed as follows:
 
 </details>
 
+### 4.3 Calibration
+
+Sensor extrinsics, camera intrinsics, and IMU noise parameters are provided in **[calibration.md](calibration.md)**. IMU noise parameters (`gyr_n`, `gyr_w`, `acc_n`, `acc_w`) follow the Kalibr convention and can be used directly by most LIO/LVIO systems (e.g., FAST-LIO2, LIO-SAM, R3LIVE).
+
 ## 5. DATASET SEQUENCES
 <div align=center>
 <img src="https://github.com/sjtuyinjie/M3DGR/blob/main/fig/Traj_page-0001.jpg" width="600px">
