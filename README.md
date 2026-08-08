@@ -695,9 +695,14 @@ Waiting for your algorithms!
 
 ## 9. Star History ⭐️
 
-[![Star History Chart](https://api.star-history.com/svg?repos=sjtuyinjie/M3DGR&type=Timeline)](https://star-history.com/#Ashutosh00710/github-readme-activity-graph&Timeline)
 
-
+<a href="https://www.star-history.com/?repos=sjtuyinjie%2FM3DGR&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=sjtuyinjie/M3DGR&type=date&theme=dark&legend=top-left&sealed_token=pUp91mbjyoy-AUVRpdjcy_1J_mZ5VvACOEeLHX9n3WrZPAOp5JQ9BXT9ebos_4bbk521HbPbgkKGapxjWWFshZHcAt5eDR1KnbT-Ol1DgNLo_zKFp96jynUl0es8x1uyDA_uJco8fArGT8VLsBG7t9ZLZVEzy7876M_6TPR2winiT0y6xPc0Ed_bVc4L" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=sjtuyinjie/M3DGR&type=date&legend=top-left&sealed_token=pUp91mbjyoy-AUVRpdjcy_1J_mZ5VvACOEeLHX9n3WrZPAOp5JQ9BXT9ebos_4bbk521HbPbgkKGapxjWWFshZHcAt5eDR1KnbT-Ol1DgNLo_zKFp96jynUl0es8x1uyDA_uJco8fArGT8VLsBG7t9ZLZVEzy7876M_6TPR2winiT0y6xPc0Ed_bVc4L" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=sjtuyinjie/M3DGR&type=date&legend=top-left&sealed_token=pUp91mbjyoy-AUVRpdjcy_1J_mZ5VvACOEeLHX9n3WrZPAOp5JQ9BXT9ebos_4bbk521HbPbgkKGapxjWWFshZHcAt5eDR1KnbT-Ol1DgNLo_zKFp96jynUl0es8x1uyDA_uJco8fArGT8VLsBG7t9ZLZVEzy7876M_6TPR2winiT0y6xPc0Ed_bVc4L" />
+ </picture>
+</a>
 
 ## 10. Contributing 👷‍♂️
 
