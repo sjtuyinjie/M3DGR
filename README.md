@@ -49,7 +49,7 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 
 ## 2. Latest Updates 📢
 
-### 2.1 🔥 Latest works citing M3DGR(Updating!)
+### 2.1 🔥 Latest works tested on M3DGR(Updating!)
 We are excited to see that M3DGR continues to inspire follow-up works. To facilitate tracking the latest developments, we provide a curated list of papers citing M3DGR:
  - [TII2026] RoLe-LIO: A Robust and Lightweight LiDAR-Inertial Odometry for Complex Environments,  [[Paper](https://ieeexplore.ieee.org/abstract/document/11646510)]
  - [IROS2026] FAST-LIVGO: A Degeneracy-Robust LiDAR-Inertial-Visual-GNSS Fusion Odometry,  [[Paper](https://arxiv.org/abs/2606.19190)]
