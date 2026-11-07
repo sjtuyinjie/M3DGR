@@ -51,6 +51,9 @@ In this work, we propose a complete solution for robust SLAM on ground robots op
 
 ### 2.1 🔥 Latest works tested on M3DGR(Updating!)
 We are excited to see that M3DGR continues to inspire follow-up works. To facilitate tracking the latest developments, we provide a curated list of papers citing M3DGR:
+ - [TMech2026] DALIO: Degeneracy-Aware, Efficient LiDAR-Inertial Odometry With Adaptive Multiresolution Mapping,  [[Paper](https://ieeexplore.ieee.org/abstract/document/11770126)]
+ - [RAL2026] MIXL: Confidence-Aware Expert Fusion for Robust Multi-Sensor Localization,  [[Paper](https://ieeexplore.ieee.org/abstract/document/11743872)]
+ - [RAL2026] ToF-Wheel Odometry: Navigating Degeneration of Localization With Limited Sensing Capabilities,  [[Paper](https://ieeexplore.ieee.org/abstract/document/11661693)]
  - [TII2026] RoLe-LIO: A Robust and Lightweight LiDAR-Inertial Odometry for Complex Environments,  [[Paper](https://ieeexplore.ieee.org/abstract/document/11646510)]
  - [IROS2026] FAST-LIVGO: A Degeneracy-Robust LiDAR-Inertial-Visual-GNSS Fusion Odometry,  [[Paper](https://arxiv.org/abs/2606.19190)]
  - [RAL2026] UAF-LIVO: Uncertainty-Aware Feature-Based LiDAR-Inertial-Visual Odometry Robust to Cross-Modal Geometric Inconsistency,  [[Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11594927)]
